@@ -1,0 +1,344 @@
+{
+ "format": "dsh-link.usage-ticket/1",
+ "generatedBy": "scripts/build-usage-tickets.mjs",
+ "plugin": {
+  "name": "@mars-sea/dsh-commandcode-provider",
+  "version": "0.11.5",
+  "license": "MIT",
+  "patch": "./cordis.patch.yml",
+  "client": true
+ },
+ "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider",
+ "filesScanned": 3,
+ "sourceDigest": "4ac1ca1fb8db17178795a725383ee742fab0364f14560fd85fa6b5132f8f613b",
+ "counts": {
+  "present": 9,
+  "client-plane": 9,
+  "absent": 1
+ },
+ "imports": [
+  {
+   "specifier": "@deepseek-ai/cordis",
+   "at": [
+    "lib\\index.d.ts:6"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-attachment",
+   "at": [
+    "lib\\index.d.ts:7"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-client-ui-primitives",
+   "at": [
+    "client lib\\client.js:8"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-commands",
+   "at": [
+    "lib\\index.d.ts:8"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-credentials",
+   "at": [
+    "lib\\index.d.ts:3",
+    "lib\\index.js:112"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-launch-environment",
+   "at": [
+    "lib\\index.js:113"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-llm",
+   "at": [
+    "lib\\index.d.ts:2",
+    "lib\\index.js:110",
+    "lib\\index.js:111"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-timeout",
+   "at": [
+    "lib\\index.js:109"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-typert-protocol",
+   "at": [
+    "lib\\index.d.ts:4",
+    "lib\\index.js:117"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-web",
+   "at": [
+    "lib\\index.d.ts:5",
+    "lib\\index.js:120"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/schemastery",
+   "at": [
+    "lib\\index.d.ts:1",
+    "lib\\index.js:108"
+   ]
+  },
+  {
+   "specifier": "node:crypto",
+   "at": [
+    "lib\\index.js:116"
+   ]
+  },
+  {
+   "specifier": "node:fs",
+   "at": [
+    "lib\\index.js:114"
+   ]
+  },
+  {
+   "specifier": "node:fs/promises",
+   "at": [
+    "lib\\index.js:115"
+   ]
+  },
+  {
+   "specifier": "node:http",
+   "at": [
+    "lib\\index.js:118"
+   ]
+  },
+  {
+   "specifier": "node:module",
+   "at": [
+    "lib\\index.js:1"
+   ]
+  },
+  {
+   "specifier": "node:net",
+   "at": [
+    "lib\\index.js:119"
+   ]
+  },
+  {
+   "specifier": "node:os",
+   "at": [
+    "lib\\index.js:106"
+   ]
+  },
+  {
+   "specifier": "node:path",
+   "at": [
+    "lib\\index.js:107"
+   ]
+  },
+  {
+   "specifier": "react",
+   "at": [
+    "client lib\\client.js:7"
+   ]
+  },
+  {
+   "specifier": "react/jsx-runtime",
+   "at": [
+    "client lib\\client.js:9"
+   ]
+  }
+ ],
+ "gaps": [
+  {
+   "name": "layout",
+   "kind": "service",
+   "via": "ctx.get",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6542",
+    "client lib\\client.js:6546"
+   ]
+  },
+  {
+   "name": "locale",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6323",
+    "client lib\\client.js:6327",
+    "client lib\\client.js:6508"
+   ]
+  },
+  {
+   "name": "locale.bind",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6508"
+   ]
+  },
+  {
+   "name": "locale.register",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6323",
+    "client lib\\client.js:6327"
+   ]
+  },
+  {
+   "name": "remote",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6356",
+    "client lib\\client.js:6374"
+   ]
+  },
+  {
+   "name": "settingsScope",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6344"
+   ]
+  },
+  {
+   "name": "slots",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6504",
+    "client lib\\client.js:6504",
+    "client lib\\client.js:6512",
+    "client lib\\client.js:6512",
+    "client lib\\client.js:6561",
+    "client lib\\client.js:6561",
+    "client lib\\client.js:6586",
+    "client lib\\client.js:6586"
+   ]
+  },
+  {
+   "name": "slots.inject",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6504",
+    "client lib\\client.js:6512",
+    "client lib\\client.js:6561",
+    "client lib\\client.js:6586"
+   ]
+  },
+  {
+   "name": "slots.register",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:6504",
+    "client lib\\client.js:6512",
+    "client lib\\client.js:6561",
+    "client lib\\client.js:6586"
+   ]
+  },
+  {
+   "name": "tuiSettingsSections",
+   "kind": "service",
+   "via": "ctx.get",
+   "classification": "absent",
+   "at": [
+    "lib\\index.js:6123"
+   ]
+  }
+ ],
+ "gapCounts": {
+  "client-plane": 9,
+  "absent": 1
+ },
+ "limits": {
+  "dynamicContextAccess": 0,
+  "destructuredContext": 1,
+  "memberUsageHeadsOutsideClientSurface": 6
+ },
+ "work": [
+  "present: 9 name(s) this plugin uses exist in the 0.2.1 surface, so nothing needs translating",
+  "client-plane: 9 usage(s) live in files only the client plane loads, and no archived surface covers that plane — unverified, not broken (R22: the packages and subpaths they import do resolve; see compat/adaptation/import-resolution.json)",
+  "absent: 1 name(s) are in neither the 0.2.1 surface nor the drift table; each needs a shim or a rewrite before adoption",
+  "loss: 0 name(s) are known-lost (a drift row with no candidate), which a bridge can only report",
+  "composition: this plugin ships its own patch, so its contract lives in its rows; adopting it means reading those rows, not only its imports"
+ ],
+ "rows": [
+  {
+   "at": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider/cordis.patch.yml:11",
+   "file": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider/cordis.patch.yml",
+   "line": 11,
+   "origin": "insert-parent",
+   "class": "insert-entries",
+   "insertedId": null,
+   "hasConfig": false,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": null
+  },
+  {
+   "at": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider/cordis.patch.yml:12",
+   "file": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider/cordis.patch.yml",
+   "line": 12,
+   "origin": "insert-child",
+   "class": "insert-entries",
+   "insertedId": "llm-commandcode",
+   "hasConfig": true,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": null
+  }
+ ],
+ "manualJudgement": [
+  {
+   "id": "silent-foreign-key",
+   "needs": "manual decision",
+   "what": "the composition keeps a key that is not in the declared list, without saying so",
+   "measured": {
+    "case": "config-key-outside-schema",
+    "observedTags": [
+     "calibration",
+     "schema-control",
+     "schema-unknown"
+    ],
+    "conclusion": "the measured case mounted the row with a key the schema does not accept, so an unknown key is passed rather than refused"
+   }
+  },
+  {
+   "id": "duplicate-insert",
+   "needs": "manual decision",
+   "what": "the same id is inserted twice; the later insert wins wholesale",
+   "measured": {
+    "case": "same-id-two-rows",
+    "observedTags": [
+     "calibration",
+     "dupe-b"
+    ],
+    "conclusion": "the measured case kept both rows and indexed the later one, so the earlier config is not merged but dropped"
+   }
+  },
+  {
+   "id": "whole-config-replacement",
+   "needs": "manual decision",
+   "what": "a later layer replaces a config wholesale rather than merging it",
+   "measured": {
+    "case": null,
+    "observedTags": null,
+    "conclusion": "no admission case measures a later layer replacing a config wholesale, so this stays a human decision and is not claimed as measured"
+   }
+  }
+ ]
+}

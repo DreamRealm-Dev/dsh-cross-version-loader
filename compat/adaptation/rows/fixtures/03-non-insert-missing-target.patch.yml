@@ -1,0 +1,4 @@
+# A named patch whose id is deliberately absent from this and every other layer: the id
+# dsh-link-fixture-no-such-row is inserted nowhere.
+- id: dsh-link-fixture-no-such-row
+  disabled: true

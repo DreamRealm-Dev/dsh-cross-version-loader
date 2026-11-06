@@ -1,0 +1,9 @@
+# The control: the plainest shape there is. One patch mapping appends one row, and the
+# carrier is a Cordis builtin that every profile resolves (cordis:group), so nothing here
+# depends on which plugin packages this machine happens to have installed.
+# Every other fixture differs from this one in exactly one respect.
+- insert:
+    - id: dsh-link-fixture-control
+      name: cordis:group
+      group: true
+      config: []

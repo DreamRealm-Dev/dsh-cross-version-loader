@@ -1,0 +1,8 @@
+# disabled as a Loader expression instead of a boolean. The expression is the one the
+# composition reference itself uses as an example.
+- insert:
+    - id: dsh-link-fixture-js-disabled
+      name: cordis:group
+      group: true
+      config: []
+      disabled: !!js "!ctx.get('profileContext')"

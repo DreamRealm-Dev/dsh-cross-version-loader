@@ -1,0 +1,490 @@
+{
+ "format": "dsh-link.usage-ticket/1",
+ "generatedBy": "scripts/build-usage-tickets.mjs",
+ "plugin": {
+  "name": "dsh-opencode-go",
+  "version": "0.1.20",
+  "license": "MIT",
+  "patch": "./cordis.patch.yml",
+  "client": true
+ },
+ "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+ "filesScanned": 33,
+ "sourceDigest": "884788a1ee5ff1202b93a7fad6d2d823235bbd1b819d22f4a5271b2d8596688b",
+ "counts": {
+  "present": 7,
+  "client-plane": 16
+ },
+ "imports": [
+  {
+   "specifier": "@deepseek-ai/cordis",
+   "at": [
+    "client lib\\types\\client\\index.d.ts:8",
+    "client lib\\types\\client\\section-controller.d.ts:11",
+    "client lib\\types\\client\\usage.d.ts:1",
+    "lib\\types\\index.d.ts:33",
+    "lib\\types\\models.d.ts:1",
+    "lib\\types\\remotes.d.ts:1",
+    "lib\\types\\usage.d.ts:1"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-api-remotes/client",
+   "at": [
+    "client lib\\types\\client\\settings.d.ts:1"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-attachment",
+   "at": [
+    "lib\\index.js:267",
+    "lib\\types\\adapter.d.ts:26",
+    "lib\\types\\conversion\\context.d.ts:7",
+    "lib\\types\\conversion\\image-offload.d.ts:2"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-brand",
+   "at": [
+    "lib\\index.js:64",
+    "lib\\index.js:556"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-client-store",
+   "at": [
+    "client lib\\client.js:815",
+    "client lib\\types\\client\\UsagePill.d.ts:1",
+    "client lib\\types\\client\\section-controller.d.ts:15",
+    "client lib\\types\\client\\staged-form.d.ts:19"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-client-ui-model-selection/client",
+   "at": [
+    "client lib\\types\\client\\UsagePill.d.ts:2"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-client-ui-primitives",
+   "at": [
+    "client lib\\client.js:42",
+    "client lib\\client.js:43",
+    "client lib\\client.js:47"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-client-ui-slots",
+   "at": [
+    "client lib\\types\\client\\Section.d.ts:9"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-credentials",
+   "at": [
+    "lib\\index.js:49"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-launch-environment",
+   "at": [
+    "lib\\index.js:48"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-llm",
+   "at": [
+    "lib\\index.js:50",
+    "lib\\index.js:65",
+    "lib\\index.js:68",
+    "lib\\index.js:275",
+    "lib\\index.js:557",
+    "lib\\index.js:720",
+    "lib\\index.js:1753",
+    "lib\\types\\adapter.d.ts:24",
+    "lib\\types\\adapter.d.ts:25",
+    "lib\\types\\catalog.d.ts:2",
+    "lib\\types\\conversion\\context.d.ts:6",
+    "lib\\types\\conversion\\image-offload.d.ts:1",
+    "lib\\types\\conversion\\replay.d.ts:10",
+    "lib\\types\\conversion\\stream.d.ts:10"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-timeout",
+   "at": [
+    "lib\\index.js:712",
+    "lib\\index.js:1460"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-typert-protocol",
+   "at": [
+    "lib\\index.js:1752",
+    "lib\\index.js:1866",
+    "client lib\\types\\client\\section-controller.d.ts:12",
+    "lib\\types\\models-contract.d.ts:2",
+    "lib\\types\\models.d.ts:2",
+    "lib\\types\\remote-contract.d.ts:1",
+    "lib\\types\\usage-contract.d.ts:1",
+    "lib\\types\\usage.d.ts:2"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/schemastery",
+   "at": [
+    "lib\\index.js:1461",
+    "lib\\types\\config.d.ts:11"
+   ]
+  },
+  {
+   "specifier": "node:crypto",
+   "at": [
+    "lib\\index.js:53",
+    "lib\\index.js:1070",
+    "lib\\index.js:1751"
+   ]
+  },
+  {
+   "specifier": "node:fs",
+   "at": [
+    "lib\\index.js:1071"
+   ]
+  },
+  {
+   "specifier": "node:fs/promises",
+   "at": [
+    "lib\\index.js:1072"
+   ]
+  },
+  {
+   "specifier": "node:os",
+   "at": [
+    "lib\\index.js:1073"
+   ]
+  },
+  {
+   "specifier": "node:path",
+   "at": [
+    "lib\\index.js:1074"
+   ]
+  },
+  {
+   "specifier": "node:stream",
+   "at": [
+    "lib\\index.js:951"
+   ]
+  },
+  {
+   "specifier": "node:stream/promises",
+   "at": [
+    "lib\\index.js:952"
+   ]
+  },
+  {
+   "specifier": "node:timers/promises",
+   "at": [
+    "lib\\index.js:950"
+   ]
+  },
+  {
+   "specifier": "node:zlib",
+   "at": [
+    "lib\\index.js:953"
+   ]
+  },
+  {
+   "specifier": "opencode-go-pi-ai",
+   "at": [
+    "lib\\index.js:54",
+    "lib\\index.js:558",
+    "lib\\index.js:715",
+    "lib\\types\\catalog.d.ts:1",
+    "lib\\types\\conversion\\context.d.ts:8",
+    "lib\\types\\conversion\\replay.d.ts:11",
+    "lib\\types\\conversion\\stream.d.ts:11",
+    "lib\\types\\model-metadata.d.ts:2",
+    "lib\\types\\reasoning.d.ts:2"
+   ]
+  },
+  {
+   "specifier": "opencode-go-pi-ai/api/anthropic-messages.lazy",
+   "at": [
+    "lib\\index.js:717"
+   ]
+  },
+  {
+   "specifier": "opencode-go-pi-ai/api/openai-completions.lazy",
+   "at": [
+    "lib\\index.js:718"
+   ]
+  },
+  {
+   "specifier": "opencode-go-pi-ai/api/openai-responses.lazy",
+   "at": [
+    "lib\\index.js:719"
+   ]
+  },
+  {
+   "specifier": "opencode-go-pi-ai/providers/all",
+   "at": [
+    "lib\\index.js:716"
+   ]
+  },
+  {
+   "specifier": "react",
+   "at": [
+    "client lib\\client.js:41",
+    "client lib\\client.js:46",
+    "client lib\\client.js:1673",
+    "client lib\\types\\client\\ModelEditor.d.ts:1",
+    "client lib\\types\\client\\ModelEditor.d.ts:19",
+    "client lib\\types\\client\\Section.d.ts:29",
+    "client lib\\types\\client\\UsagePill.d.ts:14"
+   ]
+  },
+  {
+   "specifier": "react/jsx-runtime",
+   "at": [
+    "client lib\\client.js:154",
+    "client lib\\client.js:383",
+    "client lib\\client.js:1687"
+   ]
+  }
+ ],
+ "gaps": [
+  {
+   "name": "locale",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1875",
+    "client lib\\client.js:1896",
+    "client lib\\client.js:1897"
+   ]
+  },
+  {
+   "name": "locale",
+   "kind": "service",
+   "via": "inject",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1873"
+   ]
+  },
+  {
+   "name": "locale.bind",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1896"
+   ]
+  },
+  {
+   "name": "locale.getLocale",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1897"
+   ]
+  },
+  {
+   "name": "locale.register",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1875"
+   ]
+  },
+  {
+   "name": "remote",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1089",
+    "client lib\\client.js:1291",
+    "client lib\\client.js:1344",
+    "client lib\\client.js:1876",
+    "client lib\\client.js:1893",
+    "client lib\\client.js:1902"
+   ]
+  },
+  {
+   "name": "remote",
+   "kind": "service",
+   "via": "inject",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1873"
+   ]
+  },
+  {
+   "name": "remote.credentials",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1291",
+    "client lib\\client.js:1344"
+   ]
+  },
+  {
+   "name": "remote.credentials",
+   "kind": "service",
+   "via": "inject",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1873"
+   ]
+  },
+  {
+   "name": "remote.llm",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1089"
+   ]
+  },
+  {
+   "name": "remote.llm",
+   "kind": "service",
+   "via": "inject",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1873"
+   ]
+  },
+  {
+   "name": "remote.opencodeGoModels",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1893"
+   ]
+  },
+  {
+   "name": "slots",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1907",
+    "client lib\\client.js:1907"
+   ]
+  },
+  {
+   "name": "slots",
+   "kind": "service",
+   "via": "inject",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1873"
+   ]
+  },
+  {
+   "name": "slots.inject",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1907"
+   ]
+  },
+  {
+   "name": "slots.register",
+   "kind": "service",
+   "via": "ctx.member",
+   "classification": "client-plane",
+   "at": [
+    "client lib\\client.js:1907"
+   ]
+  }
+ ],
+ "gapCounts": {
+  "client-plane": 16
+ },
+ "limits": {
+  "dynamicContextAccess": 0,
+  "destructuredContext": 1,
+  "memberUsageHeadsOutsideClientSurface": 4
+ },
+ "work": [
+  "present: 7 name(s) this plugin uses exist in the 0.2.1 surface, so nothing needs translating",
+  "client-plane: 16 usage(s) live in files only the client plane loads, and no archived surface covers that plane — unverified, not broken (R22: the packages and subpaths they import do resolve; see compat/adaptation/import-resolution.json)",
+  "absent: 0 name(s) are in neither the 0.2.1 surface nor the drift table; each needs a shim or a rewrite before adoption",
+  "loss: 0 name(s) are known-lost (a drift row with no candidate), which a bridge can only report",
+  "composition: this plugin ships its own patch, so its contract lives in its rows; adopting it means reading those rows, not only its imports"
+ ],
+ "rows": [
+  {
+   "at": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go/cordis.patch.yml:1",
+   "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go/cordis.patch.yml",
+   "line": 1,
+   "origin": "insert-parent",
+   "class": "insert-entries",
+   "insertedId": null,
+   "hasConfig": false,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": null
+  },
+  {
+   "at": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go/cordis.patch.yml:2",
+   "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go/cordis.patch.yml",
+   "line": 2,
+   "origin": "insert-child",
+   "class": "insert-entries",
+   "insertedId": "opencode-go",
+   "hasConfig": false,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": false
+  }
+ ],
+ "manualJudgement": [
+  {
+   "id": "silent-foreign-key",
+   "needs": "manual decision",
+   "what": "the composition keeps a key that is not in the declared list, without saying so",
+   "measured": {
+    "case": "config-key-outside-schema",
+    "observedTags": [
+     "calibration",
+     "schema-control",
+     "schema-unknown"
+    ],
+    "conclusion": "the measured case mounted the row with a key the schema does not accept, so an unknown key is passed rather than refused"
+   }
+  },
+  {
+   "id": "duplicate-insert",
+   "needs": "manual decision",
+   "what": "the same id is inserted twice; the later insert wins wholesale",
+   "measured": {
+    "case": "same-id-two-rows",
+    "observedTags": [
+     "calibration",
+     "dupe-b"
+    ],
+    "conclusion": "the measured case kept both rows and indexed the later one, so the earlier config is not merged but dropped"
+   }
+  },
+  {
+   "id": "whole-config-replacement",
+   "needs": "manual decision",
+   "what": "a later layer replaces a config wholesale rather than merging it",
+   "measured": {
+    "case": null,
+    "observedTags": null,
+    "conclusion": "no admission case measures a later layer replacing a config wholesale, so this stays a human decision and is not claimed as measured"
+   }
+  }
+ ]
+}

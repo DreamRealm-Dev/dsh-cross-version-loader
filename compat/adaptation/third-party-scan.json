@@ -1,0 +1,3459 @@
+{
+  "format": "dsh-link.third-party-scan/1",
+  "generatedAt": "2026-10-07T05:20:58.443Z",
+  "machine": {
+    "appData": "C:\\Users\\<user>\\AppData\\Roaming",
+    "localAppData": "C:\\Users\\<user>\\AppData\\Local",
+    "userProfile": "C:\\Users\\<user>",
+    "repo": "<workspace>//dsh-link"
+  },
+  "criterion": {
+    "statement": "a package counts as an installable plugin/bundle package when its own package.json declares dsh.bundle.patch, or dsh.client, or dsh.profile.bundles; a name inside a profile manifest dsh.profile.bundles counts as installed-as-a-layer for that profile",
+    "codeRefs": [
+      "packages/boot/plugin-manager/src/index.ts:560 (manifest.dsh.bundle -> bundlePatchPaths -> loadOverlayPatches)",
+      "packages/boot/plugin-manager/src/index.ts:382,419 (refused not-a-bundle when dsh.bundle is absent)",
+      "packages/boot/plugin-manager/src/operations.ts:102 (warning: declares no dsh.bundle, installed as a plain dependency, not a profile layer)",
+      "packages/bundle/README.md:12 (each bundle package declares dsh.bundle.patch)",
+      "packages/boot/app-boot/tests/profile.spec.ts:283 (dsh.profile.bundles resolves to patch layers in order)"
+    ],
+    "excluded": "transitive dependencies in node_modules/.pnpm (the store) and nested node_modules of a package are not separate packages of a profile; only the top level and @scope level of a node_modules directory are enumerated"
+  },
+  "roots": [
+    {
+      "id": "our-profile-web",
+      "kind": "profile-node-modules",
+      "dir": "C:\\Users\\<user>\\AppData\\Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 73,
+      "packageJsonOpened": 103,
+      "unreadable": []
+    },
+    {
+      "id": "our-profiles-root",
+      "kind": "profile-root",
+      "dir": "C:\\Users\\<user>\\AppData\\Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 73,
+      "packageJsonOpened": 103,
+      "unreadable": []
+    },
+    {
+      "id": "official-profile-web",
+      "kind": "profile-node-modules",
+      "dir": "C:\\Users\\<user>\\AppData\\Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 66,
+      "packageJsonOpened": 107,
+      "unreadable": [
+        "C:\\Users\\<user>\\AppData\\Roaming\\DeepSeek Harness\\dsh-home\\profiles\\web\\node_modules\\@mars-sea\\_backup-commandcode-20260925\\package.json"
+      ]
+    },
+    {
+      "id": "official-profile-headless",
+      "kind": "profile-node-modules",
+      "dir": "C:\\Users\\<user>\\AppData\\Roaming/DeepSeek Harness/dsh-home/profiles/headless/node_modules",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 0,
+      "packageJsonOpened": 0,
+      "unreadable": []
+    },
+    {
+      "id": "official-profiles-node-modules",
+      "kind": "profile-root-node-modules",
+      "dir": "C:\\Users\\<user>\\AppData\\Roaming/DeepSeek Harness/dsh-home/profiles/node_modules",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 192,
+      "packageJsonOpened": 487,
+      "unreadable": []
+    },
+    {
+      "id": "packaged-official-app",
+      "kind": "packaged-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 213,
+      "packageJsonOpened": 500,
+      "unreadable": []
+    },
+    {
+      "id": "npm-global",
+      "kind": "global",
+      "dir": "C:\\Users\\<user>\\AppData\\Roaming/npm/node_modules",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 2,
+      "packageJsonOpened": 2,
+      "unreadable": []
+    },
+    {
+      "id": "pnpm-global",
+      "kind": "global",
+      "dir": "C:\\Users\\<user>\\AppData\\Local/pnpm/global",
+      "exists": false,
+      "nodeModulesDirs": 0,
+      "topLevelEntries": 0,
+      "packageJsonOpened": 0,
+      "unreadable": []
+    },
+    {
+      "id": "user-dot-dsh",
+      "kind": "user",
+      "dir": "C:\\Users\\<user>/.dsh",
+      "exists": true,
+      "nodeModulesDirs": 1,
+      "topLevelEntries": 283,
+      "packageJsonOpened": 615,
+      "unreadable": [
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-api-workspace-files\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-chunked-list\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-file-upload\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-resources\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-open-in-app\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-schedule\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-sidebar-documentpreview\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-sidebar-files\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-sidebar-right\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-deque\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-host-open-in-app\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-package-manifest\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-catalog\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-v0-to-v1\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-v1-to-v2\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-v2-to-v3\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-turn-outline\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-tool-present\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-util-time\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-util-values\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\node-addon-system\\package.json",
+        "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\standardwebhooks\\package.json"
+      ]
+    }
+  ],
+  "profileManifests": [
+    {
+      "id": "our-web",
+      "path": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/package.json",
+      "exists": true,
+      "dependencies": [
+        "@argszero/cordis-plugin-thinking-loop-guard",
+        "dsh-agent-context",
+        "dsh-anchored-lite",
+        "dsh-browser",
+        "dsh-continue-button",
+        "dsh-delegation-model-choice",
+        "dsh-escalation-guard",
+        "dsh-image-guard",
+        "dsh-lan-bridge",
+        "dsh-link-brand",
+        "dsh-link-collab",
+        "dsh-link-mods",
+        "dsh-liquid-glass",
+        "dsh-opencode-go",
+        "dsh-repeat-guard",
+        "dsh-repetition-guard",
+        "dsh-theme-settings"
+      ],
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-opencode-go",
+        "@deepseek-ai/dsh-experimental-agent-team-profile",
+        "@deepseek-ai/dsh-experimental-auto-review",
+        "@deepseek-ai/dsh-experimental-voice-input-bundle",
+        "dsh-liquid-glass",
+        "dsh-theme-settings",
+        "dsh-link-mods",
+        "dsh-link-collab",
+        "dsh-continue-button",
+        "dsh-link-brand",
+        "dsh-agent-context",
+        "@argszero/cordis-plugin-thinking-loop-guard",
+        "dsh-lan-bridge",
+        "dsh-repetition-guard",
+        "dsh-repeat-guard",
+        "dsh-delegation-model-choice"
+      ]
+    },
+    {
+      "id": "official-web",
+      "path": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/package.json",
+      "exists": true,
+      "dependencies": [
+        "@deepseek-ai/dsh-experimental-agent-team-profile",
+        "@mars-sea/dsh-commandcode-provider",
+        "@rain-kl/dsh-preset-plus",
+        "dsh-delegation-model-choice",
+        "dsh-opencode-go",
+        "dsh-search-failover",
+        "dsh-continue-button"
+      ],
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "@deepseek-ai/dsh-experimental-agent-team-profile",
+        "dsh-search-failover",
+        "@mars-sea/dsh-commandcode-provider",
+        "dsh-opencode-go",
+        "dsh-continue-button"
+      ]
+    },
+    {
+      "id": "official-headless",
+      "path": "C:/Users/<user>/AppData/Roaming//DeepSeek Harness/dsh-home/profiles/headless/package.json",
+      "exists": true,
+      "dependencies": [],
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-headless"
+      ]
+    }
+  ],
+  "hits": [
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "origin": "installed-package",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-agent-context",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-agent-context",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-agent-context",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-browser",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-browser",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-browser",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-continue-button",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-continue-button",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-continue-button",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-delegation-model-choice",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-delegation-model-choice",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-delegation-model-choice",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-lan-bridge",
+      "version": "0.3.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-lan-bridge",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-lan-bridge",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-link-brand",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-link-brand",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-link-brand",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-link-collab",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-link-collab",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-link-collab",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-link-mods",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-link-mods",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-link-mods",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml",
+        "./presets.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-liquid-glass",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-liquid-glass",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-liquid-glass",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.20",
+      "origin": "installed-package",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.2.2",
+      "origin": "installed-package",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "origin": "installed-package",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-theme-settings",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-theme-settings",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-theme-settings",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "origin": "installed-package",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-agent-context",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-agent-context",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-agent-context",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-browser",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-browser",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-browser",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-continue-button",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-continue-button",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-continue-button",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-delegation-model-choice",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-delegation-model-choice",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-delegation-model-choice",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-lan-bridge",
+      "version": "0.3.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-lan-bridge",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-lan-bridge",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-link-brand",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-link-brand",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-link-brand",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-link-collab",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-link-collab",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-link-collab",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-link-mods",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-link-mods",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-link-mods",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml",
+        "./presets.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-liquid-glass",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-liquid-glass",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-liquid-glass",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.20",
+      "origin": "installed-package",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.2.2",
+      "origin": "installed-package",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "origin": "installed-package",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-theme-settings",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-theme-settings",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-theme-settings",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-agent-team-profile",
+      "version": "0.1.5-rc.1",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@deepseek-ai/dsh-experimental-agent-team-profile",
+      "realDir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@deepseek-ai/dsh-experimental-agent-team-profile",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@mars-sea/dsh-commandcode-provider",
+      "version": "0.11.5",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider",
+      "realDir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@rain-kl/dsh-preset-plus",
+      "version": "0.1.5",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@rain-kl/dsh-preset-plus",
+      "realDir": "H:/mod/dsh-preset-plus",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-agent-context",
+      "version": "0.1.0",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-agent-context",
+      "realDir": "H:/mod/dsh-agent-context",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-browser",
+      "version": "0.1.0",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-browser",
+      "realDir": "H:/mod/dsh-browser",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-continue-button",
+      "version": "0.1.0",
+      "origin": "this-repo-plugin",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-continue-button",
+      "realDir": "<workspace>//dsh-link/plugins/dsh-continue-button",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-delegation-model-choice",
+      "version": "0.1.0",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-delegation-model-choice",
+      "realDir": "H:/mod/dsh-delegation-model-choice",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-lan-bridge",
+      "version": "0.3.0",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-lan-bridge",
+      "realDir": "H:/mod/dsh-lan-bridge",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.14",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-opencode-go",
+      "realDir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-opencode-go",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-search-failover",
+      "version": "0.3.9",
+      "origin": "installed-package",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-search-failover",
+      "realDir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-search-failover",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "origin": "installed-package",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "realDir": "H:/mod/dsh-anti-repeat-suite/packages/@argszero/cordis-plugin-thinking-loop-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-acp-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-acp-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-acp-app",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-gateway",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-api-gateway",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-gateway",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-remotes",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-api-remotes",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-remotes",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-session-controller",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-api-session-controller",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-session-controller",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-workspace-controller",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-api-workspace-controller",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-workspace-controller",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-workspace-files",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-api-workspace-files",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-workspace-files",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-base",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-base",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-base",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-connection",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-connection",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-connection",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-file-upload",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-file-upload",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-file-upload",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-hmr",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-hmr",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-hmr",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-locale",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-locale",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-locale",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-modules",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-modules",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-modules",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-resources",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-resources",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-resources",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-agent-preset",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-agent-preset",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-agent-preset",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-approval",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-approval",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-approval",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-attachment",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-attachment",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-attachment",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-brand-official",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-brand-official",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-brand-official",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-chat",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-chat",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-chat",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-commands",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-commands",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-commands",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-conversation",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-conversation",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-conversation",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-cordis",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-cordis",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-cordis",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-deliverables",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-deliverables",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-deliverables",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-goal",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-goal",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-goal",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-input-trigger",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-input-trigger",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-input-trigger",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-jobs",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-jobs",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-jobs",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-layout",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-layout",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-layout",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-message-feedback",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-message-feedback",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-message-feedback",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-model-selection",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-model-selection",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-model-selection",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-open-in-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-open-in-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-open-in-app",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-permission-presets",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-permission-presets",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-permission-presets",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-plan",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-plan",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-plan",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-reference",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-reference",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-reference",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-renderer",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-renderer",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-renderer",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-schedule",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-schedule",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-schedule",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-session",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-session",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-session",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-general",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-general",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-general",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-models",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-models",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-models",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-plugins",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-plugins",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-plugins",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-sidebar",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar-files",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-sidebar-files",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-files",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar-right",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-sidebar-right",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-right",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-skill",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-skill",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-skill",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-subagent",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-subagent",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-subagent",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-theme",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-theme",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-theme",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-tool",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-tool",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-tool",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-trajectory",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-trajectory",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-trajectory",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-user-questions",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-user-questions",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-user-questions",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-workflow-run",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-workflow-run",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-workflow-run",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-workspace",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-client-ui-workspace",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-workspace",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-cordis-client-runner",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-cordis-client-runner",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-cordis-client-runner",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-headless",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-headless",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-headless",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-sdk-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-sdk-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-sdk-app",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-sdk-minimal",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-sdk-minimal",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-sdk-minimal",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-session-log-export",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-session-log-export",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-session-log-export",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-typert-registry",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-typert-registry",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-typert-registry",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-web-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@deepseek-ai/dsh-web-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-web-app",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.1.5",
+      "origin": "installed-package",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/dsh-repeat-guard",
+      "realDir": "H:/mod/dsh-anti-repeat-suite/packages/dsh-repeat-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "origin": "installed-package",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/dsh-repetition-guard",
+      "realDir": "H:/mod/dsh-anti-repeat-suite/packages/dsh-repetition-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-acp-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-acp-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-acp-app",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-gateway",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-gateway",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-gateway",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-remotes",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-remotes",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-remotes",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-session-controller",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-session-controller",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-session-controller",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-workspace-controller",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-workspace-controller",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-workspace-controller",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-workspace-files",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-workspace-files",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-api-workspace-files",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-base",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-base",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-base",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-connection",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-connection",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-connection",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-file-upload",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-file-upload",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-file-upload",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-hmr",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-hmr",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-hmr",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-locale",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-locale",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-locale",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-modules",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-modules",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-modules",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-resources",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-resources",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-resources",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-runtime",
+      "version": "0.1.1-rc.2",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-runtime",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-runtime",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-agent-preset",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-agent-preset",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-agent-preset",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-approval",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-approval",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-approval",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-attachment",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-attachment",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-attachment",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-brand-official",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-brand-official",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-brand-official",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-chat",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-chat",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-chat",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-commands",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-commands",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-commands",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-conversation",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-conversation",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-conversation",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-cordis",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-cordis",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-cordis",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-deliverables",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-deliverables",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-deliverables",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-goal",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-goal",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-goal",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-input-trigger",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-input-trigger",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-input-trigger",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-jobs",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-jobs",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-jobs",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-layout",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-layout",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-layout",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-message-feedback",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-message-feedback",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-message-feedback",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-model-selection",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-model-selection",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-model-selection",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-open-in-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-open-in-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-open-in-app",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-permission-presets",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-permission-presets",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-permission-presets",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-plan",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-plan",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-plan",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-reference",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-reference",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-reference",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-renderer",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-renderer",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-renderer",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-schedule",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-schedule",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-schedule",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-session",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-session",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-session",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-general",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-general",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-general",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-models",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-models",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-models",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-plugins",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-plugins",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-settings-plugins",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-documentpreview",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar-files",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-files",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-files",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar-right",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-right",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-sidebar-right",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-skill",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-skill",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-skill",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-subagent",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-subagent",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-subagent",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-theme",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-theme",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-theme",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-tool",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-tool",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-tool",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-trajectory",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-trajectory",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-trajectory",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-user-questions",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-user-questions",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-user-questions",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-workflow-run",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-workflow-run",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-workflow-run",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-workspace",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-workspace",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-client-ui-workspace",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-cordis-client-runner",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-cordis-client-runner",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-cordis-client-runner",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-headless",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-headless",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-headless",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-sdk-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-sdk-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-sdk-app",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-sdk-minimal",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-sdk-minimal",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-sdk-minimal",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-session-log-export",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-session-log-export",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-session-log-export",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-typert-registry",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-typert-registry",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-typert-registry",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-web-app",
+      "version": "0.1.5-rc.1",
+      "origin": "packaged-official",
+      "root": "packaged-official-app",
+      "dir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-web-app",
+      "realDir": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules/@deepseek-ai/dsh-web-app",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-acp-app",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-acp-app",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-acp-app",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-gateway",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-api-gateway",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-api-gateway",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-remotes",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-api-remotes",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-api-remotes",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-session-controller",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-api-session-controller",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-api-session-controller",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-api-workspace-controller",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-api-workspace-controller",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-api-workspace-controller",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-base",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-base",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-base",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-connection",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-connection",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-connection",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-hmr",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-hmr",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-hmr",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-locale",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-locale",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-locale",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-modules",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-modules",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-modules",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-runtime",
+      "version": "0.1.0-rc.7",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-runtime",
+      "realDir": "C:/Users/<user>/AppData/Roaming/Deepseek Harness EAC/agent/node_modules/@deepseek-ai/dsh-client-runtime",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-agent-preset",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-agent-preset",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-agent-preset",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-approval",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-approval",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-approval",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-attachment",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-attachment",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-attachment",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-brand-official",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-brand-official",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-brand-official",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-chat",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-chat",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-chat",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-commands",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-commands",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-commands",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-conversation",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-conversation",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-conversation",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-cordis",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-cordis",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-cordis",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-deliverables",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-deliverables",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-deliverables",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-browse",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-directory-picker-native",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-goal",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-goal",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-goal",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-input-trigger",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-input-trigger",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-input-trigger",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-jobs",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-jobs",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-jobs",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-layout",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-layout",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-layout",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-message-feedback",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-message-feedback",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-message-feedback",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-model-selection",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-model-selection",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-model-selection",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-permission-presets",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-permission-presets",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-permission-presets",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-plan",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-plan",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-plan",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-reference",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-reference",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-reference",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-renderer",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-renderer",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-renderer",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-session",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-session",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-session",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-settings",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-general",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-general",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-settings-general",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-models",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-models",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-settings-models",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-settings-plugin-inventory",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-settings-plugins",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-settings-plugins",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-settings-plugins",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-sidebar",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-sidebar",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-sidebar",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-skill",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-skill",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-skill",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-subagent",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-subagent",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-subagent",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-theme",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-theme",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-theme",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-tool",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-tool",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-tool",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-trajectory",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-trajectory",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-trajectory",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-user-questions",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-user-questions",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-user-questions",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-workflow-run",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-workflow-run",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-workflow-run",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-client-ui-workspace",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-client-ui-workspace",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-client-ui-workspace",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-cordis-client-runner",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-cordis-client-runner",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-cordis-client-runner",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-headless",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-headless",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-headless",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-sdk-app",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-sdk-app",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-sdk-app",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-sdk-minimal",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-sdk-minimal",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-sdk-minimal",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-session-log-export",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-session-log-export",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-session-log-export",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-typert-registry",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-typert-registry",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-typert-registry",
+      "inProfileBundles": false,
+      "bundlePatch": [],
+      "client": true,
+      "license": "MIT"
+    },
+    {
+      "name": "@deepseek-ai/dsh-web-app",
+      "version": "0.1.2-alpha.1",
+      "origin": "installed-package",
+      "root": "user-dot-dsh",
+      "dir": "C:/Users/<user>/.dsh/profiles/node_modules/@deepseek-ai/dsh-web-app",
+      "realDir": "Q:/Deepseek Harness EAC/dsh-desktop/node_modules/@deepseek-ai/dsh-web-app",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ],
+      "client": false,
+      "license": "MIT"
+    }
+  ],
+  "thirdPartyHits": [
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.20",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.2.2",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "root": "our-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.20",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.2.2",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "root": "our-profiles-root",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "realDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "@mars-sea/dsh-commandcode-provider",
+      "version": "0.11.5",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider",
+      "realDir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "@rain-kl/dsh-preset-plus",
+      "version": "0.1.5",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@rain-kl/dsh-preset-plus",
+      "realDir": "H:/mod/dsh-preset-plus",
+      "inProfileBundles": false,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-agent-context",
+      "version": "0.1.0",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-agent-context",
+      "realDir": "H:/mod/dsh-agent-context",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-browser",
+      "version": "0.1.0",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-browser",
+      "realDir": "H:/mod/dsh-browser",
+      "inProfileBundles": false,
+      "bundlePatch": []
+    },
+    {
+      "name": "dsh-delegation-model-choice",
+      "version": "0.1.0",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-delegation-model-choice",
+      "realDir": "H:/mod/dsh-delegation-model-choice",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-lan-bridge",
+      "version": "0.3.0",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-lan-bridge",
+      "realDir": "H:/mod/dsh-lan-bridge",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.14",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-opencode-go",
+      "realDir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-opencode-go",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-search-failover",
+      "version": "0.3.9",
+      "root": "official-profile-web",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-search-failover",
+      "realDir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-search-failover",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "realDir": "H:/mod/dsh-anti-repeat-suite/packages/@argszero/cordis-plugin-thinking-loop-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.1.5",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/dsh-repeat-guard",
+      "realDir": "H:/mod/dsh-anti-repeat-suite/packages/dsh-repeat-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "root": "official-profiles-node-modules",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/dsh-repetition-guard",
+      "realDir": "H:/mod/dsh-anti-repeat-suite/packages/dsh-repetition-guard",
+      "inProfileBundles": true,
+      "bundlePatch": [
+        "./cordis.patch.yml"
+      ]
+    }
+  ],
+  "candidates": {
+    "thirdPartyLooking": [
+      {
+        "name": "dsh-image-guard",
+        "version": "0.1.0",
+        "root": "official-profiles-node-modules",
+        "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/dsh-image-guard",
+        "realDir": "H:/mod/dsh-image-guard",
+        "license": "MIT",
+        "dshField": null
+      }
+    ],
+    "officialNamed": {
+      "count": 174,
+      "names": [
+        "@deepseek-ai/cordis-plugin-group",
+        "@deepseek-ai/cordis-plugin-hmr",
+        "@deepseek-ai/cordis-plugin-include",
+        "@deepseek-ai/cordis-plugin-loader",
+        "@deepseek-ai/cordis-plugin-timer",
+        "@deepseek-ai/dsh-acp",
+        "@deepseek-ai/dsh-agent",
+        "@deepseek-ai/dsh-agent-default-model",
+        "@deepseek-ai/dsh-agent-instructions",
+        "@deepseek-ai/dsh-agent-loop",
+        "@deepseek-ai/dsh-agent-presets",
+        "@deepseek-ai/dsh-agent-spine-demo"
+      ]
+    }
+  },
+  "thirdPartyDistinct": [
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "roots": [
+        "our-profile-web",
+        "our-profiles-root",
+        "official-profiles-node-modules"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/@argszero/cordis-plugin-thinking-loop-guard"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.20",
+      "roots": [
+        "our-profile-web",
+        "our-profiles-root"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.2.2",
+      "roots": [
+        "our-profile-web",
+        "our-profiles-root"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "roots": [
+        "our-profile-web",
+        "our-profiles-root",
+        "official-profiles-node-modules"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+        "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/dsh-repetition-guard"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "@mars-sea/dsh-commandcode-provider",
+      "version": "0.11.5",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "@rain-kl/dsh-preset-plus",
+      "version": "0.1.5",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@rain-kl/dsh-preset-plus"
+      ],
+      "inProfileBundles": false
+    },
+    {
+      "name": "dsh-agent-context",
+      "version": "0.1.0",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-agent-context"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-browser",
+      "version": "0.1.0",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-browser"
+      ],
+      "inProfileBundles": false
+    },
+    {
+      "name": "dsh-delegation-model-choice",
+      "version": "0.1.0",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-delegation-model-choice"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-lan-bridge",
+      "version": "0.3.0",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-lan-bridge"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.14",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-opencode-go"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-search-failover",
+      "version": "0.3.9",
+      "roots": [
+        "official-profile-web"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-search-failover"
+      ],
+      "inProfileBundles": true
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.1.5",
+      "roots": [
+        "official-profiles-node-modules"
+      ],
+      "dirs": [
+        "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/node_modules/dsh-repeat-guard"
+      ],
+      "inProfileBundles": true
+    }
+  ],
+  "bundledButNoManifestInScan": [
+    {
+      "name": "@deepseek-ai/dsh-experimental-auto-review",
+      "resolvedElsewhere": "<workspace>//dsh-link/core/deepseek-harness/packages/experimental/auto-review/package.json",
+      "resolvedBy": "Lead, R23: the scan excluded the kernel checkout by criterion, so null meant 'not found in the scanned roots', not 'does not exist'"
+    },
+    {
+      "name": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+      "resolvedElsewhere": "<workspace>//dsh-link/core/deepseek-harness/packages/experimental/voice-input-bundle/package.json",
+      "resolvedBy": "Lead, R23: same correction as above"
+    }
+  ],
+  "unreadableManifests": [
+    "C:\\Users\\<user>\\AppData\\Roaming\\DeepSeek Harness\\dsh-home\\profiles\\web\\node_modules\\@mars-sea\\_backup-commandcode-20260925\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-api-workspace-files\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-chunked-list\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-file-upload\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-resources\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-open-in-app\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-schedule\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-sidebar-documentpreview\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-sidebar-files\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-client-ui-sidebar-right\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-deque\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-host-open-in-app\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-package-manifest\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-catalog\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-v0-to-v1\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-v1-to-v2\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-format-v2-to-v3\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-session-turn-outline\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-tool-present\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-util-time\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\dsh-util-values\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\@deepseek-ai\\node-addon-system\\package.json",
+    "C:\\Users\\<user>\\.dsh\\profiles\\node_modules\\standardwebhooks\\package.json"
+  ],
+  "candidateSplit": {
+    "thirdPartyLooking": 1,
+    "officialNamed": 174,
+    "officialNamedNames": [
+      "@deepseek-ai/cordis-plugin-group",
+      "@deepseek-ai/cordis-plugin-hmr",
+      "@deepseek-ai/cordis-plugin-include",
+      "@deepseek-ai/cordis-plugin-loader",
+      "@deepseek-ai/cordis-plugin-timer",
+      "@deepseek-ai/dsh-acp",
+      "@deepseek-ai/dsh-agent",
+      "@deepseek-ai/dsh-agent-default-model",
+      "@deepseek-ai/dsh-agent-instructions",
+      "@deepseek-ai/dsh-agent-loop",
+      "@deepseek-ai/dsh-agent-presets",
+      "@deepseek-ai/dsh-agent-spine-demo"
+    ]
+  },
+  "counts": {
+    "rootsCovered": 8,
+    "packageJsonOpened": 1893,
+    "hits": 218,
+    "thirdPartyHitRecords": 19,
+    "thirdPartyDistinct": 13,
+    "candidatesThirdPartyLooking": 1,
+    "candidatesOfficialNamed": 174,
+    "firstPartyInRoots": 27,
+    "kernelCheckoutInRoots": 0,
+    "packagedOfficialInRoots": 983
+  },
+  "coverageProof": {
+    "method": "every count above comes from opening that many package.json files; the four packages the earlier pass named are looked up by name below, so a scan that read nothing cannot produce them",
+    "knownPackages": [
+      {
+        "name": "@argszero/cordis-plugin-thinking-loop-guard",
+        "found": true,
+        "version": "0.1.9",
+        "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+        "bundlePatch": [
+          "./cordis.patch.yml"
+        ],
+        "origin": "installed-package"
+      },
+      {
+        "name": "dsh-opencode-go",
+        "found": true,
+        "version": "0.1.20",
+        "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+        "bundlePatch": [
+          "./cordis.patch.yml"
+        ],
+        "origin": "installed-package"
+      },
+      {
+        "name": "dsh-repeat-guard",
+        "found": true,
+        "version": "0.2.2",
+        "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+        "bundlePatch": [
+          "./cordis.patch.yml"
+        ],
+        "origin": "installed-package"
+      },
+      {
+        "name": "dsh-repetition-guard",
+        "found": true,
+        "version": "0.1.0",
+        "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+        "bundlePatch": [
+          "./cordis.patch.yml"
+        ],
+        "origin": "installed-package"
+      }
+    ]
+  }
+}

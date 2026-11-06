@@ -1,0 +1,11 @@
+# One id, appended twice, by two separate insert patches inside one layer.
+- insert:
+    - id: dsh-link-fixture-duplicate
+      name: cordis:group
+      group: true
+      config: []
+- insert:
+    - id: dsh-link-fixture-duplicate
+      name: cordis:group
+      group: true
+      config: []

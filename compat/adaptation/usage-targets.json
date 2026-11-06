@@ -1,0 +1,62 @@
+{
+  "format": "dsh-link.usage-targets/1",
+  "note": "Artifacts live outside this repository (a kernel home profile). The tickets derived from them record a sourceDigest, so a ticket stops describing a revision somebody changed even though the repository cannot pin the artifact itself.",
+  "targets": [
+    {
+      "name": "@argszero/cordis-plugin-thinking-loop-guard",
+      "version": "0.1.9",
+      "license": "MIT",
+      "verdict": "rewrite",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+      "why": "found by the R16/R17 scan inside this profile. R22 re-scanned the machine (compat/adaptation/third-party-scan.json) and found three more third-party plugin packages outside this profile, so the earlier wording \"the only real plugin packages on this machine\" was too strong: these four are the ones THIS profile installs"
+    },
+    {
+      "name": "dsh-opencode-go",
+      "version": "0.1.20",
+      "license": "MIT",
+      "verdict": "rewrite",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go",
+      "why": "found by the R16/R17 scan inside this profile. R22 re-scanned the machine (compat/adaptation/third-party-scan.json) and found three more third-party plugin packages outside this profile, so the earlier wording \"the only real plugin packages on this machine\" was too strong: these four are the ones THIS profile installs"
+    },
+    {
+      "name": "dsh-repeat-guard",
+      "version": "0.2.2",
+      "license": "MIT",
+      "verdict": "rewrite",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard",
+      "why": "found by the R16/R17 scan inside this profile. R22 re-scanned the machine (compat/adaptation/third-party-scan.json) and found three more third-party plugin packages outside this profile, so the earlier wording \"the only real plugin packages on this machine\" was too strong: these four are the ones THIS profile installs"
+    },
+    {
+      "name": "dsh-repetition-guard",
+      "version": "0.1.0",
+      "license": "MIT",
+      "verdict": "rewrite",
+      "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard",
+      "why": "found by the R16/R17 scan inside this profile. R22 re-scanned the machine (compat/adaptation/third-party-scan.json) and found three more third-party plugin packages outside this profile, so the earlier wording \"the only real plugin packages on this machine\" was too strong: these four are the ones THIS profile installs"
+    },
+    {
+      "name": "@mars-sea/dsh-commandcode-provider",
+      "version": "0.11.5",
+      "license": "MIT",
+      "verdict": "rewrite",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider",
+      "why": "found by the R22 denominator re-scan (compat/adaptation/third-party-scan.json, root official-profile-web); installed under the official client home at C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@mars-sea/dsh-commandcode-provider; license MIT read from its own package.json"
+    },
+    {
+      "name": "@rain-kl/dsh-preset-plus",
+      "version": "0.1.5",
+      "license": "MIT",
+      "verdict": "rewrite",
+      "dir": "H:/mod/dsh-preset-plus",
+      "why": "found by the R22 denominator re-scan (compat/adaptation/third-party-scan.json, root official-profile-web); installed under the official client home at C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/@rain-kl/dsh-preset-plus and physically at H:/mod/dsh-preset-plus; license MIT read from its own package.json"
+    },
+    {
+      "name": "dsh-search-failover",
+      "version": "0.3.9",
+      "license": "MIT",
+      "verdict": "rewrite",
+      "dir": "C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-search-failover",
+      "why": "found by the R22 denominator re-scan (compat/adaptation/third-party-scan.json, root official-profile-web); installed under the official client home at C:/Users/<user>/AppData/Roaming/DeepSeek Harness/dsh-home/profiles/web/node_modules/dsh-search-failover; license MIT read from its own package.json"
+    }
+  ]
+}

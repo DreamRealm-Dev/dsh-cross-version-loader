@@ -1,0 +1,440 @@
+{
+  "format": "dsh-link.mount-admission/1",
+  "kernel": "<workspace>\\\\dsh-link\\core\\deepseek-harness",
+  "method": {
+    "boot": "runProfile() from apps/cli/src/profile-boot.ts:244, awaited until the profile settles",
+    "home": "fresh mkdtemp per case; DSH_HOME points at it; the live shell home is never read or written",
+    "rows": "inserted into <home>/profiles/r21probe/cordis.patch.yml; each row names a local module written beside the patch file",
+    "observation": "each module appends one JSON line per lifecycle event (apply/dispose) to a marker file",
+    "calibration": "every case also inserts a calibration row that must mount; without it, \"the row did not mount\" and \"the boot never got there\" are the same reading",
+    "mode": "minimal"
+  },
+  "cases": [
+    {
+      "id": "control-plain-row",
+      "question": "Positive control: a row with only id + name mounts, and what config does it receive?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-plain\",\"name\":\"./r21-plain.mjs\"}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1343,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration",
+          "plain"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null,
+          "plain": null
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": false,
+          "stderrExcerpt": ""
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration, plain]"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"apply\",\"tag\":\"plain\",\"config\":null,\"configKeys\":null}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "",
+      "rawStdoutExcerpt": "",
+      "verdict": "admission matches the control: mounted [calibration, plain]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "disabled-true",
+      "question": "Does disabled: true keep the row out of the tree? (positive control for the rest)",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-disabled\",\"name\":\"./r21-disabled.mjs\",\"disabled\":true}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1329,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": false,
+          "stderrExcerpt": ""
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration]"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "",
+      "rawStdoutExcerpt": "",
+      "verdict": "admission matches the control: mounted [calibration]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "legacy-disable-true",
+      "question": "0.1.x spelling disable: true — does the row still mount?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-legacy-disable\",\"name\":\"./r21-legacy-disable.mjs\",\"disable\":true}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1340,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration",
+          "legacy-disable"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null,
+          "legacy-disable": null
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": false,
+          "stderrExcerpt": ""
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration, legacy-disable] | legacy-disable config=null"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"apply\",\"tag\":\"legacy-disable\",\"config\":null,\"configKeys\":null}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "",
+      "rawStdoutExcerpt": "",
+      "verdict": "admission matches the control: mounted [calibration], observed [legacy-disable]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "legacy-enabled-and-options",
+      "question": "0.1.x keys enabled: true and options: {...} — do they reach the mounted plugin config?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-legacy-enabled\",\"name\":\"./r21-legacy-enabled.mjs\",\"enabled\":true,\"options\":{\"keepMe\":true}}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1337,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration",
+          "legacy-enabled"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null,
+          "legacy-enabled": null
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": false,
+          "stderrExcerpt": ""
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration, legacy-enabled] | legacy-enabled config=null"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"apply\",\"tag\":\"legacy-enabled\",\"config\":null,\"configKeys\":null}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "",
+      "rawStdoutExcerpt": "",
+      "verdict": "admission matches the control: mounted [calibration, legacy-enabled], observed [legacy-enabled]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "config-key-outside-schema",
+      "question": "A config key the declared Config schema does not accept: loud failure, or silently passed?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-schema-control\",\"name\":\"./r21-schema-control.mjs\",\"config\":{\"knownKey\":1}}]},{\"insert\":[{\"id\":\"r21-schema-unknown\",\"name\":\"./r21-schema-unknown.mjs\",\"config\":{\"knownKey\":1,\"unknownKey\":2}}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1355,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration",
+          "schema-control",
+          "schema-unknown"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null,
+          "schema-control": {
+            "knownKey": 1
+          },
+          "schema-unknown": {
+            "knownKey": 1,
+            "unknownKey": 2
+          }
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": false,
+          "stderrExcerpt": ""
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration, schema-control, schema-unknown] | schema-unknown config={\"knownKey\":1,\"unknownKey\":2}"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"apply\",\"tag\":\"schema-control\",\"config\":{\"knownKey\":1},\"configKeys\":[\"knownKey\"]}\n{\"event\":\"apply\",\"tag\":\"schema-unknown\",\"config\":{\"knownKey\":1,\"unknownKey\":2},\"configKeys\":[\"knownKey\",\"unknownKey\"]}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "",
+      "rawStdoutExcerpt": "",
+      "verdict": "admission matches the control: mounted [calibration, schema-control], observed [schema-unknown]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "same-id-two-rows",
+      "question": "Two inserted rows sharing one id: composition keeps both and indexes the last — which one mounts?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-dupe\",\"name\":\"./r21-dupe-a.mjs\"}]},{\"insert\":[{\"id\":\"r21-dupe\",\"name\":\"./r21-dupe-b.mjs\"}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1381,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration",
+          "dupe-b"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null,
+          "dupe-b": null
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": false,
+          "stderrExcerpt": ""
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration, dupe-b] | dupe-b config=null"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"apply\",\"tag\":\"dupe-b\",\"config\":null,\"configKeys\":null}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "",
+      "rawStdoutExcerpt": "",
+      "verdict": "admission matches the control: mounted [calibration], observed [dupe-a, dupe-b]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "config-absent-optional-key",
+      "question": "A config that omits a key the schema declares but does not require (no .required()): does the row mount?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-schema-optional\",\"name\":\"./r21-schema-optional.mjs\",\"config\":{\"knownKey\":1}}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1355,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration",
+          "schema-optional"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null,
+          "schema-optional": {
+            "knownKey": 1
+          }
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": false,
+          "stderrExcerpt": ""
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration, schema-optional] | schema-optional config={\"knownKey\":1}"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"apply\",\"tag\":\"schema-optional\",\"config\":{\"knownKey\":1},\"configKeys\":[\"knownKey\"]}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "",
+      "rawStdoutExcerpt": "",
+      "verdict": "admission matches the control: mounted [calibration, schema-optional], observed [schema-optional]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "config-missing-required-key",
+      "question": "A config that omits a key marked .required(): does the row mount, and what is reported?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-schema-required\",\"name\":\"./r21-schema-required.mjs\",\"config\":{\"knownKey\":1}}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1377,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": true,
+          "stderrExcerpt": "dsh: warning: 1 entry did not activate\nr21-schema-required (file:///C:/Users/<user>/AppData/Local/Temp/r21-mount-otkqTW/profiles/r21probe/r21-schema-required.mjs): ValidationError: invalid config:\n  - $.requiredKey missing required value (at requiredKey)\n    at resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:58:11)\n    at Fiber._resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:643:27)\n    at Fiber._reload (<workspace>\\\\dsh-\n…[truncated, 61 more chars]"
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration]"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "dsh: warning: 1 entry did not activate\nr21-schema-required (file:///C:/Users/<user>/AppData/Local/Temp/r21-mount-otkqTW/profiles/r21probe/r21-schema-required.mjs): ValidationError: invalid config:\n  - $.requiredKey missing required value (at requiredKey)\n    at resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:58:11)\n    at Fiber._resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:643:27)\n    at Fiber._reload (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:655:28)\n",
+      "rawStdoutExcerpt": "",
+      "verdict": "refused with a report: the row did not mount (schema-required) and the boot said so — see loudness.stderrExcerpt",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "config-type-mismatch",
+      "question": "A config whose value has the wrong type for the declared schema: does the row mount, and what is reported?",
+      "constructed": "profile r21probe (mode minimal, initialized from template headless), rows: [{\"insert\":[{\"id\":\"r21-schema-type\",\"name\":\"./r21-schema-type.mjs\",\"config\":{\"knownKey\":\"not-a-number\",\"requiredKey\":\"ok\"}}]}]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <home>/run.mjs   (cwd=<workspace>\\\\dsh-link\\core\\deepseek-harness, then runProfile({profile, patchFiles: [], args: []}))",
+      "exitStatus": 0,
+      "elapsedMs": 1354,
+      "profileMode": "minimal",
+      "initTemplate": "headless",
+      "calibrationMounted": true,
+      "observed": {
+        "mountedTags": [
+          "calibration"
+        ],
+        "disposedTags": [],
+        "configByTag": {
+          "calibration": null
+        },
+        "driverEvents": [
+          {
+            "event": "driver-imported",
+            "message": null
+          }
+        ],
+        "settled": true,
+        "driverDisposed": true,
+        "loudness": {
+          "driverError": null,
+          "reportedOnStderr": true,
+          "stderrExcerpt": "dsh: warning: 1 entry did not activate\nr21-schema-type (file:///C:/Users/<user>/AppData/Local/Temp/r21-mount-cSJlT2/profiles/r21probe/r21-schema-type.mjs): ValidationError: invalid config:\n  - $.knownKey expected number but got not-a-number (at knownKey)\n    at resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:58:11)\n    at Fiber._resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:643:27)\n    at Fiber._reload (<workspace>\\\\dsh-\n…[truncated, 61 more chars]"
+        },
+        "exitStatus": 0,
+        "timedOut": false,
+        "reading": "mounted: [calibration]"
+      },
+      "rawExcerpt": "{\"event\":\"driver-imported\"}\n{\"event\":\"apply\",\"tag\":\"calibration\",\"config\":null,\"configKeys\":null}\n{\"event\":\"settled\"}\n{\"event\":\"disposed\"}\n",
+      "rawStderrExcerpt": "dsh: warning: 1 entry did not activate\nr21-schema-type (file:///C:/Users/<user>/AppData/Local/Temp/r21-mount-cSJlT2/profiles/r21probe/r21-schema-type.mjs): ValidationError: invalid config:\n  - $.knownKey expected number but got not-a-number (at knownKey)\n    at resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:58:11)\n    at Fiber._resolveConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:643:27)\n    at Fiber._reload (<workspace>\\\\dsh-link\\core\\deepseek-harness\\vendor\\cordis\\src\\fiber.ts:655:28)\n",
+      "rawStdoutExcerpt": "",
+      "verdict": "refused with a report: the row did not mount (schema-type) and the boot said so — see loudness.stderrExcerpt",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    }
+  ]
+}

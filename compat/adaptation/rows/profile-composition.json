@@ -1,0 +1,6155 @@
+{
+ "format": "dsh-link.profile-composition/1",
+ "note": "Derived from one machine’s live profile, which is not in this repository. sourceDigest folds only the layer files whose real path is inside this repository (a bundle reached through a junction into plugins/ counts here, so a repository change moves it); liveDigest folds the inputs this machine owns — the profile’s own cordis.patch.yml and bundles installed outside the repository — and is recorded rather than gated, because the app rewrites its own profile patch (R40, R43). --check compares the report without the live section.",
+ "sourceDigestIs": "repository-derived layer files only",
+ "liveDigestIs": "the machine’s own profile patch and out-of-repository bundles: recorded, never a gate criterion",
+ "profileDir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web",
+ "bundles": [
+  "@deepseek-ai/dsh-base",
+  "@deepseek-ai/dsh-web-app",
+  "dsh-opencode-go",
+  "@deepseek-ai/dsh-experimental-agent-team-profile",
+  "@deepseek-ai/dsh-experimental-auto-review",
+  "@deepseek-ai/dsh-experimental-voice-input-bundle",
+  "dsh-liquid-glass",
+  "dsh-theme-settings",
+  "dsh-link-mods",
+  "dsh-link-collab",
+  "dsh-link-teams",
+  "dsh-continue-button",
+  "dsh-link-brand",
+  "dsh-agent-context",
+  "@argszero/cordis-plugin-thinking-loop-guard",
+  "dsh-lan-bridge",
+  "dsh-repetition-guard",
+  "dsh-repeat-guard",
+  "dsh-delegation-model-choice",
+  "dsh-link-groups",
+  "dsh-link-notes",
+  "dsh-link-markdown",
+  "dsh-link-panel",
+  "dsh-link-compat",
+  "dsh-link-host",
+  "dsh-link-responsive"
+ ],
+ "layers": [
+  {
+   "index": 0,
+   "kind": "bundle",
+   "name": "@deepseek-ai/dsh-base",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "exists": true,
+     "digest": "a2cc57868a4d0166",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "kind": "bundle",
+   "name": "@deepseek-ai/dsh-web-app",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "exists": true,
+     "digest": "3e1f923309612ed8",
+     "origin": "repo"
+    },
+    {
+     "declared": "./presets/standard.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\standard.patch.yml",
+     "exists": true,
+     "digest": "0d398d2a6872a73a",
+     "origin": "repo"
+    },
+    {
+     "declared": "./presets/ptc.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\ptc.patch.yml",
+     "exists": true,
+     "digest": "9e355c947bf61c3d",
+     "origin": "repo"
+    },
+    {
+     "declared": "./presets/minimal.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\minimal.patch.yml",
+     "exists": true,
+     "digest": "a2a9ba1c9c392a45",
+     "origin": "repo"
+    },
+    {
+     "declared": "./presets/cordis.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\cordis.patch.yml",
+     "exists": true,
+     "digest": "01b0fc94fd49136b",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "kind": "bundle",
+   "name": "dsh-opencode-go",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-opencode-go\\cordis.patch.yml",
+     "exists": true,
+     "digest": "092ae27ec8eff9f5",
+     "origin": "live"
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "kind": "bundle",
+   "name": "@deepseek-ai/dsh-experimental-agent-team-profile",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "exists": true,
+     "digest": "b5459c83d2779de1",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "kind": "bundle",
+   "name": "@deepseek-ai/dsh-experimental-auto-review",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\auto-review\\cordis.patch.yml",
+     "exists": true,
+     "digest": "21d456d0053b3d52",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "kind": "bundle",
+   "name": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+     "exists": true,
+     "digest": "3f13611403e1c761",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "kind": "bundle",
+   "name": "dsh-liquid-glass",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-liquid-glass\\cordis.patch.yml",
+     "exists": true,
+     "digest": "c6a7102c50686bc7",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "kind": "bundle",
+   "name": "dsh-theme-settings",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-theme-settings\\cordis.patch.yml",
+     "exists": true,
+     "digest": "eaa35f1b423b846a",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "kind": "bundle",
+   "name": "dsh-link-mods",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\cordis.patch.yml",
+     "exists": true,
+     "digest": "05eebcda74095c56",
+     "origin": "repo"
+    },
+    {
+     "declared": "./presets.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\presets.patch.yml",
+     "exists": true,
+     "digest": "374a02ef9a1c68b5",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "kind": "bundle",
+   "name": "dsh-link-collab",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-collab\\cordis.patch.yml",
+     "exists": true,
+     "digest": "5dd33a9c62d895ac",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "kind": "bundle",
+   "name": "dsh-link-teams",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-teams\\cordis.patch.yml",
+     "exists": true,
+     "digest": "98459d4905de106b",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "kind": "bundle",
+   "name": "dsh-continue-button",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-continue-button\\cordis.patch.yml",
+     "exists": true,
+     "digest": "fe38211d190b85db",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "kind": "bundle",
+   "name": "dsh-link-brand",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-brand\\cordis.patch.yml",
+     "exists": true,
+     "digest": "c7e0268aa96a1d0e",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "kind": "bundle",
+   "name": "dsh-agent-context",
+   "missing": false,
+   "files": [
+    {
+     "declared": "cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-agent-context\\cordis.patch.yml",
+     "exists": true,
+     "digest": "2da4e86345c146ba",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "kind": "bundle",
+   "name": "@argszero/cordis-plugin-thinking-loop-guard",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\@argszero\\cordis-plugin-thinking-loop-guard\\cordis.patch.yml",
+     "exists": true,
+     "digest": "a67aadd6a3685bb7",
+     "origin": "live"
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "kind": "bundle",
+   "name": "dsh-lan-bridge",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-lan-bridge\\cordis.patch.yml",
+     "exists": true,
+     "digest": "060ad8428f75e865",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "kind": "bundle",
+   "name": "dsh-repetition-guard",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-repetition-guard\\cordis.patch.yml",
+     "exists": true,
+     "digest": "5b09fb5122e2ae0c",
+     "origin": "live"
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "kind": "bundle",
+   "name": "dsh-repeat-guard",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-repeat-guard\\cordis.patch.yml",
+     "exists": true,
+     "digest": "9cfb8e37bec05056",
+     "origin": "live"
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "kind": "bundle",
+   "name": "dsh-delegation-model-choice",
+   "missing": false,
+   "files": [
+    {
+     "declared": "cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-delegation-model-choice\\cordis.patch.yml",
+     "exists": true,
+     "digest": "729e2b94f4bcb709",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "kind": "bundle",
+   "name": "dsh-link-groups",
+   "missing": false,
+   "files": [
+    {
+     "declared": "cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-groups\\cordis.patch.yml",
+     "exists": true,
+     "digest": "b4194f2d8b9b0d84",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "kind": "bundle",
+   "name": "dsh-link-notes",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-notes\\cordis.patch.yml",
+     "exists": true,
+     "digest": "84c8ebaad96e2c06",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "kind": "bundle",
+   "name": "dsh-link-markdown",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-markdown\\cordis.patch.yml",
+     "exists": true,
+     "digest": "ac1836d989bd465f",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "kind": "bundle",
+   "name": "dsh-link-panel",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-panel\\cordis.patch.yml",
+     "exists": true,
+     "digest": "e2492fd844e5a3c4",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "kind": "bundle",
+   "name": "dsh-link-compat",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-compat\\cordis.patch.yml",
+     "exists": true,
+     "digest": "dc6c04be861d703e",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "kind": "bundle",
+   "name": "dsh-link-host",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-host\\cordis.patch.yml",
+     "exists": true,
+     "digest": "736ac823072f0f4f",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "kind": "bundle",
+   "name": "dsh-link-responsive",
+   "missing": false,
+   "files": [
+    {
+     "declared": "./cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-responsive\\cordis.patch.yml",
+     "exists": true,
+     "digest": "69615c925fd9f0d1",
+     "origin": "repo"
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "kind": "profile",
+   "name": "cordis.patch.yml",
+   "missing": false,
+   "files": [
+    {
+     "declared": "cordis.patch.yml",
+     "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "exists": true,
+     "digest": "ae40cd1e07f5671b",
+     "origin": "live"
+    }
+   ]
+  }
+ ],
+ "counts": {
+  "rowsRead": 567,
+  "rowsUnreadable": 303,
+  "rowsWithoutId": 0,
+  "ids": 223,
+  "flagged": 37,
+  "contested": 37,
+  "duplicateInsert": 0,
+  "orphanTarget": 0,
+  "configSuperseded": 13
+ },
+ "ids": [
+  {
+   "id": "account-controller",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 147,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 147,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "agent",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 82,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 82,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "agent-context",
+   "flags": [],
+   "winner": {
+    "layerIndex": 13,
+    "layer": "dsh-agent-context",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-agent-context\\cordis.patch.yml",
+    "line": 13,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 13,
+     "layer": "dsh-agent-context",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-agent-context\\cordis.patch.yml",
+     "line": 13,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "agent-default-model",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 8,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 90
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 90,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 8,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "agent-instructions",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 573,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 303
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 303,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 573,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "agent-loop",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 511,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 511,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "agent-preset-registry",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 586,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 586,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "agent-team",
+   "flags": [],
+   "winner": {
+    "layerIndex": 3,
+    "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+    "line": 17,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 3,
+     "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "line": 17,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "api-remotes",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 248,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 248,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "api-speech-to-text",
+   "flags": [],
+   "winner": {
+    "layerIndex": 5,
+    "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+    "line": 10,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 5,
+     "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+     "line": 10,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "approval",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 259,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 259,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "attachment-local",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 146,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 146,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "authorization",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 117,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 117,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "auto-review",
+   "flags": [],
+   "winner": {
+    "layerIndex": 4,
+    "layer": "@deepseek-ai/dsh-experimental-auto-review",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\auto-review\\cordis.patch.yml",
+    "line": 2,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 4,
+     "layer": "@deepseek-ai/dsh-experimental-auto-review",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\auto-review\\cordis.patch.yml",
+     "line": 2,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "bash-sandbox",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 249,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 249,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "browser",
+   "flags": [],
+   "winner": {
+    "layerIndex": 8,
+    "layer": "dsh-link-mods",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\cordis.patch.yml",
+    "line": 77,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 8,
+     "layer": "dsh-link-mods",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\cordis.patch.yml",
+     "line": 77,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "client-hmr",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 218,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 218,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "command-compact",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 542,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 356,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 542,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "command-feedback",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 320,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 320,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "command-goal",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 523,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 329,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 523,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "commands",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 317,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 317,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "compaction-basic",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 539,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 351,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 539,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "config-editor",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 105,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 105,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "connection",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 234,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 234,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "continue-button",
+   "flags": [],
+   "winner": {
+    "layerIndex": 11,
+    "layer": "dsh-continue-button",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-continue-button\\cordis.patch.yml",
+    "line": 6,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 11,
+     "layer": "dsh-continue-button",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-continue-button\\cordis.patch.yml",
+     "line": 6,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "cordis-client-runner",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 251,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 251,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "cordis-host-runner",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 157,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 157,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "cordis-inspect-providers",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 163,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 163,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "credentials",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 125,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 125,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "deepseek-account",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 120,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 120,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "deepseek-llm-api-extensions",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 37,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 37,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "delegation-model-choice",
+   "flags": [],
+   "winner": {
+    "layerIndex": 18,
+    "layer": "dsh-delegation-model-choice",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-delegation-model-choice\\cordis.patch.yml",
+    "line": 8,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 18,
+     "layer": "dsh-delegation-model-choice",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-delegation-model-choice\\cordis.patch.yml",
+     "line": 8,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "desktop-product-telemetry",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 45,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 45,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "directory-picker",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 113,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 113,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "dsh-link-compat",
+   "flags": [],
+   "winner": {
+    "layerIndex": 23,
+    "layer": "dsh-link-compat",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-compat\\cordis.patch.yml",
+    "line": 8,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 23,
+     "layer": "dsh-link-compat",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-compat\\cordis.patch.yml",
+     "line": 8,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "dsh-repeat-guard",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 55,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 17,
+     "layer": "dsh-repeat-guard",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-repeat-guard\\cordis.patch.yml",
+     "line": 6,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 55,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "escalation-guard",
+   "flags": [],
+   "winner": {
+    "layerIndex": 8,
+    "layer": "dsh-link-mods",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\cordis.patch.yml",
+    "line": 53,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 8,
+     "layer": "dsh-link-mods",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\cordis.patch.yml",
+     "line": 53,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "file-reference-local",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 97,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 97,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "file-upload",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 245,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 245,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "fs-observation-policy",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 292,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 292,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "fs-sandbox",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 518,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 518,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "goal",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 323,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 323,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "goal-round-driver",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 326,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 326,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "harness-dev-context",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 211,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 211,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "hmr",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 28,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 28,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "image-guard",
+   "flags": [],
+   "winner": {
+    "layerIndex": 8,
+    "layer": "dsh-link-mods",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\cordis.patch.yml",
+    "line": 18,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 8,
+     "layer": "dsh-link-mods",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\cordis.patch.yml",
+     "line": 18,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "image-offload",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 434,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 434,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "job-controller",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 126,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 126,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "jobs",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 96,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 96,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "lan-bridge",
+   "flags": [],
+   "winner": {
+    "layerIndex": 15,
+    "layer": "dsh-lan-bridge",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-lan-bridge\\cordis.patch.yml",
+    "line": 18,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 15,
+     "layer": "dsh-lan-bridge",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-lan-bridge\\cordis.patch.yml",
+     "line": 18,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "link-brand",
+   "flags": [],
+   "winner": {
+    "layerIndex": 12,
+    "layer": "dsh-link-brand",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-brand\\cordis.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 12,
+     "layer": "dsh-link-brand",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-brand\\cordis.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "link-collab",
+   "flags": [],
+   "winner": {
+    "layerIndex": 9,
+    "layer": "dsh-link-collab",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-collab\\cordis.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 9,
+     "layer": "dsh-link-collab",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-collab\\cordis.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "link-groups",
+   "flags": [],
+   "winner": {
+    "layerIndex": 19,
+    "layer": "dsh-link-groups",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-groups\\cordis.patch.yml",
+    "line": 24,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 19,
+     "layer": "dsh-link-groups",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-groups\\cordis.patch.yml",
+     "line": 24,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "link-host",
+   "flags": [],
+   "winner": {
+    "layerIndex": 24,
+    "layer": "dsh-link-host",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-host\\cordis.patch.yml",
+    "line": 23,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 24,
+     "layer": "dsh-link-host",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-host\\cordis.patch.yml",
+     "line": 23,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "link-markdown",
+   "flags": [],
+   "winner": {
+    "layerIndex": 21,
+    "layer": "dsh-link-markdown",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-markdown\\cordis.patch.yml",
+    "line": 7,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 21,
+     "layer": "dsh-link-markdown",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-markdown\\cordis.patch.yml",
+     "line": 7,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "link-notes",
+   "flags": [],
+   "winner": {
+    "layerIndex": 20,
+    "layer": "dsh-link-notes",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-notes\\cordis.patch.yml",
+    "line": 12,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 20,
+     "layer": "dsh-link-notes",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-notes\\cordis.patch.yml",
+     "line": 12,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "link-panel",
+   "flags": [],
+   "winner": {
+    "layerIndex": 22,
+    "layer": "dsh-link-panel",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-panel\\cordis.patch.yml",
+    "line": 21,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 22,
+     "layer": "dsh-link-panel",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-panel\\cordis.patch.yml",
+     "line": 21,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "link-responsive",
+   "flags": [],
+   "winner": {
+    "layerIndex": 25,
+    "layer": "dsh-link-responsive",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-responsive\\cordis.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 25,
+     "layer": "dsh-link-responsive",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-responsive\\cordis.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "link-teams",
+   "flags": [],
+   "winner": {
+    "layerIndex": 10,
+    "layer": "dsh-link-teams",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-teams\\cordis.patch.yml",
+    "line": 7,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 10,
+     "layer": "dsh-link-teams",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-teams\\cordis.patch.yml",
+     "line": 7,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "liquid-glass",
+   "flags": [],
+   "winner": {
+    "layerIndex": 6,
+    "layer": "dsh-liquid-glass",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-liquid-glass\\cordis.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 6,
+     "layer": "dsh-liquid-glass",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-liquid-glass\\cordis.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "llm",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 34,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 34,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "llm-deepseek",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 525,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 525,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "llm-deepseek-account",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 528,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 528,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "llm-pi-ai",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 135,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 135,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "llm-retry",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 99,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 99,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "locale",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 257,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 257,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "mcp-resources",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 492,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 492,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "message-feedback",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 69,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 69,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "modules",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 227,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 227,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "office-to-pdf",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 287,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 287,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "open-in-app",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 81,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 81,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "opencode-go",
+   "flags": [],
+   "winner": {
+    "layerIndex": 2,
+    "layer": "dsh-opencode-go",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-opencode-go\\cordis.patch.yml",
+    "line": 2,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 2,
+     "layer": "dsh-opencode-go",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-opencode-go\\cordis.patch.yml",
+     "line": 2,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "otel",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 202,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 202,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "permission",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 264,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 264,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "plan-mode",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 529,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 332
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 332,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 529,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "plugin-inventory",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 117,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 117,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "plugin-manager",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 20,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 20,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "plugin-package-inventory-deepseek",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 85,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 85,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "preset-chat-mode",
+   "flags": [],
+   "winner": {
+    "layerIndex": 8,
+    "layer": "dsh-link-mods",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\presets.patch.yml",
+    "line": 16,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 8,
+     "layer": "dsh-link-mods",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\presets.patch.yml",
+     "line": 16,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "preset-cordis",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\cordis.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\cordis.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "preset-minimal",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\minimal.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\minimal.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "preset-minimal-tuned",
+   "flags": [],
+   "winner": {
+    "layerIndex": 8,
+    "layer": "dsh-link-mods",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\presets.patch.yml",
+    "line": 77,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 8,
+     "layer": "dsh-link-mods",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-link-mods\\presets.patch.yml",
+     "line": 77,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "preset-ptc",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\ptc.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\ptc.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "preset-standard",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\standard.patch.yml",
+    "line": 5,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\presets\\standard.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "product-analytics",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 57,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 57,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "ptc-runtime",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 397,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 397,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "pwsh-sandbox",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 255,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 255,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "remote-access",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 57,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 57,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "repeat-tool-reminder",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 448,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 448,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "repetition-guard",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 204,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "dsh-repetition-guard",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-repetition-guard\\cordis.patch.yml",
+     "line": 5
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 16,
+     "layer": "dsh-repetition-guard",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-repetition-guard\\cordis.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 204,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "resources",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 276,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 276,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "sandbox",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 240,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 240,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "sandbox-policy",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 243,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 243,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "schedule",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 139,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 139,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 40,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 40,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session-checkpoint-policy",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 420,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 420,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session-controller",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 121,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 121,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session-log-deepseek",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 14,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 43,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 14,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "session-log-download",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 75,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 75,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session-persistence-jsonl",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 138,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 138,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "session-projection",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 172,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 172,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session-projection-cache",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 196,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 196,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "session-query-sqlite",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 27,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 157
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 157,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 27,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "session-reference",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 94,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 94,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session-stats",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 102,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 102,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "session-telemetry-otel",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 218,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 218,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "session-title",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 60,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 60,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "session-title-llm",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 67,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 67,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "session-turn-outline",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 107,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 107,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "settings",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 109,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 109,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "settings-controller",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 150,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 150,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "shell-env",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 278,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 278,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "shortcuts",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 260,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 260,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "skill",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 308,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 308,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "skill-filesystem",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 514,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 311,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 514,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "speech-to-text",
+   "flags": [],
+   "winner": {
+    "layerIndex": 5,
+    "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+    "line": 2,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 5,
+     "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+     "line": 2,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "speech-to-text-sensevoice",
+   "flags": [],
+   "winner": {
+    "layerIndex": 5,
+    "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+    "line": 6,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 5,
+     "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+     "line": 6,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "spill-local",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 411,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 411,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "spill-policy",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 414,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 414,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "storage",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 179,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 179,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "storage-domain",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 187,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 187,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "storage-json",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 182,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 182,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "subagent",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 359,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 359,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "subagent-fork-in-process",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 367,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 367,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "subagent-model-selection-settings",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 66,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 66,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "subagent-spawn-in-process",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 362,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 362,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "subprocess",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 234,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 234,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "system-prompt",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 17,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 504
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 504,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 17,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "terminal-controller",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 130,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 130,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "theme-settings",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 37,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 7,
+     "layer": "dsh-theme-settings",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-theme-settings\\cordis.patch.yml",
+     "line": 5,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 37,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "thinking-loop-guard",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 189,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 14,
+     "layer": "@argszero/cordis-plugin-thinking-loop-guard",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\@argszero\\cordis-plugin-thinking-loop-guard\\cordis.patch.yml",
+     "line": 15,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 189,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "timeout-policy",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 408,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 408,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "timer",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 24,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 24,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "token-meter",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 348,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 348,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-agent-team",
+   "flags": [],
+   "winner": {
+    "layerIndex": 3,
+    "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+    "line": 25,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 3,
+     "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "line": 25,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "tool-bash",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 480,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 281,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 480,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-fs",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 499,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 295,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 499,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-fs-search",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 502,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 298
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 298,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 502,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-goal",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 526,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 444,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 526,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-jobs",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 496,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 289,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 496,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-plugin-manager",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 477,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 16,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 477,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-pwsh",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 483,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 285,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 483,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-result-pruner",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 545,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 425
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 425,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 545,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-skill",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 517,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 314,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 517,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-subagent",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 3,
+    "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+    "line": 10,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 380
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 380,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 561,
+     "kind": "field",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 3,
+     "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "line": 10,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-subagent-control",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 3,
+    "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+    "line": 4,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 374,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 555,
+     "kind": "field",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 3,
+     "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "line": 4,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-subagent-fork",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 3,
+    "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+    "line": 13,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 391
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 391,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 564,
+     "kind": "field",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 3,
+     "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "line": 13,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-subagent-list-agents",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 3,
+    "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+    "line": 7,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 377,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 558,
+     "kind": "field",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 3,
+     "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "line": 7,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-todo",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 576,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 437
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 437,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 576,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-web",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 579,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 486
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 486,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 579,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-workflow",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 570,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 405,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 570,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tool-working-directory",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 169,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 169,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 32,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 499,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 32,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "typert",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 46,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 46,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "typert-gateway",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 52,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 52,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "typert-loader",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 49,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 49,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-agent-preset",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 423,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 423,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-agent-team",
+   "flags": [],
+   "winner": {
+    "layerIndex": 3,
+    "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+    "line": 31,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 3,
+     "layer": "@deepseek-ai/dsh-experimental-agent-team-profile",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\agent-team-profile\\cordis.patch.yml",
+     "line": 31,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-approval",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 329,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 329,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-attachment",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 339,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 339,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-brand-official",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 336,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 336,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-chat",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 18,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 332,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 18,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "ui-commands",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 374,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 374,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-conversation",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 326,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 326,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-cordis",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 346,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 346,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-deepseek-model-label-1017",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 415,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 415,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-deliverables",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 352,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 352,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-goal",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 402,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 402,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-input-trigger",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 371,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 371,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-jobs",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 393,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 393,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-layout",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 266,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 266,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-message-feedback",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 408,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 408,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-model-selection",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 412,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 412,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-open-in-app",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 88,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 88,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-permission",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 418,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 418,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-plan",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 451,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 451,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-plugin-manager",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 318,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 318,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-reference",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 383,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 383,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-renderer",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 269,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 269,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-schedule",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 398,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 398,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-secret-mask",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 388,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 388,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-session",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 272,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 272,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 23,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 306,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 23,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-account",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 27,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 144,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 27,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-agent-loop",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 441,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 441,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-general",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 4,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 309,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 4,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-models",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 312,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 312,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-plugin-inventory",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 323,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 323,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-plugins",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 432,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 432,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-session-log",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 426,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 426,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-shell",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 438,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 438,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-subagent",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 444,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 444,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-settings-web-search",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 447,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 447,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-shortcuts",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 263,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 263,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-sidebar",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 279,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 279,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-sidebar-browser",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 296,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 296,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-sidebar-documentpreview",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 292,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 292,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-sidebar-files",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 303,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 303,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-sidebar-right",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 283,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 283,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-sidebar-terminal",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 300,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 300,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-skill",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 377,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 377,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-subagent",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 380,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 380,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-theme",
+   "flags": [
+    "contested"
+   ],
+   "winner": {
+    "layerIndex": 26,
+    "layer": "cordis.patch.yml",
+    "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+    "line": 44,
+    "kind": "field",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 254,
+     "kind": "insert",
+     "hasConfig": false
+    },
+    {
+     "layerIndex": 26,
+     "layer": "cordis.patch.yml",
+     "file": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+     "line": 44,
+     "kind": "field",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "ui-tool",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 343,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 343,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-trajectory",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 457,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 457,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-user-questions",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 454,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 454,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-voice-input",
+   "flags": [],
+   "winner": {
+    "layerIndex": 5,
+    "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+    "line": 12,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 5,
+     "layer": "@deepseek-ai/dsh-experimental-voice-input-bundle",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\experimental\\voice-input-bundle\\cordis.patch.yml",
+     "line": 12,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-workflow-run",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 366,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 366,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "ui-workspace",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 361,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 361,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "user-questions",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 79,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 79,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "web",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 467,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 467,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "web-deepseek-api",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 478,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 478,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "web-fetch-http",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 483,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 483,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "web-runtime",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 197,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 197,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "web-search-deepseek",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 473,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 473,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "web-startup",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 168,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 168,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "webserver",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 179,
+    "kind": "insert",
+    "hasConfig": true
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 179,
+     "kind": "insert",
+     "hasConfig": true
+    }
+   ]
+  },
+  {
+   "id": "workflow-ptc",
+   "flags": [
+    "contested",
+    "configSuperseded"
+   ],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 567,
+    "kind": "field",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [
+    {
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 400
+    }
+   ],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 400,
+     "kind": "insert",
+     "hasConfig": true
+    },
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 567,
+     "kind": "field",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "working-directory",
+   "flags": [],
+   "winner": {
+    "layerIndex": 0,
+    "layer": "@deepseek-ai/dsh-base",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+    "line": 166,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 0,
+     "layer": "@deepseek-ai/dsh-base",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\base\\cordis.patch.yml",
+     "line": 166,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "workspace",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 91,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 91,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "workspace-changes",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 357,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 357,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "workspace-controller",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 154,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 154,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  },
+  {
+   "id": "workspace-files",
+   "flags": [],
+   "winner": {
+    "layerIndex": 1,
+    "layer": "@deepseek-ai/dsh-web-app",
+    "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+    "line": 132,
+    "kind": "insert",
+    "hasConfig": false
+   },
+   "supersededConfigLayers": [],
+   "mentions": [
+    {
+     "layerIndex": 1,
+     "layer": "@deepseek-ai/dsh-web-app",
+     "file": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\bundle\\web-app\\cordis.patch.yml",
+     "line": 132,
+     "kind": "insert",
+     "hasConfig": false
+    }
+   ]
+  }
+ ],
+ "limits": [
+  "Home and command-line overlays are not read: they apply after the profile layer and can replace any claim below.",
+  "A row target is matched by id text alone; whether the id is reached at runtime (group nesting, disabled carriers, !!js) is not evaluated."
+ ],
+ "sourceDigest": "26fd83dda32d5692a9f7db6790adbfd3e416b388b44e7c37efc56e88efde9c06",
+ "liveDigest": "b2a4f21dd1b35dff6cc4315f433f08eb4442e74f9e627da180a3185c72f23baa",
+ "liveInputs": [
+  {
+   "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-opencode-go\\cordis.patch.yml",
+   "declared": "./cordis.patch.yml",
+   "exists": true,
+   "digest": "092ae27ec8eff9f5",
+   "origin": "live"
+  },
+  {
+   "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\@argszero\\cordis-plugin-thinking-loop-guard\\cordis.patch.yml",
+   "declared": "./cordis.patch.yml",
+   "exists": true,
+   "digest": "a67aadd6a3685bb7",
+   "origin": "live"
+  },
+  {
+   "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-repetition-guard\\cordis.patch.yml",
+   "declared": "./cordis.patch.yml",
+   "exists": true,
+   "digest": "5b09fb5122e2ae0c",
+   "origin": "live"
+  },
+  {
+   "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\node_modules\\dsh-repeat-guard\\cordis.patch.yml",
+   "declared": "./cordis.patch.yml",
+   "exists": true,
+   "digest": "9cfb8e37bec05056",
+   "origin": "live"
+  },
+  {
+   "path": "C:\\Users\\<user>\\AppData\\Roaming\\dev.dshlink.client\\dsh-link\\kernel-home\\profiles\\web\\cordis.patch.yml",
+   "declared": "cordis.patch.yml",
+   "exists": true,
+   "digest": "ae40cd1e07f5671b",
+   "origin": "live"
+  }
+ ]
+}

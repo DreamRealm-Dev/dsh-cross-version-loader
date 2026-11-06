@@ -1,0 +1,12 @@
+# The patch names a row by id and asserts a different plugin name than that row carries.
+# The row it names is inserted by the first patch of this same layer, and the patch also
+# supplies one override (disabled) so that the two possible outcomes differ in the composed
+# tree as well as in the diagnostics. Both names here are Cordis builtins.
+- insert:
+    - id: dsh-link-fixture-name-mismatch
+      name: cordis:group
+      group: true
+      config: []
+- id: dsh-link-fixture-name-mismatch
+  name: cordis:include
+  disabled: true

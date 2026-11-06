@@ -1,0 +1,4 @@
+# A patch mapping that is neither an insert nor a named target: it supplies one metadata
+# field and names no row at all. Documented source of the question: SKILL.md line 16 and
+# document.ts line 29 (see index.json for the citation).
+- disabled: true

@@ -1,0 +1,861 @@
+{
+ "format": "dsh-link.import-resolution/1",
+ "note": [
+  "Module resolution only: a specifier that resolves says the package and subpath still exist, NOT that the exported API kept its shape.",
+  "undeclared-not-found covers names no dependency section declares and no reachable install provides; the import extractor also records quoted strings that are not module specifiers, so a name here may be an extraction artifact rather than a missing package.",
+  "not-a-package counts specifiers this checker refuses to judge (relative paths, node: builtins)."
+ ],
+ "kernelPackages": 356,
+ "plugins": [
+  {
+   "name": "@argszero/cordis-plugin-thinking-loop-guard",
+   "version": "0.1.9",
+   "rows": [
+    {
+     "specifier": "@deepseek-ai/cordis",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/cordis",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:130",
+      "lib\\types\\index.d.ts:130"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-llm",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-llm",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:132"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/schemastery",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/schemastery",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:131",
+      "lib\\types\\index.d.ts:131"
+     ]
+    },
+    {
+     "specifier": "node:fs",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "tools\\analyze-session.mjs:51"
+     ]
+    }
+   ],
+   "counts": {
+    "resolves": 3,
+    "not-a-package": 1
+   }
+  },
+  {
+   "name": "dsh-opencode-go",
+   "version": "0.1.20",
+   "rows": [
+    {
+     "specifier": "@deepseek-ai/cordis",
+     "plane": "mixed",
+     "class": "resolves",
+     "package": "@deepseek-ai/cordis",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\types\\client\\index.d.ts:8",
+      "client lib\\types\\client\\section-controller.d.ts:11",
+      "client lib\\types\\client\\usage.d.ts:1",
+      "lib\\types\\index.d.ts:33",
+      "lib\\types\\models.d.ts:1",
+      "lib\\types\\remotes.d.ts:1",
+      "lib\\types\\usage.d.ts:1"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-api-remotes/client",
+     "plane": "client",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-api-remotes",
+     "subpath": "client",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\types\\client\\settings.d.ts:1"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-attachment",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-attachment",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:267",
+      "lib\\types\\adapter.d.ts:26",
+      "lib\\types\\conversion\\context.d.ts:7",
+      "lib\\types\\conversion\\image-offload.d.ts:2"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-brand",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-brand",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:64",
+      "lib\\index.js:556"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-client-store",
+     "plane": "client",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-client-store",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\client.js:815",
+      "client lib\\types\\client\\UsagePill.d.ts:1",
+      "client lib\\types\\client\\section-controller.d.ts:15",
+      "client lib\\types\\client\\staged-form.d.ts:19"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-client-ui-model-selection/client",
+     "plane": "client",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-client-ui-model-selection",
+     "subpath": "client",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\types\\client\\UsagePill.d.ts:2"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-client-ui-primitives",
+     "plane": "client",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-client-ui-primitives",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\client.js:42",
+      "client lib\\client.js:43",
+      "client lib\\client.js:47"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-client-ui-slots",
+     "plane": "client",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-client-ui-slots",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\types\\client\\Section.d.ts:9"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-credentials",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-credentials",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:49"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-launch-environment",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-launch-environment",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:48"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-llm",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-llm",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:50",
+      "lib\\index.js:65",
+      "lib\\index.js:68",
+      "lib\\index.js:275",
+      "lib\\index.js:557",
+      "lib\\index.js:720",
+      "lib\\index.js:1753",
+      "lib\\types\\adapter.d.ts:24",
+      "lib\\types\\adapter.d.ts:25",
+      "lib\\types\\catalog.d.ts:2",
+      "lib\\types\\conversion\\context.d.ts:6",
+      "lib\\types\\conversion\\image-offload.d.ts:1",
+      "lib\\types\\conversion\\replay.d.ts:10",
+      "lib\\types\\conversion\\stream.d.ts:10"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-timeout",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-timeout",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:712",
+      "lib\\index.js:1460"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-typert-protocol",
+     "plane": "mixed",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-typert-protocol",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:1752",
+      "lib\\index.js:1866",
+      "client lib\\types\\client\\section-controller.d.ts:12",
+      "lib\\types\\models-contract.d.ts:2",
+      "lib\\types\\models.d.ts:2",
+      "lib\\types\\remote-contract.d.ts:1",
+      "lib\\types\\usage-contract.d.ts:1",
+      "lib\\types\\usage.d.ts:2"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/schemastery",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/schemastery",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:1461",
+      "lib\\types\\config.d.ts:11"
+     ]
+    },
+    {
+     "specifier": "node:crypto",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:53",
+      "lib\\index.js:1070",
+      "lib\\index.js:1751"
+     ]
+    },
+    {
+     "specifier": "node:fs",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:1071"
+     ]
+    },
+    {
+     "specifier": "node:fs/promises",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:1072"
+     ]
+    },
+    {
+     "specifier": "node:os",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:1073"
+     ]
+    },
+    {
+     "specifier": "node:path",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:1074"
+     ]
+    },
+    {
+     "specifier": "node:stream",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:951"
+     ]
+    },
+    {
+     "specifier": "node:stream/promises",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:952"
+     ]
+    },
+    {
+     "specifier": "node:timers/promises",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:950"
+     ]
+    },
+    {
+     "specifier": "node:zlib",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:953"
+     ]
+    },
+    {
+     "specifier": "opencode-go-pi-ai",
+     "plane": "host",
+     "class": "dependency-not-installed",
+     "at": [
+      "lib\\index.js:54",
+      "lib\\index.js:558",
+      "lib\\index.js:715",
+      "lib\\types\\catalog.d.ts:1",
+      "lib\\types\\conversion\\context.d.ts:8",
+      "lib\\types\\conversion\\replay.d.ts:11",
+      "lib\\types\\conversion\\stream.d.ts:11",
+      "lib\\types\\model-metadata.d.ts:2",
+      "lib\\types\\reasoning.d.ts:2"
+     ]
+    },
+    {
+     "specifier": "opencode-go-pi-ai/api/anthropic-messages.lazy",
+     "plane": "host",
+     "class": "dependency-not-installed",
+     "at": [
+      "lib\\index.js:717"
+     ]
+    },
+    {
+     "specifier": "opencode-go-pi-ai/api/openai-completions.lazy",
+     "plane": "host",
+     "class": "dependency-not-installed",
+     "at": [
+      "lib\\index.js:718"
+     ]
+    },
+    {
+     "specifier": "opencode-go-pi-ai/api/openai-responses.lazy",
+     "plane": "host",
+     "class": "dependency-not-installed",
+     "at": [
+      "lib\\index.js:719"
+     ]
+    },
+    {
+     "specifier": "opencode-go-pi-ai/providers/all",
+     "plane": "host",
+     "class": "dependency-not-installed",
+     "at": [
+      "lib\\index.js:716"
+     ]
+    },
+    {
+     "specifier": "react",
+     "plane": "client",
+     "class": "undeclared-not-found",
+     "at": [
+      "client lib\\client.js:41",
+      "client lib\\client.js:46",
+      "client lib\\client.js:1673",
+      "client lib\\types\\client\\ModelEditor.d.ts:1",
+      "client lib\\types\\client\\ModelEditor.d.ts:19",
+      "client lib\\types\\client\\Section.d.ts:29",
+      "client lib\\types\\client\\UsagePill.d.ts:14"
+     ]
+    },
+    {
+     "specifier": "react/jsx-runtime",
+     "plane": "client",
+     "class": "undeclared-not-found",
+     "at": [
+      "client lib\\client.js:154",
+      "client lib\\client.js:383",
+      "client lib\\client.js:1687"
+     ]
+    }
+   ],
+   "counts": {
+    "resolves": 14,
+    "not-a-package": 9,
+    "dependency-not-installed": 5,
+    "undeclared-not-found": 2
+   }
+  },
+  {
+   "name": "dsh-repeat-guard",
+   "version": "0.2.2",
+   "rows": [
+    {
+     "specifier": "@deepseek-ai/cordis",
+     "plane": "mixed",
+     "class": "resolves",
+     "package": "@deepseek-ai/cordis",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\client.d.ts:11",
+      "lib\\config.d.ts:12",
+      "lib\\index.d.ts:1",
+      "client src\\client.tsx:12",
+      "src\\config.ts:13",
+      "src\\index.ts:24"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-agent",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-agent",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\resume.d.ts:17",
+      "lib\\turn-stopping-guard.d.ts:7",
+      "src\\resume.ts:18",
+      "src\\turn-stopping-guard.ts:8"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-client-ui-renderer/client",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-client-ui-renderer",
+     "subpath": "client",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client src\\client.tsx:15"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-client-ui-settings/client",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-client-ui-settings",
+     "subpath": "client",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client src\\client.tsx:16"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-llm",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-llm",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\resume.d.ts:18",
+      "lib\\resume.js:17",
+      "lib\\stream-guard.d.ts:6",
+      "src\\resume.ts:19",
+      "src\\resume.ts:20",
+      "src\\stream-guard.ts:7"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-settings",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-settings",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "src\\config.ts:15"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/schemastery",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/schemastery",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\config.d.ts:13",
+      "lib\\config.js:12",
+      "src\\config.ts:16"
+     ]
+    },
+    {
+     "specifier": "react",
+     "plane": "mixed",
+     "class": "peer-not-installed",
+     "at": [
+      "client lib\\client.js:34",
+      "client src\\client.tsx:17"
+     ]
+    },
+    {
+     "specifier": "react/jsx-runtime",
+     "plane": "client",
+     "class": "peer-not-installed",
+     "at": [
+      "client lib\\client.js:35"
+     ]
+    }
+   ],
+   "counts": {
+    "resolves": 7,
+    "peer-not-installed": 2
+   }
+  },
+  {
+   "name": "dsh-repetition-guard",
+   "version": "0.1.0",
+   "rows": [],
+   "counts": {}
+  },
+  {
+   "name": "@mars-sea/dsh-commandcode-provider",
+   "version": "0.11.5",
+   "rows": [
+    {
+     "specifier": "@deepseek-ai/cordis",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/cordis",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:6"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-attachment",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-attachment",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:7"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-client-ui-primitives",
+     "plane": "client",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-client-ui-primitives",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "client lib\\client.js:8"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-commands",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-commands",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:8"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-credentials",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-credentials",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:3",
+      "lib\\index.js:112"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-launch-environment",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-launch-environment",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:113"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-llm",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-llm",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:2",
+      "lib\\index.js:110",
+      "lib\\index.js:111"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-timeout",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-timeout",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:109"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-typert-protocol",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-typert-protocol",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:4",
+      "lib\\index.js:117"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-web",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-web",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:5",
+      "lib\\index.js:120"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/schemastery",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/schemastery",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.d.ts:1",
+      "lib\\index.js:108"
+     ]
+    },
+    {
+     "specifier": "node:crypto",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:116"
+     ]
+    },
+    {
+     "specifier": "node:fs",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:114"
+     ]
+    },
+    {
+     "specifier": "node:fs/promises",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:115"
+     ]
+    },
+    {
+     "specifier": "node:http",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:118"
+     ]
+    },
+    {
+     "specifier": "node:module",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:1"
+     ]
+    },
+    {
+     "specifier": "node:net",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:119"
+     ]
+    },
+    {
+     "specifier": "node:os",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:106"
+     ]
+    },
+    {
+     "specifier": "node:path",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:107"
+     ]
+    },
+    {
+     "specifier": "react",
+     "plane": "client",
+     "class": "peer-not-installed",
+     "at": [
+      "client lib\\client.js:7"
+     ]
+    },
+    {
+     "specifier": "react/jsx-runtime",
+     "plane": "client",
+     "class": "peer-not-installed",
+     "at": [
+      "client lib\\client.js:9"
+     ]
+    }
+   ],
+   "counts": {
+    "resolves": 11,
+    "not-a-package": 8,
+    "peer-not-installed": 2
+   }
+  },
+  {
+   "name": "@rain-kl/dsh-preset-plus",
+   "version": "0.1.5",
+   "rows": [
+    {
+     "specifier": "node:crypto",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\index.js:26"
+     ]
+    },
+    {
+     "specifier": "node:fs",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\core.js:21",
+      "lib\\core.js:22",
+      "lib\\index.js:21",
+      "lib\\index.js:22"
+     ]
+    },
+    {
+     "specifier": "node:os",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\core.js:23",
+      "lib\\index.js:24"
+     ]
+    },
+    {
+     "specifier": "node:path",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\core.js:24",
+      "lib\\index.js:23"
+     ]
+    },
+    {
+     "specifier": "node:url",
+     "plane": "host",
+     "class": "not-a-package",
+     "at": [
+      "lib\\core.js:25",
+      "lib\\index.js:25"
+     ]
+    }
+   ],
+   "counts": {
+    "not-a-package": 5
+   }
+  },
+  {
+   "name": "dsh-search-failover",
+   "version": "0.3.9",
+   "rows": [
+    {
+     "specifier": "@deepseek-ai/dsh-launch-environment",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-launch-environment",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:19"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/dsh-tools",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/dsh-tools",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\index.js:26"
+     ]
+    },
+    {
+     "specifier": "@deepseek-ai/schemastery",
+     "plane": "host",
+     "class": "resolves",
+     "package": "@deepseek-ai/schemastery",
+     "subpath": "",
+     "resolvedFrom": "kernel",
+     "at": [
+      "lib\\settings-host.js:16"
+     ]
+    }
+   ],
+   "counts": {
+    "resolves": 3
+   }
+  }
+ ],
+ "counts": {
+  "resolves": 38,
+  "not-a-package": 23,
+  "dependency-not-installed": 5,
+  "undeclared-not-found": 2,
+  "peer-not-installed": 4
+ },
+ "sourceDigest": "506841cef6a8adbe"
+}

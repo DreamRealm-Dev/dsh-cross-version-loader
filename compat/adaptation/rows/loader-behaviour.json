@@ -1,0 +1,687 @@
+{
+  "format": "dsh-link.loader-row-behaviour/1",
+  "kernel": {
+    "root": "<workspace>\\\\dsh-link\\core\\deepseek-harness",
+    "cliEntry": "apps/cli/src/bin.ts",
+    "profile": "web"
+  },
+  "method": {
+    "compose": "node --import tsx/esm <kernel>/apps/cli/src/bin.ts --profile <p> --dump-config --patch <layer...>",
+    "home": "fresh mkdtemp per case; the machine profile and the live shell home are never read or written",
+    "authority": "the dump composes through applyEntryPatches (vendor/include/src/index.ts:57), the same call boot() makes",
+    "stage": "composition only; row admission is a later stage (app-boot/src/index.ts:407-408)",
+    "warningSink": "stderr (app-boot/src/index.ts:427,435): a patch that matches no row is reported there",
+    "baseline": "one unpatched composition per run; fixture observations are diffs by row id against it, because an insert shifts line numbers",
+    "calibration": "every constructed case inserts a calibration row beside the row under test, so a missing effect cannot be read as acceptance when the overlay was never read",
+    "unknownToProbe": "the probe records what composition did; it does not decide whether a key is honoured at mount"
+  },
+  "baseline": {
+    "exitStatus": 0,
+    "rows": 207,
+    "rowsMetric": "deduplicated union of root ids and nested (indented) ids, empty-home default composition",
+    "rootIds": 190,
+    "indentedIds": 40,
+    "warnings": []
+  },
+  "cases": [
+    {
+      "id": "non-insert-without-id",
+      "question": "A non-insert patch row that omits id.",
+      "constructed": "one layer: [{ config: { r20Probe: 1 } }, { insert: [calibration] }] — the first row is a non-insert patch with no id",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml",
+      "exitStatus": 0,
+      "calibrationRowPresent": true,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "warnings": [
+          "dsh: [C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml] patch: id is required for non-insert patches"
+        ],
+        "warningMatched": true,
+        "occurrences": []
+      },
+      "rawExcerpt": "# == @deepseek-ai/dsh-base\n- id: tool-plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager/tools'\n  disabled: true\n- id: plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager'\n  disabled: !!js '!ctx.get(''profileContext'')'\n- id: timer\n  name: '@deepseek-ai/cordis-plugin-timer'\n- id: hmr\n  name: '@deepseek-ai/dsh-hmr'\n  disabled: !!js '!ctx.get(''profileContext'')'\n  config:\n    root: []\n- id: llm\n  name: '@deepseek-ai/dsh-llm'\n- id: deepseek-llm-api-extensions\n  name: '@deepseek-ai/dsh-deepseek-llm-api-extensions'\n- id: session\n  name: '@deepseek-ai/dsh-session'\n- id: session-log-deepseek\n  name: '@deepseek-ai/dsh-session-log-deepseek'\n- id: typert\n  name: '@deepseek-ai/dsh-typert-registry'\n- id: typert-loader\n  name: '@deepseek-ai/dsh-typert-loader'\n- id: typert-gateway\n  name: '@deepseek-ai/dsh-api-gateway'\n- id: remote-access\n  name: '@deepseek-ai/dsh-api-remote-access'\n- id: session-title\n  name: '@deepseek-ai/dsh-session-title'\n  config:\n    fallbackMaxWords: 5\n    fallbackMaxBytes: 40\n    maxTitleBytes: 80\n- id: session-title-llm\n  name: '@deepseek-ai/dsh-session-title-first-prompt-llm'\n  config:\n    targetWords: 5\n    targetCjkCharacters: 10\n    maxInputBytes: 4096\n   \n…[truncated, 43467 more chars]",
+      "rawStderrExcerpt": "dsh: [C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml] patch: id is required for non-insert patches\n",
+      "verdict": "composition warned and skipped the row (warning matched on stderr)",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "non-insert-unknown-id",
+      "question": "A non-insert patch row naming an id no entry has.",
+      "constructed": "one layer: [{ id: 'r20-does-not-exist', disabled: true }, { insert: [calibration] }]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml",
+      "exitStatus": 0,
+      "calibrationRowPresent": true,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "warnings": [
+          "dsh: [C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml] patch: entry \"r20-does-not-exist\" not found"
+        ],
+        "warningMatched": true,
+        "occurrences": []
+      },
+      "rawExcerpt": "# == @deepseek-ai/dsh-base\n- id: tool-plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager/tools'\n  disabled: true\n- id: plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager'\n  disabled: !!js '!ctx.get(''profileContext'')'\n- id: timer\n  name: '@deepseek-ai/cordis-plugin-timer'\n- id: hmr\n  name: '@deepseek-ai/dsh-hmr'\n  disabled: !!js '!ctx.get(''profileContext'')'\n  config:\n    root: []\n- id: llm\n  name: '@deepseek-ai/dsh-llm'\n- id: deepseek-llm-api-extensions\n  name: '@deepseek-ai/dsh-deepseek-llm-api-extensions'\n- id: session\n  name: '@deepseek-ai/dsh-session'\n- id: session-log-deepseek\n  name: '@deepseek-ai/dsh-session-log-deepseek'\n- id: typert\n  name: '@deepseek-ai/dsh-typert-registry'\n- id: typert-loader\n  name: '@deepseek-ai/dsh-typert-loader'\n- id: typert-gateway\n  name: '@deepseek-ai/dsh-api-gateway'\n- id: remote-access\n  name: '@deepseek-ai/dsh-api-remote-access'\n- id: session-title\n  name: '@deepseek-ai/dsh-session-title'\n  config:\n    fallbackMaxWords: 5\n    fallbackMaxBytes: 40\n    maxTitleBytes: 80\n- id: session-title-llm\n  name: '@deepseek-ai/dsh-session-title-first-prompt-llm'\n  config:\n    targetWords: 5\n    targetCjkCharacters: 10\n    maxInputBytes: 4096\n   \n…[truncated, 43467 more chars]",
+      "rawStderrExcerpt": "dsh: [C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml] patch: entry \"r20-does-not-exist\" not found\n",
+      "verdict": "composition warned and skipped the row (warning matched on stderr)",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "insert-legacy-0.1.x-keys",
+      "question": "An insert child carrying 0.1.x-era keys (enabled / options / disable) that are absent from document.ts:11-22.",
+      "constructed": "one layer: [{ insert: [{ id: 'r20-legacy', name: 'r20-legacy-name', enabled: true, options: { keepMe: true }, disable: true }, calibration] }]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml",
+      "exitStatus": 0,
+      "calibrationRowPresent": true,
+      "rootIds": 192,
+      "indentedIds": 40,
+      "observed": {
+        "markerPresent": true,
+        "warnings": [],
+        "warningCount": 0,
+        "blocks": {
+          "r20-legacy": "- id: r20-legacy\n  name: r20-legacy-name\n  enabled: true\n  options:\n    keepMe: true\n  disable: true"
+        },
+        "occurrences": [
+          {
+            "line": 1231,
+            "id": "r20-legacy",
+            "body": "name: r20-legacy-name | enabled: true | options: | keepMe: true | disable: true"
+          }
+        ]
+      },
+      "rawExcerpt": "# == @deepseek-ai/dsh-base\n- id: tool-plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager/tools'\n  disabled: true\n- id: plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager'\n  disabled: !!js '!ctx.get(''profileContext'')'\n- id: timer\n  name: '@deepseek-ai/cordis-plugin-timer'\n- id: hmr\n  name: '@deepseek-ai/dsh-hmr'\n  disabled: !!js '!ctx.get(''profileContext'')'\n  config:\n    root: []\n- id: llm\n  name: '@deepseek-ai/dsh-llm'\n- id: deepseek-llm-api-extensions\n  name: '@deepseek-ai/dsh-deepseek-llm-api-extensions'\n- id: session\n  name: '@deepseek-ai/dsh-session'\n- id: session-log-deepseek\n  name: '@deepseek-ai/dsh-session-log-deepseek'\n- id: typert\n  name: '@deepseek-ai/dsh-typert-registry'\n- id: typert-loader\n  name: '@deepseek-ai/dsh-typert-loader'\n- id: typert-gateway\n  name: '@deepseek-ai/dsh-api-gateway'\n- id: remote-access\n  name: '@deepseek-ai/dsh-api-remote-access'\n- id: session-title\n  name: '@deepseek-ai/dsh-session-title'\n  config:\n    fallbackMaxWords: 5\n    fallbackMaxBytes: 40\n    maxTitleBytes: 80\n- id: session-title-llm\n  name: '@deepseek-ai/dsh-session-title-first-prompt-llm'\n  config:\n    targetWords: 5\n    targetCjkCharacters: 10\n    maxInputBytes: 4096\n   \n…[truncated, 43568 more chars]",
+      "rawStderrExcerpt": "",
+      "verdict": "composition kept the rows; see occurrences for what it composed",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "insert-same-id-twice",
+      "question": "The same id inserted twice, then patched.",
+      "constructed": "layer 1: two inserts both with id 'r20-dupe' and different config ({ from: 'A' }, { from: 'B' }); layer 2: [{ id: 'r20-dupe', disabled: true }]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-2.yml",
+      "exitStatus": 0,
+      "calibrationRowPresent": true,
+      "rootIds": 192,
+      "indentedIds": 40,
+      "observed": {
+        "markerPresent": true,
+        "warnings": [],
+        "warningCount": 0,
+        "blocks": {
+          "r20-dupe": "- id: r20-dupe\n  name: r20-dupe-name\n  config:\n    from: A"
+        },
+        "occurrences": [
+          {
+            "line": 1231,
+            "id": "r20-dupe",
+            "body": "name: r20-dupe-name | config: | from: A"
+          },
+          {
+            "line": 1236,
+            "id": "r20-dupe",
+            "body": "name: r20-dupe-name | config: | from: B | disabled: true"
+          }
+        ]
+      },
+      "rawExcerpt": "# == @deepseek-ai/dsh-base\n- id: tool-plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager/tools'\n  disabled: true\n- id: plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager'\n  disabled: !!js '!ctx.get(''profileContext'')'\n- id: timer\n  name: '@deepseek-ai/cordis-plugin-timer'\n- id: hmr\n  name: '@deepseek-ai/dsh-hmr'\n  disabled: !!js '!ctx.get(''profileContext'')'\n  config:\n    root: []\n- id: llm\n  name: '@deepseek-ai/dsh-llm'\n- id: deepseek-llm-api-extensions\n  name: '@deepseek-ai/dsh-deepseek-llm-api-extensions'\n- id: session\n  name: '@deepseek-ai/dsh-session'\n- id: session-log-deepseek\n  name: '@deepseek-ai/dsh-session-log-deepseek'\n- id: typert\n  name: '@deepseek-ai/dsh-typert-registry'\n- id: typert-loader\n  name: '@deepseek-ai/dsh-typert-loader'\n- id: typert-gateway\n  name: '@deepseek-ai/dsh-api-gateway'\n- id: remote-access\n  name: '@deepseek-ai/dsh-api-remote-access'\n- id: session-title\n  name: '@deepseek-ai/dsh-session-title'\n  config:\n    fallbackMaxWords: 5\n    fallbackMaxBytes: 40\n    maxTitleBytes: 80\n- id: session-title-llm\n  name: '@deepseek-ai/dsh-session-title-first-prompt-llm'\n  config:\n    targetWords: 5\n    targetCjkCharacters: 10\n    maxInputBytes: 4096\n   \n…[truncated, 43822 more chars]",
+      "rawStderrExcerpt": "",
+      "verdict": "composition kept the rows; see occurrences for what it composed",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "config-replace-vs-deep-merge",
+      "question": "Whether a later layer replaces a config wholesale or deep-merges it.",
+      "constructed": "layer 1: insert { id: 'r20-cfg', name: 'r20-cfg-name', config: { keep: 1, replace: 2 } }; layer 2: [{ id: 'r20-cfg', config: { replace: 99 } }]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-2.yml",
+      "exitStatus": 0,
+      "calibrationRowPresent": true,
+      "rootIds": 192,
+      "indentedIds": 40,
+      "observed": {
+        "markerPresent": true,
+        "warnings": [],
+        "warningCount": 0,
+        "blocks": {
+          "r20-cfg": "- id: r20-cfg\n  name: r20-cfg-name\n  config:\n    replace: 99"
+        },
+        "occurrences": [
+          {
+            "line": 1231,
+            "id": "r20-cfg",
+            "body": "name: r20-cfg-name | config: | replace: 99"
+          }
+        ]
+      },
+      "rawExcerpt": "# == @deepseek-ai/dsh-base\n- id: tool-plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager/tools'\n  disabled: true\n- id: plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager'\n  disabled: !!js '!ctx.get(''profileContext'')'\n- id: timer\n  name: '@deepseek-ai/cordis-plugin-timer'\n- id: hmr\n  name: '@deepseek-ai/dsh-hmr'\n  disabled: !!js '!ctx.get(''profileContext'')'\n  config:\n    root: []\n- id: llm\n  name: '@deepseek-ai/dsh-llm'\n- id: deepseek-llm-api-extensions\n  name: '@deepseek-ai/dsh-deepseek-llm-api-extensions'\n- id: session\n  name: '@deepseek-ai/dsh-session'\n- id: session-log-deepseek\n  name: '@deepseek-ai/dsh-session-log-deepseek'\n- id: typert\n  name: '@deepseek-ai/dsh-typert-registry'\n- id: typert-loader\n  name: '@deepseek-ai/dsh-typert-loader'\n- id: typert-gateway\n  name: '@deepseek-ai/dsh-api-gateway'\n- id: remote-access\n  name: '@deepseek-ai/dsh-api-remote-access'\n- id: session-title\n  name: '@deepseek-ai/dsh-session-title'\n  config:\n    fallbackMaxWords: 5\n    fallbackMaxBytes: 40\n    maxTitleBytes: 80\n- id: session-title-llm\n  name: '@deepseek-ai/dsh-session-title-first-prompt-llm'\n  config:\n    targetWords: 5\n    targetCjkCharacters: 10\n    maxInputBytes: 4096\n   \n…[truncated, 43677 more chars]",
+      "rawStderrExcerpt": "",
+      "verdict": "composition kept the rows; see occurrences for what it composed",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    },
+    {
+      "id": "config-replace-on-bundle-row",
+      "question": "The same question asked against a real bundle row that ships a multi-key config.",
+      "constructed": "one layer: [{ id: 'session-telemetry-otel', config: { r20Probe: true } }, { insert: [calibration] }]",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch C:\\Users\\<user>\\AppData\\Local\\Temp\\r20-row-layer-<tmp>\\layer-1.yml",
+      "exitStatus": 0,
+      "calibrationRowPresent": true,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "warnings": [],
+        "warningCount": 0,
+        "blocks": {
+          "session-telemetry-otel": "- id: session-telemetry-otel\n  name: '@deepseek-ai/dsh-session-telemetry-otel'\n  config:\n    r20Probe: true"
+        },
+        "occurrences": [
+          {
+            "line": 113,
+            "id": "session-telemetry-otel",
+            "body": "name: '@deepseek-ai/dsh-session-telemetry-otel' | config: | r20Probe: true"
+          }
+        ],
+        "baselineBlock": "- id: session-telemetry-otel\n  name: '@deepseek-ai/dsh-session-telemetry-otel'\n  config:\n    mode: !!js process.env.DSH_TELEMETRY_MODE || 'FEEDBACK_ONLY'\n    shutdownTimeoutMillis: 3000\n    maxRequestBytes: 4000000\n    exporter:\n      url: !!js >-\n        process.env.DSH_TELEMETRY_OTLP_URL ??\n        'https://dsh-otel-collector.deepseeksvc.com/v1/logs'\n      compression: gzip\n      timeoutMillis: 1000\n    processor:\n      scheduledDelayMillis: 10000\n      maxQueueSize: 2048\n      maxExportBatchSize: 2048\n      exportTimeoutMillis: 1500",
+        "baselineConfigKeys": 5,
+        "composedConfigKeys": 1
+      },
+      "rawExcerpt": "# == @deepseek-ai/dsh-base\n- id: tool-plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager/tools'\n  disabled: true\n- id: plugin-manager\n  name: '@deepseek-ai/dsh-plugin-manager'\n  disabled: !!js '!ctx.get(''profileContext'')'\n- id: timer\n  name: '@deepseek-ai/cordis-plugin-timer'\n- id: hmr\n  name: '@deepseek-ai/dsh-hmr'\n  disabled: !!js '!ctx.get(''profileContext'')'\n  config:\n    root: []\n- id: llm\n  name: '@deepseek-ai/dsh-llm'\n- id: deepseek-llm-api-extensions\n  name: '@deepseek-ai/dsh-deepseek-llm-api-extensions'\n- id: session\n  name: '@deepseek-ai/dsh-session'\n- id: session-log-deepseek\n  name: '@deepseek-ai/dsh-session-log-deepseek'\n- id: typert\n  name: '@deepseek-ai/dsh-typert-registry'\n- id: typert-loader\n  name: '@deepseek-ai/dsh-typert-loader'\n- id: typert-gateway\n  name: '@deepseek-ai/dsh-api-gateway'\n- id: remote-access\n  name: '@deepseek-ai/dsh-api-remote-access'\n- id: session-title\n  name: '@deepseek-ai/dsh-session-title'\n  config:\n    fallbackMaxWords: 5\n    fallbackMaxBytes: 40\n    maxTitleBytes: 80\n- id: session-title-llm\n  name: '@deepseek-ai/dsh-session-title-first-prompt-llm'\n  config:\n    targetWords: 5\n    targetCjkCharacters: 10\n    maxInputBytes: 4096\n   \n…[truncated, 43165 more chars]",
+      "rawStderrExcerpt": "",
+      "verdict": "baseline config keys 5 -> composed config keys 1: the profile layer substituted the WHOLE config map, so the other bundle keys are gone",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ]
+    }
+  ],
+  "fixturesMeasured": true,
+  "fixtures": [
+    {
+      "file": "01-insert-control.patch.yml",
+      "idiom": "insert（对照组）",
+      "question": "一份只做一次 append 的最小层，真 loader 是否原样组合出这一行、不产生任何诊断？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\01-insert-control.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 208,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-control"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [],
+        "blocks": {
+          "dsh-link-fixture-control": "- id: dsh-link-fixture-control\n  name: cordis:group\n  group: true\n  config: []"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-control\n  name: cordis:group\n  group: true\n  config: []",
+      "rawStderrExcerpt": "",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "applied with no diagnostics: 1 row(s) added, 0 changed",
+      "verdict": "applied with no diagnostics: 1 row(s) added, 0 changed"
+    },
+    {
+      "file": "02-non-insert-without-id.patch.yml",
+      "idiom": "非 insert 且无 id",
+      "question": "既不是 insert、又没有 id 的补丁映射，会带来什么诊断、以及是否留下任何痕迹？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\02-non-insert-without-id.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 207,
+      "rootIds": 190,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "warnings": [
+          "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\02-non-insert-without-id.patch.yml] patch: id is required for non-insert patches"
+        ],
+        "blocks": {}
+      },
+      "rawExcerpt": "(composed tree identical to baseline)",
+      "rawStderrExcerpt": "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\02-non-insert-without-id.patch.yml] patch: id is required for non-insert patches\n",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "warned and skipped: the composed tree is identical to the baseline",
+      "verdict": "warned and skipped: the composed tree is identical to the baseline"
+    },
+    {
+      "file": "03-non-insert-missing-target.patch.yml",
+      "idiom": "非 insert 指向不存在的 id",
+      "question": "id 匹配不到任何行时，除了警告跳过，读取器与 loader 各自还要不要报告这个 id 本身？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\03-non-insert-missing-target.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 207,
+      "rootIds": 190,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "warnings": [
+          "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\03-non-insert-missing-target.patch.yml] patch: entry \"dsh-link-fixture-no-such-row\" not found"
+        ],
+        "blocks": {}
+      },
+      "rawExcerpt": "(composed tree identical to baseline)",
+      "rawStderrExcerpt": "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\03-non-insert-missing-target.patch.yml] patch: entry \"dsh-link-fixture-no-such-row\" not found\n",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "warned and skipped: the composed tree is identical to the baseline",
+      "verdict": "warned and skipped: the composed tree is identical to the baseline"
+    },
+    {
+      "file": "04-insert-child-legacy-keys.patch.yml",
+      "idiom": "insert 子条目带 0.1.x 惯用键",
+      "question": "enabled / options / disable 这三个不在 0.2.x 名单里的键，会被 schema 拒绝、被丢弃、还是被忽略地留在组合结果里？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\04-insert-child-legacy-keys.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 209,
+      "rootIds": 191,
+      "indentedIds": 41,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-legacy-parent",
+          "dsh-link-fixture-legacy-child"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [],
+        "blocks": {
+          "dsh-link-fixture-legacy-parent": "- id: dsh-link-fixture-legacy-parent\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-legacy-child\n      name: cordis:group\n      group: true\n      config: []\n      enabled: true\n      options:\n        retries: 3\n        label: legacy\n      disable: false",
+          "dsh-link-fixture-legacy-child": "    - id: dsh-link-fixture-legacy-child\n      name: cordis:group\n      group: true\n      config: []\n      enabled: true\n      options:\n        retries: 3\n        label: legacy\n      disable: false"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-legacy-parent\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-legacy-child\n      name: cordis:group\n      group: true\n      config: []\n      enabled: true\n      options:\n        retries: 3\n        label: legacy\n      disable: false\n    - id: dsh-link-fixture-legacy-child\n      name: cordis:group\n      group: true\n      config: []\n      enabled: true\n      options:\n        retries: 3\n        label: legacy\n      disable: false",
+      "rawStderrExcerpt": "",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "applied with no diagnostics: 2 row(s) added, 0 changed",
+      "verdict": "applied with no diagnostics: 2 row(s) added, 0 changed"
+    },
+    {
+      "file": "05-insert-duplicate-id.patch.yml",
+      "idiom": "同名 id 两次 insert",
+      "question": "同一个 id 被两次 insert 时，组合结果是多出一行、只有其中一行胜出、还是给出诊断？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\05-insert-duplicate-id.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 208,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-duplicate"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [],
+        "blocks": {
+          "dsh-link-fixture-duplicate": "- id: dsh-link-fixture-duplicate\n  name: cordis:group\n  group: true\n  config: []\n---\n- id: dsh-link-fixture-duplicate\n  name: cordis:group\n  group: true\n  config: []"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-duplicate\n  name: cordis:group\n  group: true\n  config: []\n---\n- id: dsh-link-fixture-duplicate\n  name: cordis:group\n  group: true\n  config: []",
+      "rawStderrExcerpt": "",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "kept every row: the id dsh-link-fixture-duplicate appears more than once in the composed tree",
+      "verdict": "kept every row: the id dsh-link-fixture-duplicate appears more than once in the composed tree"
+    },
+    {
+      "file": "06-disabled-js-expression.patch.yml",
+      "idiom": "!!js 表达式做 disabled",
+      "question": "disabled 写成 !!js 表达式时，读取器是否把它当表达式（而不是 truthy 字符串），loader 是否在每次挂载决策求值？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\06-disabled-js-expression.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 208,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-js-disabled"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [],
+        "blocks": {
+          "dsh-link-fixture-js-disabled": "- id: dsh-link-fixture-js-disabled\n  name: cordis:group\n  group: true\n  config: []\n  disabled: !!js '!ctx.get(''profileContext'')'"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-js-disabled\n  name: cordis:group\n  group: true\n  config: []\n  disabled: !!js '!ctx.get(''profileContext'')'",
+      "rawStderrExcerpt": "",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "applied with no diagnostics: 1 row(s) added, 0 changed",
+      "verdict": "applied with no diagnostics: 1 row(s) added, 0 changed"
+    },
+    {
+      "file": "07-insert-into-group.patch.yml",
+      "idiom": "group 里 insert",
+      "question": "同一层里先 append 一个 group、再按其 id append 子条目，第二条是否生效？也就是同一个层内多个补丁的应用顺序。",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\07-insert-into-group.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 209,
+      "rootIds": 191,
+      "indentedIds": 41,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-group",
+          "dsh-link-fixture-group-child"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [],
+        "blocks": {
+          "dsh-link-fixture-group": "- id: dsh-link-fixture-group\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-group-child\n      name: cordis:group\n      group: true\n      config: []",
+          "dsh-link-fixture-group-child": "    - id: dsh-link-fixture-group-child\n      name: cordis:group\n      group: true\n      config: []"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-group\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-group-child\n      name: cordis:group\n      group: true\n      config: []\n    - id: dsh-link-fixture-group-child\n      name: cordis:group\n      group: true\n      config: []",
+      "rawStderrExcerpt": "",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "applied with no diagnostics: 2 row(s) added, 0 changed",
+      "verdict": "applied with no diagnostics: 2 row(s) added, 0 changed"
+    },
+    {
+      "file": "08-layer-config-base.patch.yml",
+      "idiom": "层间 config 替换（base 半）",
+      "question": "作为 base 层单独使用时，它是否组合出 config 里那两个子条目？（与 09 配对使用：先本文件、后 09）",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\08-layer-config-base.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 210,
+      "rootIds": 191,
+      "indentedIds": 42,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-config-target",
+          "dsh-link-fixture-config-child-a",
+          "dsh-link-fixture-config-child-b"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [],
+        "blocks": {
+          "dsh-link-fixture-config-target": "- id: dsh-link-fixture-config-target\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-config-child-a\n      name: cordis:group\n      group: true\n      config: []\n    - id: dsh-link-fixture-config-child-b\n      name: cordis:group\n      group: true\n      config: []",
+          "dsh-link-fixture-config-child-a": "    - id: dsh-link-fixture-config-child-a\n      name: cordis:group\n      group: true\n      config: []",
+          "dsh-link-fixture-config-child-b": "    - id: dsh-link-fixture-config-child-b\n      name: cordis:group\n      group: true\n      config: []"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-config-target\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-config-child-a\n      name: cordis:group\n      group: true\n      config: []\n    - id: dsh-link-fixture-config-child-b\n      name: cordis:group\n      group: true\n      config: []\n    - id: dsh-link-fixture-config-child-a\n      name: cordis:group\n      group: true\n      config: []\n    - id: dsh-link-fixture-config-child-b\n      name: cordis:group\n      group: true\n      config: []",
+      "rawStderrExcerpt": "",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "applied with no diagnostics: 3 row(s) added, 0 changed",
+      "verdict": "applied with no diagnostics: 3 row(s) added, 0 changed"
+    },
+    {
+      "file": "09-layer-config-replace.patch.yml",
+      "idiom": "层间 config 替换（replace 半）",
+      "question": "叠在 08 之后、只给 config 时，base 层那两个子条目是被整段替换（只剩 child-c）还是被深合并？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\09-layer-config-replace.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 207,
+      "rootIds": 190,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "warnings": [
+          "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\09-layer-config-replace.patch.yml] patch: entry \"dsh-link-fixture-config-target\" not found"
+        ],
+        "blocks": {}
+      },
+      "rawExcerpt": "(composed tree identical to baseline)",
+      "rawStderrExcerpt": "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\09-layer-config-replace.patch.yml] patch: entry \"dsh-link-fixture-config-target\" not found\n",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "warned and skipped: the composed tree is identical to the baseline",
+      "verdict": "warned and skipped: the composed tree is identical to the baseline"
+    },
+    {
+      "file": "10-disabled-bang-js-expression.patch.yml",
+      "idiom": "单叹号 !js 做 disabled",
+      "question": "单叹号的 !js 作为 disabled 的表达式写法，读取器与 loader 认不认？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\10-disabled-bang-js-expression.patch.yml",
+      "exitStatus": 1,
+      "baselineRows": 207,
+      "composedRows": 0,
+      "rootIds": 0,
+      "indentedIds": 0,
+      "observed": {
+        "layerFatal": true,
+        "removedMeaning": "NOT a list of removed rows: composition was refused, so no tree existed to compare against. This list is empty by construction; the baseline is intact.",
+        "fatalReason": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\boot\\app-boot\\src\\index.ts:582\r\n    throw new Error(`${binName}: failed to parse ${label} ${file}: ${String(error)}`)\r\n          ^\r\n\r\nError: dsh: failed to parse overlay <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\10-disabled-bang-js-expression.patch.yml: YAMLException: unknown tag !<!js> (8:27)\r\n\r\n 5 |       name: cordis:group\r\n 6 |  \n…[truncated, 753 more chars]",
+        "added": [],
+        "removed": [],
+        "changed": [],
+        "warnings": [
+          "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\boot\\app-boot\\src\\index.ts:582",
+          "throw new Error(`${binName}: failed to parse ${label} ${file}: ${String(error)}`)",
+          "^",
+          "Error: dsh: failed to parse overlay <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\10-disabled-bang-js-expression.patch.yml: YAMLException: unknown tag !<!js> (8:27)",
+          "5 |       name: cordis:group",
+          "6 |       group: true",
+          "7 |       config: []",
+          "8 |       disabled: !js \"true\"",
+          "-------------------------------^",
+          "at parsePatchList (<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\boot\\app-boot\\src\\index.ts:582:11)",
+          "at loadOverlayPatches (<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\boot\\app-boot\\src\\index.ts:547:10)",
+          "at collectConfigDumpLayers (<workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\dump-config.ts:71:47)",
+          "at runDumpConfig (<workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\dump-config.ts:39:18)",
+          "at runCli (<workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts:57:7)",
+          "at async <anonymous> (<workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts:77:3)",
+          "Node.js v24.16.0"
+        ],
+        "blocks": {}
+      },
+      "rawExcerpt": "(composed tree identical to baseline)",
+      "rawStderrExcerpt": "<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\boot\\app-boot\\src\\index.ts:582\r\n    throw new Error(`${binName}: failed to parse ${label} ${file}: ${String(error)}`)\r\n          ^\r\n\r\nError: dsh: failed to parse overlay <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\10-disabled-bang-js-expression.patch.yml: YAMLException: unknown tag !<!js> (8:27)\r\n\r\n 5 |       name: cordis:group\r\n 6 |       group: true\r\n 7 |       config: []\r\n 8 |       disabled: !js \"true\"\r\n-------------------------------^\r\n    at parsePatchList (<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\boot\\app-boot\\src\\index.ts:582:11)\r\n    at loadOverlayPatches (<workspace>\\\\dsh-link\\core\\deepseek-harness\\packages\\boot\\app-boot\\src\\index.ts:547:10)\r\n    at collectConfigDumpLayers (<workspace>\\\\dsh-link\\core\\deeps\n…[truncated, 353 more chars]",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发",
+        "layer-fatal"
+      ],
+      "reading": "layer-fatal: the whole composition was refused, so no tree exists and NOTHING is a row in it. The baseline is untouched; no rows were removed, added, or changed by a tree (see rawStderrExcerpt)",
+      "verdict": "layer-fatal: the whole composition was refused, so no tree exists and NOTHING is a row in it. The baseline is untouched; no rows were removed, added, or changed by a tree (see rawStderrExcerpt)"
+    },
+    {
+      "file": "11-insert-into-non-group.patch.yml",
+      "idiom": "insert 命中非 group 行",
+      "question": "按 id insert 到一个不是 group 的行上时，loader 会怎么处理这次 insert、被插入的那一行还在不在？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\11-insert-into-non-group.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 208,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-nongroup"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [
+          "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\11-insert-into-non-group.patch.yml] patch insert: entry \"dsh-link-fixture-nongroup\" is not a group"
+        ],
+        "blocks": {
+          "dsh-link-fixture-nongroup": "- id: dsh-link-fixture-nongroup\n  name: cordis:group\n  config: []"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-nongroup\n  name: cordis:group\n  config: []",
+      "rawStderrExcerpt": "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\11-insert-into-non-group.patch.yml] patch insert: entry \"dsh-link-fixture-nongroup\" is not a group\n",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "partly applied, with 1 diagnostic(s)",
+      "verdict": "partly applied, with 1 diagnostic(s)"
+    },
+    {
+      "file": "12-name-mismatch.patch.yml",
+      "idiom": "name 与目标行不匹配",
+      "question": "补丁给 id 指定了一个与目标行不同的 name 时，这次补丁会不会生效、诊断文本是什么？",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\12-name-mismatch.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 208,
+      "rootIds": 191,
+      "indentedIds": 40,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "ids present in the baseline composition and absent from this one",
+        "fatalReason": null,
+        "added": [
+          "dsh-link-fixture-name-mismatch"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [
+          "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\12-name-mismatch.patch.yml] patch: name mismatch for \"dsh-link-fixture-name-mismatch\" (expected \"cordis:group\", got \"cordis:include\"), skipping"
+        ],
+        "blocks": {
+          "dsh-link-fixture-name-mismatch": "- id: dsh-link-fixture-name-mismatch\n  name: cordis:group\n  group: true\n  config: []"
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-name-mismatch\n  name: cordis:group\n  group: true\n  config: []",
+      "rawStderrExcerpt": "dsh: [<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\12-name-mismatch.patch.yml] patch: name mismatch for \"dsh-link-fixture-name-mismatch\" (expected \"cordis:group\", got \"cordis:include\"), skipping\n",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "partly applied, with 1 diagnostic(s)",
+      "verdict": "partly applied, with 1 diagnostic(s)"
+    },
+    {
+      "file": "08-layer-config-base.patch.yml + 09-layer-config-replace.patch.yml",
+      "idiom": "层间 config 替换（base 后叠 replace）",
+      "question": "Stacked in that order, do the base layer's config children survive beside the replace layer's, or does the replace layer substitute the whole config map?",
+      "command": "DSH_HOME=<mkdtemp> node --import tsx/esm <workspace>\\\\dsh-link\\core\\deepseek-harness\\apps\\cli\\src\\bin.ts --profile web --dump-config --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\08-layer-config-base.patch.yml --patch <workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\09-layer-config-replace.patch.yml",
+      "exitStatus": 0,
+      "baselineRows": 207,
+      "composedRows": 209,
+      "rootIds": 191,
+      "indentedIds": 41,
+      "observed": {
+        "layerFatal": false,
+        "removedMeaning": "never computed for this stacked run: it compares the two layers against each other, not against the baseline",
+        "added": [
+          "dsh-link-fixture-config-target",
+          "dsh-link-fixture-config-child-c"
+        ],
+        "removed": [],
+        "changed": [],
+        "warnings": [],
+        "blocks": {
+          "dsh-link-fixture-config-target": "- id: dsh-link-fixture-config-target\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-config-child-c\n      name: cordis:group\n      group: true\n      config: []",
+          "dsh-link-fixture-config-child-c": "    - id: dsh-link-fixture-config-child-c\n      name: cordis:group\n      group: true\n      config: []"
+        },
+        "configKeys": {
+          "dsh-link-fixture-config-target": 1,
+          "dsh-link-fixture-config-child-c": 0
+        }
+      },
+      "rawExcerpt": "- id: dsh-link-fixture-config-target\n  name: cordis:group\n  group: true\n  config:\n    - id: dsh-link-fixture-config-child-c\n      name: cordis:group\n      group: true\n      config: []\n    - id: dsh-link-fixture-config-child-c\n      name: cordis:group\n      group: true\n      config: []",
+      "rawStderrExcerpt": "",
+      "measured": true,
+      "labels": [
+        "实测",
+        "构造触发"
+      ],
+      "reading": "applied with no diagnostics: 2 row(s) added, 0 changed",
+      "verdict": "applied with no diagnostics: 2 row(s) added, 0 changed"
+    }
+  ]
+}

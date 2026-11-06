@@ -1,0 +1,9 @@
+# The replacing half of the pair: the same id, patched by a later layer, with a config
+# that lists one child. Whether the two children of the base layer survive is the question
+# this file asks (index.json carries the citation).
+- id: dsh-link-fixture-config-target
+  config:
+    - id: dsh-link-fixture-config-child-c
+      name: cordis:group
+      group: true
+      config: []

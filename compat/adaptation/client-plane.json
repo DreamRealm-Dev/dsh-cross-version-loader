@@ -1,0 +1,642 @@
+{
+ "format": "dsh-link.client-plane/1",
+ "note": "A dotted usage is judged twice: the head against the declared services, the tail against the member set that service declares (member-present / member-absent / member-unknown). A member is present when the type declares it as a callable member or as a data property, and absent only when the member set was enumerated completely; a service whose set could not be enumerated yields member-unknown with the reason. Slot names are judged against SlotMap merging, which is what makes a name legal to render.",
+ "surface": "/compat/surface/client-0.2.1-alpha.1.json",
+ "clientSurfaceCounts": {
+  "services": 40,
+  "events": 10,
+  "slots": 112,
+  "servicesWithMembers": 29,
+  "servicesWithMembersPartial": 2,
+  "servicesWithoutMembers": 9
+ },
+ "plugins": [
+  {
+   "name": "@argszero/cordis-plugin-thinking-loop-guard",
+   "version": "0.1.9",
+   "rows": [],
+   "slotRows": [],
+   "counts": {}
+  },
+  {
+   "name": "dsh-opencode-go",
+   "version": "0.1.20",
+   "rows": [
+    {
+     "name": "locale",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1875",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "locale",
+     "kind": "service",
+     "via": "inject",
+     "at": "client lib\\client.js:1873",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "locale.bind",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1896",
+     "member": "bind",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": "member",
+     "memberReason": "class LocaleRuntime @ core/deepseek-harness/packages/client/locale/src/client/index.ts:165"
+    },
+    {
+     "name": "locale.getLocale",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1897",
+     "member": "getLocale",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": "member",
+     "memberReason": "class LocaleRuntime @ core/deepseek-harness/packages/client/locale/src/client/index.ts:165"
+    },
+    {
+     "name": "locale.register",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1875",
+     "member": "register",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": "member",
+     "memberReason": "class LocaleRuntime @ core/deepseek-harness/packages/client/locale/src/client/index.ts:165"
+    },
+    {
+     "name": "remote",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1089",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "remote",
+     "kind": "service",
+     "via": "inject",
+     "at": "client lib\\client.js:1873",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "remote.credentials",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1291",
+     "member": "credentials",
+     "class": "member-unknown",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": "interface ClientRemote @ core/deepseek-harness/packages/api/gateway/src/client/index.ts:103; base interface TypertClientRemote @ core/deepseek-harness/packages/typert/protocol/src/types.ts:620; base interface TypertRemoteNamespaceMap @ core/deepseek-harness/packages/typert/protocol/src/types.ts:318 (empty body here: names this interface carries may be added by declaration merging)"
+    },
+    {
+     "name": "remote.credentials",
+     "kind": "service",
+     "via": "inject",
+     "at": "client lib\\client.js:1873",
+     "member": "credentials",
+     "class": "member-unknown",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": "interface ClientRemote @ core/deepseek-harness/packages/api/gateway/src/client/index.ts:103; base interface TypertClientRemote @ core/deepseek-harness/packages/typert/protocol/src/types.ts:620; base interface TypertRemoteNamespaceMap @ core/deepseek-harness/packages/typert/protocol/src/types.ts:318 (empty body here: names this interface carries may be added by declaration merging)"
+    },
+    {
+     "name": "remote.llm",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1089",
+     "member": "llm",
+     "class": "member-unknown",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": "interface ClientRemote @ core/deepseek-harness/packages/api/gateway/src/client/index.ts:103; base interface TypertClientRemote @ core/deepseek-harness/packages/typert/protocol/src/types.ts:620; base interface TypertRemoteNamespaceMap @ core/deepseek-harness/packages/typert/protocol/src/types.ts:318 (empty body here: names this interface carries may be added by declaration merging)"
+    },
+    {
+     "name": "remote.llm",
+     "kind": "service",
+     "via": "inject",
+     "at": "client lib\\client.js:1873",
+     "member": "llm",
+     "class": "member-unknown",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": "interface ClientRemote @ core/deepseek-harness/packages/api/gateway/src/client/index.ts:103; base interface TypertClientRemote @ core/deepseek-harness/packages/typert/protocol/src/types.ts:620; base interface TypertRemoteNamespaceMap @ core/deepseek-harness/packages/typert/protocol/src/types.ts:318 (empty body here: names this interface carries may be added by declaration merging)"
+    },
+    {
+     "name": "remote.opencodeGoModels",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1893",
+     "member": "opencodeGoModels",
+     "class": "member-unknown",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": "interface ClientRemote @ core/deepseek-harness/packages/api/gateway/src/client/index.ts:103; base interface TypertClientRemote @ core/deepseek-harness/packages/typert/protocol/src/types.ts:620; base interface TypertRemoteNamespaceMap @ core/deepseek-harness/packages/typert/protocol/src/types.ts:318 (empty body here: names this interface carries may be added by declaration merging)"
+    },
+    {
+     "name": "slots",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1907",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "slots",
+     "kind": "service",
+     "via": "inject",
+     "at": "client lib\\client.js:1873",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "slots.inject",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1907",
+     "member": "inject",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": "member",
+     "memberReason": "class SlotRegistry @ core/deepseek-harness/packages/client/ui-renderer/src/client/registry.ts:120; base class Service @ core/deepseek-harness/vendor/cordis/src/service.ts:11"
+    },
+    {
+     "name": "slots.register",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:1907",
+     "member": "register",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": "property",
+     "memberReason": "class SlotRegistry @ core/deepseek-harness/packages/client/ui-renderer/src/client/registry.ts:120; base class Service @ core/deepseek-harness/vendor/cordis/src/service.ts:11"
+    }
+   ],
+   "slotRows": [
+    {
+     "name": "conversation.input.right",
+     "at": "lib/client.js:1855",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-conversation/src/client/contract/slots.ts:278"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'session' }"
+    },
+    {
+     "name": "settings.section",
+     "at": "lib/client.js:1907",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/contract/slots.ts:57"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'root'; owner: SettingsSectionOwnerProps }"
+    }
+   ],
+   "counts": {
+    "present": 6,
+    "member-present": 5,
+    "member-unknown": 5,
+    "slot:present": 2
+   }
+  },
+  {
+   "name": "dsh-repeat-guard",
+   "version": "0.2.2",
+   "rows": [
+    {
+     "name": "configForms",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:369",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/config-form.ts:225"
+     ],
+     "declaredType": "ConfigForms",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "configForms",
+     "kind": "service",
+     "via": "inject",
+     "at": "client lib\\client.js:366",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/config-form.ts:225"
+     ],
+     "declaredType": "ConfigForms",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "configForms.get",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:369",
+     "member": "get",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/config-form.ts:225"
+     ],
+     "declaredType": "ConfigForms",
+     "declaredAs": "member",
+     "memberReason": "class ConfigForms @ core/deepseek-harness/packages/client/ui-settings/src/client/config-form.ts:236; base class Service @ core/deepseek-harness/vendor/cordis/src/service.ts:11"
+    },
+    {
+     "name": "slots",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:400",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "slots",
+     "kind": "service",
+     "via": "inject",
+     "at": "client lib\\client.js:366",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "slots.inject",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:400",
+     "member": "inject",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": "member",
+     "memberReason": "class SlotRegistry @ core/deepseek-harness/packages/client/ui-renderer/src/client/registry.ts:120; base class Service @ core/deepseek-harness/vendor/cordis/src/service.ts:11"
+    },
+    {
+     "name": "slots.register",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:402",
+     "member": "register",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": "property",
+     "memberReason": "class SlotRegistry @ core/deepseek-harness/packages/client/ui-renderer/src/client/registry.ts:120; base class Service @ core/deepseek-harness/vendor/cordis/src/service.ts:11"
+    }
+   ],
+   "slotRows": [
+    {
+     "name": "settings.section",
+     "at": "src/client.tsx:453",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/contract/slots.ts:57"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'root'; owner: SettingsSectionOwnerProps }"
+    }
+   ],
+   "counts": {
+    "present": 4,
+    "member-present": 3,
+    "slot:present": 1
+   }
+  },
+  {
+   "name": "dsh-repetition-guard",
+   "version": "0.1.0",
+   "rows": [],
+   "slotRows": [],
+   "counts": {}
+  },
+  {
+   "name": "@mars-sea/dsh-commandcode-provider",
+   "version": "0.11.5",
+   "rows": [
+    {
+     "name": "layout",
+     "kind": "service",
+     "via": "ctx.get",
+     "at": "client lib\\client.js:6542",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-layout/src/client/index.ts:38"
+     ],
+     "declaredType": "import('./service.ts').ILayout",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "locale",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6323",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "locale.bind",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6508",
+     "member": "bind",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": "member",
+     "memberReason": "class LocaleRuntime @ core/deepseek-harness/packages/client/locale/src/client/index.ts:165"
+    },
+    {
+     "name": "locale.register",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6323",
+     "member": "register",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/locale/src/client/index.ts:85"
+     ],
+     "declaredType": "LocaleRuntime",
+     "declaredAs": "member",
+     "memberReason": "class LocaleRuntime @ core/deepseek-harness/packages/client/locale/src/client/index.ts:165"
+    },
+    {
+     "name": "remote",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6356",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/api/gateway/src/client/index.ts:130",
+      "core/deepseek-harness/packages/api/remotes/src/client/index.ts:173"
+     ],
+     "declaredType": "ClientRemote",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "settingsScope",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6344",
+     "member": null,
+     "class": "absent-from-client-surface",
+     "declaredIn": null,
+     "declaredType": null,
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "slots",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6504",
+     "member": null,
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": null,
+     "memberReason": null
+    },
+    {
+     "name": "slots.inject",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6504",
+     "member": "inject",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": "member",
+     "memberReason": "class SlotRegistry @ core/deepseek-harness/packages/client/ui-renderer/src/client/registry.ts:120; base class Service @ core/deepseek-harness/vendor/cordis/src/service.ts:11"
+    },
+    {
+     "name": "slots.register",
+     "kind": "service",
+     "via": "ctx.member",
+     "at": "client lib\\client.js:6504",
+     "member": "register",
+     "class": "member-present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-renderer/src/client/index.ts:45"
+     ],
+     "declaredType": "SlotRegistry",
+     "declaredAs": "property",
+     "memberReason": "class SlotRegistry @ core/deepseek-harness/packages/client/ui-renderer/src/client/registry.ts:120; base class Service @ core/deepseek-harness/vendor/cordis/src/service.ts:11"
+    }
+   ],
+   "slotRows": [
+    {
+     "name": "conversation.composer.dock",
+     "at": "lib/client.js:6586",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-conversation/src/client/contract/slots.ts:274"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'session' }"
+    },
+    {
+     "name": "main",
+     "at": "lib/client.js:6561",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-layout/src/client/index.ts:73"
+     ],
+     "specifier": "{ kind: 'keyed'; scope: 'root' }"
+    },
+    {
+     "name": "settings.models.provider-card",
+     "at": "lib/client.js:6512",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings-models/src/client/slot-contract.ts:33"
+     ],
+     "specifier": "{ kind: 'keyed'; scope: 'root'; owner: ProviderCardExtrasOwnerProps }"
+    },
+    {
+     "name": "settings.section",
+     "at": "lib/client.js:6504",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/contract/slots.ts:57"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'root'; owner: SettingsSectionOwnerProps }"
+    },
+    {
+     "name": "sidebar.footer.action",
+     "at": "lib/client.js:6573",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-sidebar/src/client/contract/slots.ts:53"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'root'; owner: SidebarFooterActionOwnerProps }"
+    }
+   ],
+   "counts": {
+    "present": 4,
+    "member-present": 4,
+    "absent-from-client-surface": 1,
+    "slot:present": 5
+   }
+  },
+  {
+   "name": "@rain-kl/dsh-preset-plus",
+   "version": "0.1.5",
+   "rows": [],
+   "slotRows": [
+    {
+     "name": "settings.section",
+     "at": "client.js:315",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/contract/slots.ts:57"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'root'; owner: SettingsSectionOwnerProps }"
+    }
+   ],
+   "counts": {
+    "slot:present": 1
+   }
+  },
+  {
+   "name": "dsh-search-failover",
+   "version": "0.3.9",
+   "rows": [],
+   "slotRows": [
+    {
+     "name": "settings.section",
+     "at": "client/client.js:893",
+     "class": "present",
+     "declaredIn": [
+      "core/deepseek-harness/packages/client/ui-settings/src/client/contract/slots.ts:57"
+     ],
+     "specifier": "{ kind: 'list'; scope: 'root'; owner: SettingsSectionOwnerProps }"
+    }
+   ],
+   "counts": {
+    "slot:present": 1
+   }
+  }
+ ],
+ "counts": {
+  "present": 14,
+  "member-present": 12,
+  "member-unknown": 5,
+  "slot:present": 10,
+  "absent-from-client-surface": 1
+ },
+ "sourceDigest": "836f2bbcae834a7c"
+}

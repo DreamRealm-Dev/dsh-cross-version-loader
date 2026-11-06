@@ -1,0 +1,83 @@
+{
+  "format": "dsh-link.row-fixtures/1",
+  "note": "每份 YAML 是一份可被真 loader 当作 profile 层补丁喂进去的完整文档（顶层数组，元素是一行补丁映射）。载体一律用 Cordis 内建的 cordis:group，因此不依赖本机装了哪些插件。这些文件只提供输入与它要问的问题；判定归读取器与 loader 探针，文件里不写应有的判定结论。08 与 09 是一对：08 是 base 层，09 是叠在它上面的替换层。",
+  "cites": {
+    "skill": "packages/preset/agent-preset/skills/cordis-composition-reference/SKILL.md",
+    "schema": "packages/boot/app-boot/src/config-schema/document.ts",
+    "shapeExample": "packages/boot/app-boot/tests/user-patches.spec.ts"
+  },
+  "fixtures": [
+    {
+      "file": "01-insert-control.patch.yml",
+      "idiom": "insert（对照组）",
+      "question": "一份只做一次 append 的最小层，真 loader 是否原样组合出这一行、不产生任何诊断？",
+      "expectedByDocs": "SKILL.md:14（insert 追加行）、:18（行字段表）、:20（group: true + cordis:group 使 config 成为嵌套条目表）；真实补丁文件的形状见 packages/boot/app-boot/tests/user-patches.spec.ts:106-119"
+    },
+    {
+      "file": "02-non-insert-without-id.patch.yml",
+      "idiom": "非 insert 且无 id",
+      "question": "既不是 insert、又没有 id 的补丁映射，会带来什么诊断、以及是否留下任何痕迹？",
+      "expectedByDocs": "文档已言明：SKILL.md:16 与 packages/boot/app-boot/src/config-schema/document.ts:29 都写 non-insert patches without a nonempty id 会被 warn 并 skip"
+    },
+    {
+      "file": "03-non-insert-missing-target.patch.yml",
+      "idiom": "非 insert 指向不存在的 id",
+      "question": "id 匹配不到任何行时，除了警告跳过，读取器与 loader 各自还要不要报告这个 id 本身？",
+      "expectedByDocs": "文档已言明：SKILL.md:16 与 document.ts:29（targets that match no row 会被 warn 并 skip）"
+    },
+    {
+      "file": "04-insert-child-legacy-keys.patch.yml",
+      "idiom": "insert 子条目带 0.1.x 惯用键",
+      "question": "enabled / options / disable 这三个不在 0.2.x 名单里的键，会被 schema 拒绝、被丢弃、还是被忽略地留在组合结果里？",
+      "expectedByDocs": "名单见 document.ts:11-22（id/name/config/group/disabled/inject/intercept/isolate），SKILL.md:18 同；名单之外的键如何处置**文档未言明**（未说明 schema 是否为 additionalProperties: false）"
+    },
+    {
+      "file": "05-insert-duplicate-id.patch.yml",
+      "idiom": "同名 id 两次 insert",
+      "question": "同一个 id 被两次 insert 时，组合结果是多出一行、只有其中一行胜出、还是给出诊断？",
+      "expectedByDocs": "SKILL.md:14-16 只说明 append 与按 id 定位；document.ts:38 只声明 patch 索引是 last-id-wins。同一 id 被两次 insert 的结果**文档未言明**"
+    },
+    {
+      "file": "06-disabled-js-expression.patch.yml",
+      "idiom": "!!js 表达式做 disabled",
+      "question": "disabled 写成 !!js 表达式时，读取器是否把它当表达式（而不是 truthy 字符串），loader 是否在每次挂载决策求值？",
+      "expectedByDocs": "文档已言明：SKILL.md:21（disabled 接受 boolean / null / !!js，每次挂载决策求值）、document.ts:17（anyOf boolean|null|loaderExpression，其他 truthy 值被 schema 拒绝）"
+    },
+    {
+      "file": "07-insert-into-group.patch.yml",
+      "idiom": "group 里 insert",
+      "question": "同一层里先 append 一个 group、再按其 id append 子条目，第二条是否生效？也就是同一个层内多个补丁的应用顺序。",
+      "expectedByDocs": "SKILL.md:14 说明 insert 带 id 命中 group: true 的行时追加进它的 config；同一层内多个补丁的应用顺序**文档未言明**"
+    },
+    {
+      "file": "08-layer-config-base.patch.yml",
+      "idiom": "层间 config 替换（base 半）",
+      "question": "作为 base 层单独使用时，它是否组合出 config 里那两个子条目？（与 09 配对使用：先本文件、后 09）",
+      "expectedByDocs": "SKILL.md:14-15（insert 与 config 的关系）、document.ts:29；本文件自身没有争议点，它存在的意义是给 09 一个前一层"
+    },
+    {
+      "file": "09-layer-config-replace.patch.yml",
+      "idiom": "层间 config 替换（replace 半）",
+      "question": "叠在 08 之后、只给 config 时，base 层那两个子条目是被整段替换（只剩 child-c）还是被深合并？",
+      "expectedByDocs": "文档已言明整段替换：SKILL.md:15（config is replaced wholesale, never deep-merged, so restate every field the row needs）、document.ts:29 同义"
+    },
+    {
+      "file": "10-disabled-bang-js-expression.patch.yml",
+      "idiom": "单叹号 !js 做 disabled",
+      "question": "单叹号的 !js 作为 disabled 的表达式写法，读取器与 loader 认不认？",
+      "expectedByDocs": "SKILL.md:22 明确只认两个叹号：!!js scalars are Loader expressions, never !js。单叹号形式的行为**文档未言明**"
+    },
+    {
+      "file": "11-insert-into-non-group.patch.yml",
+      "idiom": "insert 命中非 group 行",
+      "question": "按 id insert 到一个不是 group 的行上时，loader 会怎么处理这次 insert、被插入的那一行还在不在？",
+      "expectedByDocs": "代码位（vendor/include/src/index.ts:86-88）：target.group 为假时报 patch insert: entry %C is not a group 并 continue；同函数 :90-91 只有在 target.group 为真时才把 insert 推进 target.config"
+    },
+    {
+      "file": "12-name-mismatch.patch.yml",
+      "idiom": "name 与目标行不匹配",
+      "question": "补丁给 id 指定了一个与目标行不同的 name 时，这次补丁会不会生效、诊断文本是什么？",
+      "expectedByDocs": "代码位（vendor/include/src/index.ts:115-117）：name 与 target.name 不同时报 patch: name mismatch for %C (expected %C, got %C), skipping 并 continue，因此该补丁的其他字段都不落地"
+    }
+  ]
+}

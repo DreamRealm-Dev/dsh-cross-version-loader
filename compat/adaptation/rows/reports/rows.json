@@ -1,0 +1,4098 @@
+{
+ "format": "dsh-link.composition-rows/1",
+ "method": "bounded YAML subset parser (see the module header for coverage); classification follows packages/boot/app-boot/src/config-schema/document.ts",
+ "files": [
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-agent-context/cordis.patch.yml",
+   "bytes": 729,
+   "lines": 19,
+   "parsedLines": 7,
+   "totalLines": 19,
+   "attributedLines": 7,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "coverage": 0.37,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-agent-context\\cordis.patch.yml",
+     "line": 12,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-agent-context\\cordis.patch.yml",
+     "line": 13,
+     "class": "insert-entries",
+     "id": "agent-context",
+     "name": "dsh-agent-context",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 12,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "agent-context",
+      "name": "dsh-agent-context",
+      "config": {
+       "present": true
+      }
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-continue-button/cordis.patch.yml",
+   "bytes": 347,
+   "lines": 8,
+   "parsedLines": 3,
+   "totalLines": 8,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "coverage": 0.38,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-continue-button\\cordis.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-continue-button\\cordis.patch.yml",
+     "line": 6,
+     "class": "insert-entries",
+     "id": "continue-button",
+     "name": "dsh-continue-button",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 5,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "continue-button",
+      "name": "dsh-continue-button"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-delegation-model-choice/cordis.patch.yml",
+   "bytes": 485,
+   "lines": 13,
+   "parsedLines": 6,
+   "totalLines": 13,
+   "attributedLines": 6,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "coverage": 0.46,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-delegation-model-choice\\cordis.patch.yml",
+     "line": 7,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-delegation-model-choice\\cordis.patch.yml",
+     "line": 8,
+     "class": "insert-entries",
+     "id": "delegation-model-choice",
+     "name": "dsh-delegation-model-choice",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 7,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "delegation-model-choice",
+      "name": "dsh-delegation-model-choice",
+      "config": {
+       "present": true
+      }
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-lan-bridge/cordis.patch.yml",
+   "bytes": 974,
+   "lines": 21,
+   "parsedLines": 4,
+   "totalLines": 21,
+   "attributedLines": 4,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "coverage": 0.19,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-lan-bridge\\cordis.patch.yml",
+     "line": 17,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-lan-bridge\\cordis.patch.yml",
+     "line": 18,
+     "class": "insert-entries",
+     "id": "lan-bridge",
+     "name": "dsh-lan-bridge",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 17,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "lan-bridge",
+      "name": "dsh-lan-bridge",
+      "config": {}
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-brand/cordis.patch.yml",
+   "bytes": 256,
+   "lines": 7,
+   "parsedLines": 3,
+   "totalLines": 7,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.43,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-brand\\cordis.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-brand\\cordis.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": "link-brand",
+     "name": "dsh-link-brand",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 4,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-brand",
+      "name": "dsh-link-brand"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-collab/cordis.patch.yml",
+   "bytes": 283,
+   "lines": 7,
+   "parsedLines": 3,
+   "totalLines": 7,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.43,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-collab\\cordis.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-collab\\cordis.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": "link-collab",
+     "name": "dsh-link-collab",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 4,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-collab",
+      "name": "dsh-link-collab"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-compat/cordis.patch.yml",
+   "bytes": 440,
+   "lines": 10,
+   "parsedLines": 3,
+   "totalLines": 10,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "coverage": 0.3,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-compat\\cordis.patch.yml",
+     "line": 7,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-compat\\cordis.patch.yml",
+     "line": 8,
+     "class": "insert-entries",
+     "id": "dsh-link-compat",
+     "name": "dsh-link-compat",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 7,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-compat",
+      "name": "dsh-link-compat"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-groups/cordis.patch.yml",
+   "bytes": 3548,
+   "lines": 67,
+   "parsedLines": 33,
+   "totalLines": 67,
+   "attributedLines": 33,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    31,
+    32,
+    33,
+    34,
+    35,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+   ],
+   "coverage": 0.49,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 23,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 24,
+     "class": "insert-entries",
+     "id": "link-groups",
+     "name": "dsh-link-groups",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 23,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-groups",
+      "name": "dsh-link-groups",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 28,
+     "class": "unknown-metadata-key",
+     "id": "teams",
+     "name": null,
+     "keys": [
+      "id",
+      "title",
+      "summary",
+      "tools",
+      "provider",
+      "state",
+      "auto"
+     ],
+     "unknownKeys": [
+      "title",
+      "summary",
+      "tools",
+      "provider",
+      "state",
+      "auto"
+     ],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 24,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:11-22 (the complete metadata key list)",
+     "values": {
+      "id": "teams",
+      "title": "Agent Teams",
+      "summary": "Create, message, and manage Agent Teams teammates and their tasks.",
+      "tools": "",
+      "provider": "team_",
+      "state": "auto",
+      "auto": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 37,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 38,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 39,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 40,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 41,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 42,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 43,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 44,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 28,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 55,
+     "class": "unknown-metadata-key",
+     "id": "notes",
+     "name": null,
+     "keys": [
+      "id",
+      "title",
+      "summary",
+      "tools",
+      "provider",
+      "state",
+      "auto"
+     ],
+     "unknownKeys": [
+      "title",
+      "summary",
+      "tools",
+      "provider",
+      "state",
+      "auto"
+     ],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 24,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:11-22 (the complete metadata key list)",
+     "values": {
+      "id": "notes",
+      "title": "Notes",
+      "summary": "Read the notes ledger and add a note to it after approval.",
+      "tools": "",
+      "provider": "notes_",
+      "state": "auto",
+      "auto": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 59,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 55,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-groups\\cordis.patch.yml",
+     "line": 60,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 55,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-host/cordis.patch.yml",
+   "bytes": 1498,
+   "lines": 25,
+   "parsedLines": 3,
+   "totalLines": 25,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "coverage": 0.12,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-host\\cordis.patch.yml",
+     "line": 22,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-host\\cordis.patch.yml",
+     "line": 23,
+     "class": "insert-entries",
+     "id": "link-host",
+     "name": "dsh-link-host",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 22,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-host",
+      "name": "dsh-link-host"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-markdown/cordis.patch.yml",
+   "bytes": 381,
+   "lines": 9,
+   "parsedLines": 3,
+   "totalLines": 9,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "coverage": 0.33,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-markdown\\cordis.patch.yml",
+     "line": 6,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-markdown\\cordis.patch.yml",
+     "line": 7,
+     "class": "insert-entries",
+     "id": "link-markdown",
+     "name": "dsh-link-markdown",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 6,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-markdown",
+      "name": "dsh-link-markdown"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/cordis.patch.yml",
+   "bytes": 7160,
+   "lines": 96,
+   "parsedLines": 15,
+   "totalLines": 96,
+   "attributedLines": 15,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    46,
+    47,
+    48,
+    50,
+    51,
+    52,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95
+   ],
+   "coverage": 0.16,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\cordis.patch.yml",
+     "line": 15,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\cordis.patch.yml",
+     "line": 18,
+     "class": "insert-entries",
+     "id": "image-guard",
+     "name": "dsh-image-guard",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 15,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "image-guard",
+      "name": "dsh-image-guard",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\cordis.patch.yml",
+     "line": 53,
+     "class": "insert-entries",
+     "id": "escalation-guard",
+     "name": "dsh-escalation-guard",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 15,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "escalation-guard",
+      "name": "dsh-escalation-guard"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\cordis.patch.yml",
+     "line": 77,
+     "class": "insert-entries",
+     "id": "browser",
+     "name": "dsh-browser",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 15,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "browser",
+      "name": "dsh-browser",
+      "config": {
+       "present": true
+      }
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "bytes": 14294,
+   "lines": 246,
+   "parsedLines": 126,
+   "totalLines": 246,
+   "attributedLines": 125,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    43,
+    52,
+    53,
+    54,
+    55,
+    76,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    131,
+    132,
+    133,
+    134,
+    138,
+    139,
+    140,
+    141,
+    149,
+    158,
+    162,
+    169,
+    173,
+    174,
+    195,
+    196,
+    197,
+    198,
+    199,
+    232
+   ],
+   "coverage": 0.51,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 14,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 16,
+     "class": "insert-entries",
+     "id": "preset-chat-mode",
+     "name": "@deepseek-ai/dsh-agent-preset",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 14,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "preset-chat-mode",
+      "name": "@deepseek-ai/dsh-agent-preset",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 39,
+     "class": "field-replacement",
+     "id": "persona",
+     "name": "@deepseek-ai/dsh-persona",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 16,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "persona",
+      "name": "@deepseek-ai/dsh-persona",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 45,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 39,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 46,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 39,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 47,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 39,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 48,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 39,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 56,
+     "class": "field-replacement",
+     "id": "compaction",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "isolate",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 16,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "compaction",
+      "name": "cordis:group",
+      "group": true,
+      "isolate": "",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 63,
+     "class": "field-replacement",
+     "id": "compaction-basic",
+     "name": "@deepseek-ai/dsh-compaction-basic",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 56,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "compaction-basic",
+      "name": "@deepseek-ai/dsh-compaction-basic"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 66,
+     "class": "field-replacement",
+     "id": "command-compact",
+     "name": "@deepseek-ai/dsh-command-compact",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 56,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "command-compact",
+      "name": "@deepseek-ai/dsh-command-compact"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 69,
+     "class": "field-replacement",
+     "id": "tool-result-pruner",
+     "name": "@deepseek-ai/dsh-compaction-tool-result-pruner",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 56,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-result-pruner",
+      "name": "@deepseek-ai/dsh-compaction-tool-result-pruner",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 77,
+     "class": "insert-entries",
+     "id": "preset-minimal-tuned",
+     "name": "@deepseek-ai/dsh-agent-preset",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 14,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "preset-minimal-tuned",
+      "name": "@deepseek-ai/dsh-agent-preset",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 124,
+     "class": "field-replacement",
+     "id": "anchored-lite",
+     "name": "dsh-anchored-lite",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "anchored-lite",
+      "name": "dsh-anchored-lite",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 135,
+     "class": "field-replacement",
+     "id": "tool-bash",
+     "name": "@deepseek-ai/dsh-tool-bash",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-bash",
+      "name": "@deepseek-ai/dsh-tool-bash"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 142,
+     "class": "field-replacement",
+     "id": "tool-str-replace-editor",
+     "name": "@deepseek-ai/dsh-tool-str-replace-editor",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-str-replace-editor",
+      "name": "@deepseek-ai/dsh-tool-str-replace-editor"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 145,
+     "class": "field-replacement",
+     "id": "tool-pwsh",
+     "name": "@deepseek-ai/dsh-tool-pwsh",
+     "keys": [
+      "id",
+      "name",
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-pwsh",
+      "name": "@deepseek-ai/dsh-tool-pwsh",
+      "disabled": true
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 150,
+     "class": "field-replacement",
+     "id": "tool-fs",
+     "name": "@deepseek-ai/dsh-tool-fs",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-fs",
+      "name": "@deepseek-ai/dsh-tool-fs"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 153,
+     "class": "field-replacement",
+     "id": "tool-fs-search",
+     "name": "@deepseek-ai/dsh-tool-fs-search",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-fs-search",
+      "name": "@deepseek-ai/dsh-tool-fs-search",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 159,
+     "class": "field-replacement",
+     "id": "tool-jobs",
+     "name": "@deepseek-ai/dsh-tool-jobs",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-jobs",
+      "name": "@deepseek-ai/dsh-tool-jobs"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 163,
+     "class": "field-replacement",
+     "id": "skill-filesystem",
+     "name": "@deepseek-ai/dsh-skill-filesystem",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "skill-filesystem",
+      "name": "@deepseek-ai/dsh-skill-filesystem"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 166,
+     "class": "field-replacement",
+     "id": "tool-skill",
+     "name": "@deepseek-ai/dsh-tool-skill",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-skill",
+      "name": "@deepseek-ai/dsh-tool-skill"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 170,
+     "class": "field-replacement",
+     "id": "tool-goal",
+     "name": "@deepseek-ai/dsh-tool-goal",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-goal",
+      "name": "@deepseek-ai/dsh-tool-goal"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 175,
+     "class": "duplicate-insert-id",
+     "id": "compaction",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "isolate",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "compaction",
+      "name": "cordis:group",
+      "group": true,
+      "isolate": "",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 182,
+     "class": "duplicate-insert-id",
+     "id": "compaction-basic",
+     "name": "@deepseek-ai/dsh-compaction-basic",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 175,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "compaction-basic",
+      "name": "@deepseek-ai/dsh-compaction-basic"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 185,
+     "class": "duplicate-insert-id",
+     "id": "command-compact",
+     "name": "@deepseek-ai/dsh-command-compact",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 175,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "command-compact",
+      "name": "@deepseek-ai/dsh-command-compact"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 188,
+     "class": "duplicate-insert-id",
+     "id": "tool-result-pruner",
+     "name": "@deepseek-ai/dsh-compaction-tool-result-pruner",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 175,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "tool-result-pruner",
+      "name": "@deepseek-ai/dsh-compaction-tool-result-pruner",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 201,
+     "class": "field-replacement",
+     "id": "tool-subagent-control",
+     "name": "@deepseek-ai/dsh-tool-subagent-control",
+     "keys": [
+      "id",
+      "name",
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-subagent-control",
+      "name": "@deepseek-ai/dsh-tool-subagent-control",
+      "disabled": true
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 205,
+     "class": "field-replacement",
+     "id": "tool-subagent",
+     "name": "@deepseek-ai/dsh-tool-subagent",
+     "keys": [
+      "id",
+      "name",
+      "disabled",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-subagent",
+      "name": "@deepseek-ai/dsh-tool-subagent",
+      "disabled": true,
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 213,
+     "class": "field-replacement",
+     "id": "tool-subagent-fork",
+     "name": "@deepseek-ai/dsh-tool-subagent",
+     "keys": [
+      "id",
+      "name",
+      "disabled",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-subagent-fork",
+      "name": "@deepseek-ai/dsh-tool-subagent",
+      "disabled": true,
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 221,
+     "class": "field-replacement",
+     "id": "tool-workflow",
+     "name": "@deepseek-ai/dsh-tool-workflow",
+     "keys": [
+      "id",
+      "name",
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-workflow",
+      "name": "@deepseek-ai/dsh-tool-workflow",
+      "disabled": true
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 225,
+     "class": "field-replacement",
+     "id": "tool-ralph",
+     "name": "@deepseek-ai/dsh-tool-ralph",
+     "keys": [
+      "id",
+      "name",
+      "disabled",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-ralph",
+      "name": "@deepseek-ai/dsh-tool-ralph",
+      "disabled": true,
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 233,
+     "class": "field-replacement",
+     "id": "tool-ask-user",
+     "name": "@deepseek-ai/dsh-tool-ask-user",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-ask-user",
+      "name": "@deepseek-ai/dsh-tool-ask-user"
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 236,
+     "class": "field-replacement",
+     "id": "tool-todo",
+     "name": "@deepseek-ai/dsh-tool-todo",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-todo",
+      "name": "@deepseek-ai/dsh-tool-todo",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-mods\\presets.patch.yml",
+     "line": 241,
+     "class": "field-replacement",
+     "id": "tool-web",
+     "name": "@deepseek-ai/dsh-tool-web",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 77,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "tool-web",
+      "name": "@deepseek-ai/dsh-tool-web",
+      "config": {
+       "present": true
+      }
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-notes/cordis.patch.yml",
+   "bytes": 755,
+   "lines": 14,
+   "parsedLines": 3,
+   "totalLines": 14,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "coverage": 0.21,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-notes\\cordis.patch.yml",
+     "line": 11,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-notes\\cordis.patch.yml",
+     "line": 12,
+     "class": "insert-entries",
+     "id": "link-notes",
+     "name": "dsh-link-notes",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 11,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-notes",
+      "name": "dsh-link-notes"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-panel/cordis.patch.yml",
+   "bytes": 1612,
+   "lines": 32,
+   "parsedLines": 12,
+   "totalLines": 32,
+   "attributedLines": 12,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "coverage": 0.38,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-panel\\cordis.patch.yml",
+     "line": 20,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-panel\\cordis.patch.yml",
+     "line": 21,
+     "class": "insert-entries",
+     "id": "link-panel",
+     "name": "dsh-link-panel",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 20,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-panel",
+      "name": "dsh-link-panel",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-panel\\cordis.patch.yml",
+     "line": 25,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 21,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {}
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-panel\\cordis.patch.yml",
+     "line": 27,
+     "class": "duplicate-insert-id",
+     "id": "link-panel",
+     "name": null,
+     "keys": [
+      "id",
+      "kind",
+      "title",
+      "source",
+      "order"
+     ],
+     "unknownKeys": [
+      "kind",
+      "title",
+      "source",
+      "order"
+     ],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 21,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "link-panel",
+      "kind": "pane",
+      "title": "LINK panel",
+      "source": "dsh-link-panel",
+      "order": 10
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-responsive/cordis.patch.yml",
+   "bytes": 278,
+   "lines": 7,
+   "parsedLines": 3,
+   "totalLines": 7,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.43,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-responsive\\cordis.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-responsive\\cordis.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": "link-responsive",
+     "name": "dsh-link-responsive",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 4,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-responsive",
+      "name": "dsh-link-responsive"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-teams/cordis.patch.yml",
+   "bytes": 354,
+   "lines": 9,
+   "parsedLines": 3,
+   "totalLines": 9,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "coverage": 0.33,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-teams\\cordis.patch.yml",
+     "line": 6,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-teams\\cordis.patch.yml",
+     "line": 7,
+     "class": "insert-entries",
+     "id": "link-teams",
+     "name": "dsh-link-teams",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 6,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-teams",
+      "name": "dsh-link-teams"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-toolbar/cordis.patch.yml",
+   "bytes": 241,
+   "lines": 6,
+   "parsedLines": 3,
+   "totalLines": 6,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2
+   ],
+   "coverage": 0.5,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-toolbar\\cordis.patch.yml",
+     "line": 3,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-link-toolbar\\cordis.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": "link-toolbar",
+     "name": "dsh-link-toolbar",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 3,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "link-toolbar",
+      "name": "dsh-link-toolbar"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-liquid-glass/cordis.patch.yml",
+   "bytes": 253,
+   "lines": 7,
+   "parsedLines": 3,
+   "totalLines": 7,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.43,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-liquid-glass\\cordis.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-liquid-glass\\cordis.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": "liquid-glass",
+     "name": "dsh-liquid-glass",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 4,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "liquid-glass",
+      "name": "dsh-liquid-glass"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-theme-settings/cordis.patch.yml",
+   "bytes": 279,
+   "lines": 7,
+   "parsedLines": 3,
+   "totalLines": 7,
+   "attributedLines": 3,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.43,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-theme-settings\\cordis.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\plugins\\dsh-theme-settings\\cordis.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": "theme-settings",
+     "name": "dsh-theme-settings",
+     "keys": [
+      "id",
+      "name"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 4,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "theme-settings",
+      "name": "dsh-theme-settings"
+     }
+    }
+   ],
+   "source": "sample",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/01-insert-control.patch.yml",
+   "bytes": 425,
+   "lines": 10,
+   "parsedLines": 5,
+   "totalLines": 10,
+   "attributedLines": 5,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "coverage": 0.5,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\01-insert-control.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\01-insert-control.patch.yml",
+     "line": 6,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-control",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 5,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-control",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/02-non-insert-without-id.patch.yml",
+   "bytes": 252,
+   "lines": 5,
+   "parsedLines": 1,
+   "totalLines": 5,
+   "attributedLines": 1,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.2,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\02-non-insert-without-id.patch.yml",
+     "line": 4,
+     "class": "skipped-no-id",
+     "id": null,
+     "name": null,
+     "keys": [
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "row",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (non-insert patches without a nonempty id are warned and skipped)",
+     "values": {
+      "disabled": true
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/03-non-insert-missing-target.patch.yml",
+   "bytes": 192,
+   "lines": 5,
+   "parsedLines": 2,
+   "totalLines": 5,
+   "attributedLines": 2,
+   "unattributedLines": [
+    1,
+    2
+   ],
+   "coverage": 0.4,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\03-non-insert-missing-target.patch.yml",
+     "line": 3,
+     "class": "field-replacement",
+     "id": "dsh-link-fixture-no-such-row",
+     "name": null,
+     "keys": [
+      "id",
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "row",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "dsh-link-fixture-no-such-row",
+      "disabled": true
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/04-insert-child-legacy-keys.patch.yml",
+   "bytes": 587,
+   "lines": 18,
+   "parsedLines": 14,
+   "totalLines": 18,
+   "attributedLines": 14,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.78,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\04-insert-child-legacy-keys.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\04-insert-child-legacy-keys.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-legacy-parent",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 4,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-legacy-parent",
+      "name": "cordis:group",
+      "group": true,
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\04-insert-child-legacy-keys.patch.yml",
+     "line": 9,
+     "class": "unknown-metadata-key",
+     "id": "dsh-link-fixture-legacy-child",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config",
+      "enabled",
+      "options",
+      "disable"
+     ],
+     "unknownKeys": [
+      "enabled",
+      "options",
+      "disable"
+     ],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 5,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:11-22 (the complete metadata key list)",
+     "values": {
+      "id": "dsh-link-fixture-legacy-child",
+      "name": "cordis:group",
+      "group": true,
+      "config": [],
+      "enabled": true,
+      "options": "",
+      "disable": false
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/05-insert-duplicate-id.patch.yml",
+   "bytes": 289,
+   "lines": 12,
+   "parsedLines": 10,
+   "totalLines": 12,
+   "attributedLines": 10,
+   "unattributedLines": [
+    1
+   ],
+   "coverage": 0.83,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\05-insert-duplicate-id.patch.yml",
+     "line": 2,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\05-insert-duplicate-id.patch.yml",
+     "line": 3,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-duplicate",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 2,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-duplicate",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\05-insert-duplicate-id.patch.yml",
+     "line": 7,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\05-insert-duplicate-id.patch.yml",
+     "line": 8,
+     "class": "duplicate-insert-id",
+     "id": "dsh-link-fixture-duplicate",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 7,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "dsh-link-fixture-duplicate",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/06-disabled-js-expression.patch.yml",
+   "bytes": 296,
+   "lines": 9,
+   "parsedLines": 6,
+   "totalLines": 9,
+   "attributedLines": 6,
+   "unattributedLines": [
+    1,
+    2
+   ],
+   "coverage": 0.67,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\06-disabled-js-expression.patch.yml",
+     "line": 3,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\06-disabled-js-expression.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-js-disabled",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config",
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 3,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-js-disabled",
+      "name": "cordis:group",
+      "group": true,
+      "config": [],
+      "disabled": "!ctx.get('profileContext')",
+      "disabled__unevaluated": true
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/07-insert-into-group.patch.yml",
+   "bytes": 432,
+   "lines": 15,
+   "parsedLines": 11,
+   "totalLines": 15,
+   "attributedLines": 11,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.73,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\07-insert-into-group.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\07-insert-into-group.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-group",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 4,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-group",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\07-insert-into-group.patch.yml",
+     "line": 9,
+     "class": "duplicate-insert-id",
+     "id": "dsh-link-fixture-group",
+     "name": null,
+     "keys": [
+      "id",
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "dsh-link-fixture-group",
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\07-insert-into-group.patch.yml",
+     "line": 11,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-group-child",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 9,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-group-child",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/08-layer-config-base.patch.yml",
+   "bytes": 511,
+   "lines": 16,
+   "parsedLines": 13,
+   "totalLines": 16,
+   "attributedLines": 13,
+   "unattributedLines": [
+    1,
+    2
+   ],
+   "coverage": 0.81,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\08-layer-config-base.patch.yml",
+     "line": 3,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\08-layer-config-base.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-config-target",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 3,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-config-target",
+      "name": "cordis:group",
+      "group": true,
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\08-layer-config-base.patch.yml",
+     "line": 8,
+     "class": "field-replacement",
+     "id": "dsh-link-fixture-config-child-a",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 4,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "dsh-link-fixture-config-child-a",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\08-layer-config-base.patch.yml",
+     "line": 12,
+     "class": "field-replacement",
+     "id": "dsh-link-fixture-config-child-b",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 4,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "dsh-link-fixture-config-child-b",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/09-layer-config-replace.patch.yml",
+   "bytes": 379,
+   "lines": 10,
+   "parsedLines": 6,
+   "totalLines": 10,
+   "attributedLines": 6,
+   "unattributedLines": [
+    1,
+    2,
+    3
+   ],
+   "coverage": 0.6,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\09-layer-config-replace.patch.yml",
+     "line": 4,
+     "class": "field-replacement",
+     "id": "dsh-link-fixture-config-target",
+     "name": null,
+     "keys": [
+      "id",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "row",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "dsh-link-fixture-config-target",
+      "config": {
+       "present": true
+      }
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\09-layer-config-replace.patch.yml",
+     "line": 6,
+     "class": "field-replacement",
+     "id": "dsh-link-fixture-config-child-c",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "nested",
+     "parentLine": null,
+     "nestedUnder": 4,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:29 (patch description: other patches replace supplied fields)",
+     "values": {
+      "id": "dsh-link-fixture-config-child-c",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/10-disabled-bang-js-expression.patch.yml",
+   "bytes": 282,
+   "lines": 9,
+   "parsedLines": 6,
+   "totalLines": 9,
+   "attributedLines": 6,
+   "unattributedLines": [
+    1,
+    2
+   ],
+   "coverage": 0.67,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\10-disabled-bang-js-expression.patch.yml",
+     "line": 3,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\10-disabled-bang-js-expression.patch.yml",
+     "line": 4,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-bang-js-disabled",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config",
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 3,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-bang-js-disabled",
+      "name": "cordis:group",
+      "group": true,
+      "config": [],
+      "disabled": "!js \"true\""
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/11-insert-into-non-group.patch.yml",
+   "bytes": 623,
+   "lines": 16,
+   "parsedLines": 10,
+   "totalLines": 16,
+   "attributedLines": 10,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "coverage": 0.63,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\11-insert-into-non-group.patch.yml",
+     "line": 6,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\11-insert-into-non-group.patch.yml",
+     "line": 7,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-nongroup",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 6,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-nongroup",
+      "name": "cordis:group",
+      "config": []
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\11-insert-into-non-group.patch.yml",
+     "line": 10,
+     "class": "duplicate-insert-id",
+     "id": "dsh-link-fixture-nongroup",
+     "name": null,
+     "keys": [
+      "id",
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "dsh-link-fixture-nongroup",
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\11-insert-into-non-group.patch.yml",
+     "line": 12,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-nongroup-child",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 10,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-nongroup-child",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/12-name-mismatch.patch.yml",
+   "bytes": 533,
+   "lines": 13,
+   "parsedLines": 8,
+   "totalLines": 13,
+   "attributedLines": 8,
+   "unattributedLines": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "coverage": 0.62,
+   "warnings": [],
+   "rows": [
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\12-name-mismatch.patch.yml",
+     "line": 5,
+     "class": "insert-entries",
+     "id": null,
+     "name": null,
+     "keys": [
+      "insert"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-parent",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "insert": ""
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\12-name-mismatch.patch.yml",
+     "line": 6,
+     "class": "insert-entries",
+     "id": "dsh-link-fixture-name-mismatch",
+     "name": "cordis:group",
+     "keys": [
+      "id",
+      "name",
+      "group",
+      "config"
+     ],
+     "unknownKeys": [],
+     "origin": "insert-child",
+     "parentLine": 5,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:24-31 (the patch insert shape)",
+     "values": {
+      "id": "dsh-link-fixture-name-mismatch",
+      "name": "cordis:group",
+      "group": true,
+      "config": []
+     }
+    },
+    {
+     "file": "<workspace>\\\\dsh-link\\compat\\adaptation\\rows\\fixtures\\12-name-mismatch.patch.yml",
+     "line": 10,
+     "class": "duplicate-insert-id",
+     "id": "dsh-link-fixture-name-mismatch",
+     "name": "cordis:include",
+     "keys": [
+      "id",
+      "name",
+      "disabled"
+     ],
+     "unknownKeys": [],
+     "origin": "row",
+     "parentLine": null,
+     "nestedUnder": null,
+     "evidence": "packages/boot/app-boot/src/config-schema/document.ts:13 (an entry id identifies a row)",
+     "values": {
+      "id": "dsh-link-fixture-name-mismatch",
+      "name": "cordis:include",
+      "disabled": true
+     }
+    }
+   ],
+   "source": "fixture",
+   "origin": "repo",
+   "bundle": "profile-layer (this file is an overlay, not a bundle)",
+   "layer": 26
+  }
+ ],
+ "counts": {
+  "files": 31,
+  "rows": 118,
+  "patchRows": 84,
+  "insertChildren": 34,
+  "nestedRows": 49,
+  "byOrigin": {
+   "insert-parent": 31,
+   "insert-child": 34,
+   "nested": 49,
+   "row": 4
+  },
+  "bySource": {
+   "sample": 86,
+   "fixture": 32
+  },
+  "classCoverage": [
+   {
+    "class": "insert-entries",
+    "samples": 41,
+    "fixtures": 21,
+    "fixtureFiles": [
+     "01-insert-control.patch.yml",
+     "04-insert-child-legacy-keys.patch.yml",
+     "05-insert-duplicate-id.patch.yml",
+     "06-disabled-js-expression.patch.yml",
+     "07-insert-into-group.patch.yml",
+     "08-layer-config-base.patch.yml",
+     "10-disabled-bang-js-expression.patch.yml",
+     "11-insert-into-non-group.patch.yml",
+     "12-name-mismatch.patch.yml"
+    ],
+    "note": null
+   },
+   {
+    "class": "field-replacement",
+    "samples": 23,
+    "fixtures": 5,
+    "fixtureFiles": [
+     "03-non-insert-missing-target.patch.yml",
+     "08-layer-config-base.patch.yml",
+     "09-layer-config-replace.patch.yml"
+    ],
+    "note": null
+   },
+   {
+    "class": "skipped-no-id",
+    "samples": 15,
+    "fixtures": 1,
+    "fixtureFiles": [
+     "02-non-insert-without-id.patch.yml"
+    ],
+    "note": null
+   },
+   {
+    "class": "unknown-metadata-key",
+    "samples": 2,
+    "fixtures": 1,
+    "fixtureFiles": [
+     "04-insert-child-legacy-keys.patch.yml"
+    ],
+    "note": null
+   },
+   {
+    "class": "duplicate-insert-id",
+    "samples": 5,
+    "fixtures": 4,
+    "fixtureFiles": [
+     "05-insert-duplicate-id.patch.yml",
+     "07-insert-into-group.patch.yml",
+     "11-insert-into-non-group.patch.yml",
+     "12-name-mismatch.patch.yml"
+    ],
+    "note": null
+   },
+   {
+    "class": "unresolvable-insert-name",
+    "samples": 0,
+    "fixtures": 0,
+    "fixtureFiles": [],
+    "note": "no trigger on this machine: neither the real samples nor the fixtures exercise this class"
+   }
+  ],
+  "byClass": {
+   "insert-entries": 62,
+   "unknown-metadata-key": 3,
+   "skipped-no-id": 16,
+   "field-replacement": 28,
+   "duplicate-insert-id": 9
+  },
+  "bytes": 38968,
+  "parserWarnings": 0
+ },
+ "cannotSee": [
+  "a !!js value is kept verbatim and never evaluated",
+  "whether the module a row names is actually installed",
+  "group inheritance and layer order beyond the file being read (bundle, profile, home, CLI apply in that order, per document.ts:152-159)",
+  "a config block is reported as present, never as satisfying any schema",
+  "anchors, aliases, block scalars and multi-document files are counted, not parsed (see the module header)"
+ ],
+ "liveInputs": {
+  "note": "Read from this machine, not from this repository: the profile own patch file and the bundles installed outside it. The application rewrites its own profile patch (R40, R43), so this material is recorded and printed but is not part of the --check comparison.",
+  "files": [
+   {
+    "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml",
+    "origin": "live",
+    "bytes": 5973,
+    "lines": 209,
+    "coverage": 0.9,
+    "rows": 127,
+    "digest": "ae40cd1e07f5671b"
+   },
+   {
+    "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard/cordis.patch.yml",
+    "origin": "live",
+    "bytes": 563,
+    "lines": 17,
+    "coverage": 0.18,
+    "rows": 2,
+    "digest": "a67aadd6a3685bb7"
+   },
+   {
+    "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-opencode-go/cordis.patch.yml",
+    "origin": "live",
+    "bytes": 60,
+    "lines": 4,
+    "coverage": 0.75,
+    "rows": 2,
+    "digest": "092ae27ec8eff9f5"
+   },
+   {
+    "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard/cordis.patch.yml",
+    "origin": "live",
+    "bytes": 316,
+    "lines": 8,
+    "coverage": 0.38,
+    "rows": 2,
+    "digest": "9cfb8e37bec05056"
+   },
+   {
+    "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard/cordis.patch.yml",
+    "origin": "live",
+    "bytes": 345,
+    "lines": 10,
+    "coverage": 0.6,
+    "rows": 2,
+    "digest": "5b09fb5122e2ae0c"
+   }
+  ],
+  "counts": {
+   "files": 5,
+   "bytes": 7257,
+   "rows": 135
+  },
+  "digest": "fa9497385c69ee21",
+  "layers": {
+   "bundles": [
+    "@deepseek-ai/dsh-base",
+    "@deepseek-ai/dsh-web-app",
+    "dsh-opencode-go",
+    "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "@deepseek-ai/dsh-experimental-auto-review",
+    "@deepseek-ai/dsh-experimental-voice-input-bundle",
+    "dsh-liquid-glass",
+    "dsh-theme-settings",
+    "dsh-link-mods",
+    "dsh-link-collab",
+    "dsh-link-teams",
+    "dsh-continue-button",
+    "dsh-link-brand",
+    "dsh-agent-context",
+    "@argszero/cordis-plugin-thinking-loop-guard",
+    "dsh-lan-bridge",
+    "dsh-repetition-guard",
+    "dsh-repeat-guard",
+    "dsh-delegation-model-choice",
+    "dsh-link-groups",
+    "dsh-link-notes",
+    "dsh-link-markdown",
+    "dsh-link-panel",
+    "dsh-link-compat",
+    "dsh-link-host",
+    "dsh-link-responsive"
+   ],
+   "layerOf": {
+    "@deepseek-ai/dsh-base": 0,
+    "@deepseek-ai/dsh-web-app": 1,
+    "dsh-opencode-go": 2,
+    "@deepseek-ai/dsh-experimental-agent-team-profile": 3,
+    "@deepseek-ai/dsh-experimental-auto-review": 4,
+    "@deepseek-ai/dsh-experimental-voice-input-bundle": 5,
+    "dsh-liquid-glass": 6,
+    "dsh-theme-settings": 7,
+    "dsh-link-mods": 8,
+    "dsh-link-collab": 9,
+    "dsh-link-teams": 10,
+    "dsh-continue-button": 11,
+    "dsh-link-brand": 12,
+    "dsh-agent-context": 13,
+    "@argszero/cordis-plugin-thinking-loop-guard": 14,
+    "dsh-lan-bridge": 15,
+    "dsh-repetition-guard": 16,
+    "dsh-repeat-guard": 17,
+    "dsh-delegation-model-choice": 18,
+    "dsh-link-groups": 19,
+    "dsh-link-notes": 20,
+    "dsh-link-markdown": 21,
+    "dsh-link-panel": 22,
+    "dsh-link-compat": 23,
+    "dsh-link-host": 24,
+    "dsh-link-responsive": 25
+   },
+   "idsInMoreThanOnePlace": [
+    {
+     "id": "compaction",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 56,
+       "class": "field-replacement",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 175,
+       "class": "duplicate-insert-id",
+       "hasConfig": true
+      }
+     ]
+    },
+    {
+     "id": "compaction-basic",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 63,
+       "class": "field-replacement",
+       "hasConfig": false
+      },
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 182,
+       "class": "duplicate-insert-id",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "command-compact",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 66,
+       "class": "field-replacement",
+       "hasConfig": false
+      },
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 185,
+       "class": "duplicate-insert-id",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "tool-result-pruner",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 69,
+       "class": "field-replacement",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+       "layer": 26,
+       "line": 188,
+       "class": "duplicate-insert-id",
+       "hasConfig": true
+      }
+     ]
+    },
+    {
+     "id": "link-panel",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-panel/cordis.patch.yml",
+       "layer": 26,
+       "line": 21,
+       "class": "insert-entries",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-link-panel/cordis.patch.yml",
+       "layer": 26,
+       "line": 27,
+       "class": "duplicate-insert-id",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "theme-settings",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/plugins/dsh-theme-settings/cordis.patch.yml",
+       "layer": 26,
+       "line": 5,
+       "class": "insert-entries",
+       "hasConfig": false
+      },
+      {
+       "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml",
+       "layer": 26,
+       "line": 37,
+       "class": "field-replacement",
+       "hasConfig": true
+      }
+     ]
+    },
+    {
+     "id": "dsh-link-fixture-duplicate",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/05-insert-duplicate-id.patch.yml",
+       "layer": 26,
+       "line": 3,
+       "class": "insert-entries",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/05-insert-duplicate-id.patch.yml",
+       "layer": 26,
+       "line": 8,
+       "class": "duplicate-insert-id",
+       "hasConfig": true
+      }
+     ]
+    },
+    {
+     "id": "dsh-link-fixture-group",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/07-insert-into-group.patch.yml",
+       "layer": 26,
+       "line": 5,
+       "class": "insert-entries",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/07-insert-into-group.patch.yml",
+       "layer": 26,
+       "line": 9,
+       "class": "duplicate-insert-id",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "dsh-link-fixture-config-target",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/08-layer-config-base.patch.yml",
+       "layer": 26,
+       "line": 4,
+       "class": "insert-entries",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/09-layer-config-replace.patch.yml",
+       "layer": 26,
+       "line": 4,
+       "class": "field-replacement",
+       "hasConfig": true
+      }
+     ]
+    },
+    {
+     "id": "dsh-link-fixture-nongroup",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/11-insert-into-non-group.patch.yml",
+       "layer": 26,
+       "line": 7,
+       "class": "insert-entries",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/11-insert-into-non-group.patch.yml",
+       "layer": 26,
+       "line": 10,
+       "class": "duplicate-insert-id",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "dsh-link-fixture-name-mismatch",
+     "entries": [
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/12-name-mismatch.patch.yml",
+       "layer": 26,
+       "line": 6,
+       "class": "insert-entries",
+       "hasConfig": true
+      },
+      {
+       "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/12-name-mismatch.patch.yml",
+       "layer": 26,
+       "line": 10,
+       "class": "duplicate-insert-id",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "dsh-repeat-guard",
+     "entries": [
+      {
+       "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml",
+       "layer": 26,
+       "line": 55,
+       "class": "field-replacement",
+       "hasConfig": true
+      },
+      {
+       "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard/cordis.patch.yml",
+       "layer": 17,
+       "line": 6,
+       "class": "insert-entries",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "thinking-loop-guard",
+     "entries": [
+      {
+       "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml",
+       "layer": 26,
+       "line": 189,
+       "class": "field-replacement",
+       "hasConfig": true
+      },
+      {
+       "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard/cordis.patch.yml",
+       "layer": 14,
+       "line": 15,
+       "class": "insert-entries",
+       "hasConfig": false
+      }
+     ]
+    },
+    {
+     "id": "repetition-guard",
+     "entries": [
+      {
+       "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml",
+       "layer": 26,
+       "line": 204,
+       "class": "field-replacement",
+       "hasConfig": true
+      },
+      {
+       "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard/cordis.patch.yml",
+       "layer": 16,
+       "line": 5,
+       "class": "insert-entries",
+       "hasConfig": true
+      }
+     ]
+    }
+   ],
+   "overriddenBy": {
+    "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:56": {
+     "id": "compaction",
+     "by": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:175",
+     "winnerHasConfig": true,
+     "earlierHasConfig": true
+    },
+    "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:63": {
+     "id": "compaction-basic",
+     "by": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:182",
+     "winnerHasConfig": false,
+     "earlierHasConfig": false
+    },
+    "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:66": {
+     "id": "command-compact",
+     "by": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:185",
+     "winnerHasConfig": false,
+     "earlierHasConfig": false
+    },
+    "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:69": {
+     "id": "tool-result-pruner",
+     "by": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml:188",
+     "winnerHasConfig": true,
+     "earlierHasConfig": true
+    },
+    "<workspace>//dsh-link/plugins/dsh-link-panel/cordis.patch.yml:21": {
+     "id": "link-panel",
+     "by": "<workspace>//dsh-link/plugins/dsh-link-panel/cordis.patch.yml:27",
+     "winnerHasConfig": false,
+     "earlierHasConfig": true
+    },
+    "<workspace>//dsh-link/plugins/dsh-theme-settings/cordis.patch.yml:5": {
+     "id": "theme-settings",
+     "by": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml:37",
+     "winnerHasConfig": true,
+     "earlierHasConfig": false
+    },
+    "<workspace>//dsh-link/compat/adaptation/rows/fixtures/05-insert-duplicate-id.patch.yml:3": {
+     "id": "dsh-link-fixture-duplicate",
+     "by": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/05-insert-duplicate-id.patch.yml:8",
+     "winnerHasConfig": true,
+     "earlierHasConfig": true
+    },
+    "<workspace>//dsh-link/compat/adaptation/rows/fixtures/07-insert-into-group.patch.yml:5": {
+     "id": "dsh-link-fixture-group",
+     "by": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/07-insert-into-group.patch.yml:9",
+     "winnerHasConfig": false,
+     "earlierHasConfig": true
+    },
+    "<workspace>//dsh-link/compat/adaptation/rows/fixtures/08-layer-config-base.patch.yml:4": {
+     "id": "dsh-link-fixture-config-target",
+     "by": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/09-layer-config-replace.patch.yml:4",
+     "winnerHasConfig": true,
+     "earlierHasConfig": true
+    },
+    "<workspace>//dsh-link/compat/adaptation/rows/fixtures/11-insert-into-non-group.patch.yml:7": {
+     "id": "dsh-link-fixture-nongroup",
+     "by": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/11-insert-into-non-group.patch.yml:10",
+     "winnerHasConfig": false,
+     "earlierHasConfig": true
+    },
+    "<workspace>//dsh-link/compat/adaptation/rows/fixtures/12-name-mismatch.patch.yml:6": {
+     "id": "dsh-link-fixture-name-mismatch",
+     "by": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/12-name-mismatch.patch.yml:10",
+     "winnerHasConfig": false,
+     "earlierHasConfig": true
+    },
+    "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repeat-guard/cordis.patch.yml:6": {
+     "id": "dsh-repeat-guard",
+     "by": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml:55",
+     "winnerHasConfig": true,
+     "earlierHasConfig": false
+    },
+    "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard/cordis.patch.yml:15": {
+     "id": "thinking-loop-guard",
+     "by": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml:189",
+     "winnerHasConfig": true,
+     "earlierHasConfig": false
+    },
+    "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/dsh-repetition-guard/cordis.patch.yml:5": {
+     "id": "repetition-guard",
+     "by": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/cordis.patch.yml:204",
+     "winnerHasConfig": true,
+     "earlierHasConfig": true
+    }
+   },
+   "note": "The loader keys its store by id, so a later layer with the same id wins; when the winner carries no config, the earlier config is a dead flag. This is the shape recorded at plugins/dsh-link-mods/cordis.patch.yml:25-33."
+  }
+ },
+ "rowsOutsideThisFile": [
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 39,
+   "id": "persona",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 56,
+   "id": "compaction",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 63,
+   "id": "compaction-basic",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 66,
+   "id": "command-compact",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 69,
+   "id": "tool-result-pruner",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 124,
+   "id": "anchored-lite",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 135,
+   "id": "tool-bash",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 142,
+   "id": "tool-str-replace-editor",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 145,
+   "id": "tool-pwsh",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 150,
+   "id": "tool-fs",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 153,
+   "id": "tool-fs-search",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 159,
+   "id": "tool-jobs",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 163,
+   "id": "skill-filesystem",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 166,
+   "id": "tool-skill",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 170,
+   "id": "tool-goal",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 201,
+   "id": "tool-subagent-control",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 205,
+   "id": "tool-subagent",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 213,
+   "id": "tool-subagent-fork",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 221,
+   "id": "tool-workflow",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 225,
+   "id": "tool-ralph",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 233,
+   "id": "tool-ask-user",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 236,
+   "id": "tool-todo",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/plugins/dsh-link-mods/presets.patch.yml",
+   "line": 241,
+   "id": "tool-web",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/03-non-insert-missing-target.patch.yml",
+   "line": 3,
+   "id": "dsh-link-fixture-no-such-row",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/08-layer-config-base.patch.yml",
+   "line": 8,
+   "id": "dsh-link-fixture-config-child-a",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/08-layer-config-base.patch.yml",
+   "line": 12,
+   "id": "dsh-link-fixture-config-child-b",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/09-layer-config-replace.patch.yml",
+   "line": 4,
+   "id": "dsh-link-fixture-config-target",
+   "targetInThisFile": false
+  },
+  {
+   "file": "<workspace>//dsh-link/compat/adaptation/rows/fixtures/09-layer-config-replace.patch.yml",
+   "line": 6,
+   "id": "dsh-link-fixture-config-child-c",
+   "targetInThisFile": false
+  }
+ ]
+}

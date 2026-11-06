@@ -1,0 +1,14 @@
+{
+  "name": "dsh-cross-version-loader",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Cross-version loader: resolves a kernel version against declarative surface/capability tables.",
+  "files": [
+    "src",
+    "compat",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ]
+}

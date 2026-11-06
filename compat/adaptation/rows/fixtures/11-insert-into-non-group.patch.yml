@@ -1,0 +1,15 @@
+# The row inserted first carries the group plugin name but not the group flag, so it is a
+# non-group row as far as insertion is concerned (document.ts:16: the flag is what allows
+# insertion into a row's config). The second patch of this layer then inserts into it by id.
+# Both names in this file are Cordis builtins, so nothing depends on which plugin packages a
+# machine has installed.
+- insert:
+    - id: dsh-link-fixture-nongroup
+      name: cordis:group
+      config: []
+- id: dsh-link-fixture-nongroup
+  insert:
+    - id: dsh-link-fixture-nongroup-child
+      name: cordis:group
+      group: true
+      config: []

@@ -1,0 +1,124 @@
+{
+ "format": "dsh-link.usage-ticket/1",
+ "generatedBy": "scripts/build-usage-tickets.mjs",
+ "plugin": {
+  "name": "@argszero/cordis-plugin-thinking-loop-guard",
+  "version": "0.1.9",
+  "license": "MIT",
+  "patch": "./cordis.patch.yml",
+  "client": false
+ },
+ "dir": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard",
+ "filesScanned": 3,
+ "sourceDigest": "edc08c6c049679937f026684768f80b86dc83bea57a0a81c8f7e0b3dbee7b62a",
+ "counts": {
+  "present": 3
+ },
+ "imports": [
+  {
+   "specifier": "@deepseek-ai/cordis",
+   "at": [
+    "lib\\index.js:130",
+    "lib\\types\\index.d.ts:130"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/dsh-llm",
+   "at": [
+    "lib\\index.js:132"
+   ]
+  },
+  {
+   "specifier": "@deepseek-ai/schemastery",
+   "at": [
+    "lib\\index.js:131",
+    "lib\\types\\index.d.ts:131"
+   ]
+  },
+  {
+   "specifier": "node:fs",
+   "at": [
+    "tools\\analyze-session.mjs:51"
+   ]
+  }
+ ],
+ "gaps": [],
+ "gapCounts": {},
+ "limits": {
+  "dynamicContextAccess": 0,
+  "destructuredContext": 0,
+  "memberUsageHeadsOutsideClientSurface": 1
+ },
+ "work": [
+  "present: 3 name(s) this plugin uses exist in the 0.2.1 surface, so nothing needs translating",
+  "client-plane: 0 usage(s) live in files only the client plane loads, and no archived surface covers that plane — unverified, not broken (R22: the packages and subpaths they import do resolve; see compat/adaptation/import-resolution.json)",
+  "absent: 0 name(s) are in neither the 0.2.1 surface nor the drift table; each needs a shim or a rewrite before adoption",
+  "loss: 0 name(s) are known-lost (a drift row with no candidate), which a bridge can only report",
+  "composition: this plugin ships its own patch, so its contract lives in its rows; adopting it means reading those rows, not only its imports"
+ ],
+ "rows": [
+  {
+   "at": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard/cordis.patch.yml:14",
+   "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard/cordis.patch.yml",
+   "line": 14,
+   "origin": "insert-parent",
+   "class": "insert-entries",
+   "insertedId": null,
+   "hasConfig": false,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": null
+  },
+  {
+   "at": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard/cordis.patch.yml:15",
+   "file": "C:/Users/<user>/AppData/Roaming/dev.dshlink.client/dsh-link/kernel-home/profiles/web/node_modules/@argszero/cordis-plugin-thinking-loop-guard/cordis.patch.yml",
+   "line": 15,
+   "origin": "insert-child",
+   "class": "insert-entries",
+   "insertedId": "thinking-loop-guard",
+   "hasConfig": false,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": false
+  }
+ ],
+ "manualJudgement": [
+  {
+   "id": "silent-foreign-key",
+   "needs": "manual decision",
+   "what": "the composition keeps a key that is not in the declared list, without saying so",
+   "measured": {
+    "case": "config-key-outside-schema",
+    "observedTags": [
+     "calibration",
+     "schema-control",
+     "schema-unknown"
+    ],
+    "conclusion": "the measured case mounted the row with a key the schema does not accept, so an unknown key is passed rather than refused"
+   }
+  },
+  {
+   "id": "duplicate-insert",
+   "needs": "manual decision",
+   "what": "the same id is inserted twice; the later insert wins wholesale",
+   "measured": {
+    "case": "same-id-two-rows",
+    "observedTags": [
+     "calibration",
+     "dupe-b"
+    ],
+    "conclusion": "the measured case kept both rows and indexed the later one, so the earlier config is not merged but dropped"
+   }
+  },
+  {
+   "id": "whole-config-replacement",
+   "needs": "manual decision",
+   "what": "a later layer replaces a config wholesale rather than merging it",
+   "measured": {
+    "case": null,
+    "observedTags": null,
+    "conclusion": "no admission case measures a later layer replacing a config wholesale, so this stays a human decision and is not claimed as measured"
+   }
+  }
+ ]
+}

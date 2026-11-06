@@ -1,0 +1,15 @@
+{
+ "format": "dsh-link.patched-installed/1",
+ "note": "An installed package this machine deliberately patched. A digest that cannot match is drift; a digest that matches a RECORDED patch is a fact. Every entry names the file, the line, the reason, and both digests, so the next reader does not have to rediscover why the analyzer disagrees with the ticket.",
+ "patches": [
+  {
+   "package": "@argszero/cordis-plugin-thinking-loop-guard",
+   "file": "lib/index.js",
+   "line": 163,
+   "what": "const PLUGIN_SOURCE = { kind: 'plugin', plugin: 'thinking-loop-guard' } -> { kind: 'plugin:thinking-loop-guard' }",
+   "reason": "R198/R199: the retired v3 source shape is refused at session-format v4 admission, so the guard's own correction message threw SessionFormatError and killed a real turn before it delivered anything. The v3->v4 converter maps this plugin to the producer-owned kind plugin:thinking-loop-guard (dsh-session-format-v3-to-v4 lib/index.js producerKind()), which is what a plugin writing NEW messages must use. Original kept beside it as lib/index.js.bak-v3-source-r198. Upstream report owed: this is a patch on a third-party package.",
+   "ticketDigest": "edc08c6c049679937f026684768f80b86dc83bea57a0a81c8f7e0b3dbee7b62a",
+   "installedDigest": "6582718af5f643403680d6d602272d313a83503f02900246cd3b481f73fecf7f"
+  }
+ ]
+}

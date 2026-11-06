@@ -1,0 +1,134 @@
+{
+ "format": "dsh-link.usage-ticket/1",
+ "generatedBy": "scripts/build-usage-tickets.mjs",
+ "plugin": {
+  "name": "@rain-kl/dsh-preset-plus",
+  "version": "0.1.5",
+  "license": "MIT",
+  "patch": "./cordis.patch.yml",
+  "client": true
+ },
+ "dir": "H:/mod/dsh-preset-plus",
+ "filesScanned": 2,
+ "sourceDigest": "fd2889739915def1e54f075e30e749d1166754d2305bac13377eb0fae946446a",
+ "counts": {
+  "present": 11
+ },
+ "imports": [
+  {
+   "specifier": "node:crypto",
+   "at": [
+    "lib\\index.js:26"
+   ]
+  },
+  {
+   "specifier": "node:fs",
+   "at": [
+    "lib\\core.js:21",
+    "lib\\core.js:22",
+    "lib\\index.js:21",
+    "lib\\index.js:22"
+   ]
+  },
+  {
+   "specifier": "node:os",
+   "at": [
+    "lib\\core.js:23",
+    "lib\\index.js:24"
+   ]
+  },
+  {
+   "specifier": "node:path",
+   "at": [
+    "lib\\core.js:24",
+    "lib\\index.js:23"
+   ]
+  },
+  {
+   "specifier": "node:url",
+   "at": [
+    "lib\\core.js:25",
+    "lib\\index.js:25"
+   ]
+  }
+ ],
+ "gaps": [],
+ "gapCounts": {},
+ "limits": {
+  "dynamicContextAccess": 0,
+  "destructuredContext": 0,
+  "memberUsageHeadsOutsideClientSurface": 3
+ },
+ "work": [
+  "present: 11 name(s) this plugin uses exist in the 0.2.1 surface, so nothing needs translating",
+  "client-plane: 0 usage(s) live in files only the client plane loads, and no archived surface covers that plane — unverified, not broken (R22: the packages and subpaths they import do resolve; see compat/adaptation/import-resolution.json)",
+  "absent: 0 name(s) are in neither the 0.2.1 surface nor the drift table; each needs a shim or a rewrite before adoption",
+  "loss: 0 name(s) are known-lost (a drift row with no candidate), which a bridge can only report",
+  "composition: this plugin ships its own patch, so its contract lives in its rows; adopting it means reading those rows, not only its imports"
+ ],
+ "rows": [
+  {
+   "at": "H:/mod/dsh-preset-plus/cordis.patch.yml:4",
+   "file": "H:/mod/dsh-preset-plus/cordis.patch.yml",
+   "line": 4,
+   "origin": "insert-parent",
+   "class": "insert-entries",
+   "insertedId": null,
+   "hasConfig": false,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": null
+  },
+  {
+   "at": "H:/mod/dsh-preset-plus/cordis.patch.yml:5",
+   "file": "H:/mod/dsh-preset-plus/cordis.patch.yml",
+   "line": 5,
+   "origin": "insert-child",
+   "class": "insert-entries",
+   "insertedId": "dsh-preset-plus",
+   "hasConfig": true,
+   "nestedUnder": null,
+   "legacyKeys": [],
+   "supersededByLaterLayer": null
+  }
+ ],
+ "manualJudgement": [
+  {
+   "id": "silent-foreign-key",
+   "needs": "manual decision",
+   "what": "the composition keeps a key that is not in the declared list, without saying so",
+   "measured": {
+    "case": "config-key-outside-schema",
+    "observedTags": [
+     "calibration",
+     "schema-control",
+     "schema-unknown"
+    ],
+    "conclusion": "the measured case mounted the row with a key the schema does not accept, so an unknown key is passed rather than refused"
+   }
+  },
+  {
+   "id": "duplicate-insert",
+   "needs": "manual decision",
+   "what": "the same id is inserted twice; the later insert wins wholesale",
+   "measured": {
+    "case": "same-id-two-rows",
+    "observedTags": [
+     "calibration",
+     "dupe-b"
+    ],
+    "conclusion": "the measured case kept both rows and indexed the later one, so the earlier config is not merged but dropped"
+   }
+  },
+  {
+   "id": "whole-config-replacement",
+   "needs": "manual decision",
+   "what": "a later layer replaces a config wholesale rather than merging it",
+   "measured": {
+    "case": null,
+    "observedTags": null,
+    "conclusion": "no admission case measures a later layer replacing a config wholesale, so this stays a human decision and is not claimed as measured"
+   }
+  }
+ ]
+}

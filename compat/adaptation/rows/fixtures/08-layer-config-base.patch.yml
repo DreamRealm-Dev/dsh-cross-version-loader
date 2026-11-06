@@ -1,0 +1,15 @@
+# The base half of the config-replacement pair: a group whose entry list holds two
+# children. Apply this layer first, then 09-layer-config-replace.patch.yml over it.
+- insert:
+    - id: dsh-link-fixture-config-target
+      name: cordis:group
+      group: true
+      config:
+        - id: dsh-link-fixture-config-child-a
+          name: cordis:group
+          group: true
+          config: []
+        - id: dsh-link-fixture-config-child-b
+          name: cordis:group
+          group: true
+          config: []

@@ -1,0 +1,171 @@
+{
+ "format": "dsh-link.name-drift/2",
+ "generatedAt": "2026-10-07T03:37:28.649Z",
+ "oracle": {
+  "materialRoot": "Q:/Program Files/DeepSeek Harness/resources/app/node_modules",
+  "material": "the packaged 0.1.5 install: package.json exports/main/types entry points, then exported symbols in those .d.ts files, one re-export level deep",
+  "scannedEntryFiles": 890,
+  "exportedSymbols": 4070,
+  "whyTrustworthy": [
+   "a name is offered only when it is either observed by a kernel probe (measured) or exported by the packaged build under its declared entry point",
+   "the previous pass read every \"name: Type\" line inside interface Context, which is what let plain properties in; this pass never looks at Context declarations"
+  ],
+  "stillUnknown": [
+   "a renamed service whose old AND new symbol names both exist as exports is invisible here",
+   "JS-only packages with no .d.ts contribute no symbols",
+   "the tier says the NAME existed, not that its CONTRACT matched; contract drift lives in compat/table/**"
+  ],
+  "countsAreMethodDependent": {
+   "note": "scannedEntryFiles/exportedSymbols depend on the entry-point and re-export rules used. An independent implementation (R18-verify.md) counted 2,562 entry files and 5,296 exported symbols over the same tree, i.e. 2.9x and 1.3x these numbers. Read them as \"this method reached at least this many\", not as a property of the install.",
+   "independentCount": {
+    "scannedEntryFiles": 2562,
+    "exportedSymbols": 5296,
+    "by": "the R18 verification, different implementation"
+   }
+  }
+ },
+ "counts": {
+  "rows": 15,
+  "certain": 3,
+  "probable": 1,
+  "unsupported": 11,
+  "kept": 4,
+  "refusals": 0
+ },
+ "kept": [
+  {
+   "kind": "service",
+   "from": "dsh-v0.1.1-rc.2",
+   "name": "codeRuntime",
+   "members": 5,
+   "tier": "certain",
+   "evidence": [
+    {
+     "where": "compat/surface/0.1.1-rc.2.json services.codeRuntime",
+     "why": "a probe ran against that kernel and read this property"
+    }
+   ],
+   "candidates": [
+    {
+     "name": "runtime",
+     "score": 0.7,
+     "how": "name-similarity"
+    }
+   ],
+   "refusal": null
+  },
+  {
+   "kind": "event",
+   "from": "dsh-v0.1.1-rc.2",
+   "name": "agent/session-start",
+   "members": null,
+   "tier": "certain",
+   "evidence": [
+    {
+     "where": "compat/surface/0.1.1-rc.2.json events[]",
+     "why": "the probe observed a listener registered for this name"
+    }
+   ],
+   "candidates": [],
+   "refusal": null
+  },
+  {
+   "kind": "event",
+   "from": "dsh-v0.1.1-rc.2",
+   "name": "tools/code-dispatch-log",
+   "members": null,
+   "tier": "certain",
+   "evidence": [
+    {
+     "where": "compat/surface/0.1.1-rc.2.json events[]",
+     "why": "the probe observed a listener registered for this name"
+    }
+   ],
+   "candidates": [],
+   "refusal": null
+  },
+  {
+   "kind": "service",
+   "from": "dsh-v0.1.5-rc.1",
+   "name": "error",
+   "members": 0,
+   "tier": "probable",
+   "evidence": [
+    {
+     "where": "external:@smithy/core/dist-types/submodules/schema/index.d.ts (@smithy/core)",
+     "why": "the packaged build exports a symbol with this exact name from a declared entry point"
+    }
+   ],
+   "candidates": [],
+   "refusal": null
+  }
+ ],
+ "refusals": [],
+ "unsupported": [
+  {
+   "name": "agent",
+   "from": "dsh-v0.1.1-rc.2",
+   "because": "not a service or event in the 0.1.1 surface: that document has 58 services (agentDefaultModel, agentLoop, agentPresets, agents, subagents) and 32 events, and no `agent`. It came from the earlier regex over Context declarations, and the verifier found it by parsing the surface itself."
+  },
+  {
+   "name": "apiProxy",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "codeRuntime",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the 0.1.5 surface exists on disk and does not contain this name; the row cited the 0.1.1 document, so the 0.1.5 half of it was never supported."
+  },
+  {
+   "name": "configuredAgentIdentities",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "entry",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "invariants",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "launcherSessionQueryPath",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "sessionId",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "startTime",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "version",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  },
+  {
+   "name": "webhookRuntime",
+   "from": "dsh-v0.1.5-rc.1",
+   "because": "the only trace is a regex over Context declarations"
+  }
+ ],
+ "correction": {
+  "at": "2026-10-07T03:54:58.749Z",
+  "by": "lead, after the R18 verification parsed the surfaces itself",
+  "removed": [
+   "kept: agent (its own evidence cited services.agent, which the 0.1.1 surface does not have)",
+   "kept: codeRuntime@dsh-v0.1.5-rc.1 (cited the 0.1.1 document; the 0.1.5 surface has no such name)",
+   "refusals: agent (a refused name that never existed is not a refusal)"
+  ],
+  "note": "the drift this table still supports is three certain rows (codeRuntime@0.1.1, agent/session-start, tools/code-dispatch-log) and one probable row (error), and it now says so instead of carrying two rows nothing supported."
+ }
+}

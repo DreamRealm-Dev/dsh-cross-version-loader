@@ -1,0 +1,8 @@
+# The older spelling of the previous fixture: one exclamation mark instead of two. The
+# composition reference names the two-mark form only.
+- insert:
+    - id: dsh-link-fixture-bang-js-disabled
+      name: cordis:group
+      group: true
+      config: []
+      disabled: !js "true"

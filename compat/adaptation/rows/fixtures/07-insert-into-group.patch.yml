@@ -1,0 +1,14 @@
+# Two patches in one layer: the first appends a group, the second appends inside that
+# group by naming its id. The second patch therefore depends on the first having been
+# applied already.
+- insert:
+    - id: dsh-link-fixture-group
+      name: cordis:group
+      group: true
+      config: []
+- id: dsh-link-fixture-group
+  insert:
+    - id: dsh-link-fixture-group-child
+      name: cordis:group
+      group: true
+      config: []

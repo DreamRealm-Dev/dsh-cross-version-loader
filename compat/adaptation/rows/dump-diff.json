@@ -1,0 +1,72 @@
+{
+ "format": "dsh-link.composition-dump-diff/1",
+ "method": "live profile composed through apps/cli/src/bin.ts --dump-config over a throwaway home whose profile node_modules is a junction to the live one",
+ "staged": [
+  "copied package.json",
+  "copied cordis.yml",
+  "copied cordis.patch.yml",
+  "copied compatibility.json",
+  "copied pnpm-workspace.yaml",
+  "copied pnpm-lock.yaml",
+  "junctioned node_modules to the live profile"
+ ],
+ "dump": {
+  "lines": 1689,
+  "rootIds": 222,
+  "uniqueIds": 222,
+  "idsInsideConfig": 139,
+  "idsInsideConfigSample": [
+   "persona",
+   "agent-instructions",
+   "time-context",
+   "tool-bash",
+   "tool-pwsh",
+   "tool-fs",
+   "tool-fs-search",
+   "tool-jobs",
+   "tool-schedule",
+   "skill-filesystem",
+   "tool-skill",
+   "command-goal",
+   "tool-goal",
+   "planning",
+   "plan-mode",
+   "compaction",
+   "compaction-basic",
+   "command-compact",
+   "tool-result-pruner",
+   "delegation"
+  ]
+ },
+ "staticAnalysis": {
+  "ids": 223,
+  "sourceDigest": "26fd83dda32d5692a9f7db6790adbfd3e416b388b44e7c37efc56e88efde9c06",
+  "liveDigest": "b2a4f21dd1b35dff6cc4315f433f08eb4442e74f9e627da180a3185c72f23baa"
+ },
+ "digests": {
+  "note": "sourceDigest folds only the layer files whose real path is inside this repository, so a repository change moves it and a machine change does not. liveDigest folds the inputs this machine owns (the live profile own cordis.patch.yml and bundles installed outside the repository): it is recorded so a reader can see that the machine moved under the report, and no gate may turn on it - the application rewrites its own profile patch (measured in R40, R43 and R51).",
+  "gated": "sourceDigest",
+  "recorded": "liveDigest"
+ },
+ "refused": {
+  "bundles": [
+   "@argszero/cordis-plugin-thinking-loop-guard"
+  ],
+  "ids": [
+   "thinking-loop-guard"
+  ]
+ },
+ "agree": true,
+ "onlyInDump": [],
+ "onlyInStatic": [],
+ "counts": {
+  "onlyInDump": 0,
+  "onlyInStatic": 0,
+  "both": 222
+ },
+ "limit": [
+  "The dump is matched by id lines only: it does not evaluate !!js, and an id present in both does not mean the same config.",
+  "Scope is the profile composition (bundle layers then the profile layer). The home layer and --patch overlays apply after it (document.ts:159) and are not part of this comparison.",
+  "Only unindented ids count as rows; an id printed inside some entry config (an agent preset plugin list) is counted separately as idsInsideConfig."
+ ]
+}

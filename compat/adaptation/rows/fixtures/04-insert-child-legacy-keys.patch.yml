@@ -1,0 +1,17 @@
+# A 0.1.x-era child row: beside the documented fields it carries keys from the older
+# spellings this rewrite exists to read (enabled, options, disable). The 0.2.x metadata
+# list is document.ts lines 11-22, which does not name any of the three.
+- insert:
+    - id: dsh-link-fixture-legacy-parent
+      name: cordis:group
+      group: true
+      config:
+        - id: dsh-link-fixture-legacy-child
+          name: cordis:group
+          group: true
+          config: []
+          enabled: true
+          options:
+            retries: 3
+            label: legacy
+          disable: false
